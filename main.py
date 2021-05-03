@@ -16,8 +16,6 @@ bot = commands.Bot(command_prefix="$")
 nav = DefaultMenu("◀️", "▶️", "❌")
 bot.help_command = PrettyHelp(navigation=nav, color=discord.Colour.green())
 
-def funcc(m):
-  return m.content == 'hello' and m.channel == channel
   
 @bot.event
 async def on_ready():
@@ -40,15 +38,16 @@ class Quiz(commands.Cog):
     for i in order:
       await ctx.send(questions[i][0])
           
-      msg_ch = None
-      def funcc(msg):
-        global msg_ch
-        msg_ch = msg.channel
-        return functions.format(msg.content) == questions[i][1]
+      #msg_ch = None
+      def funcc(x):
+        #global msg_ch
+        #msg_ch = msg.channel
+        return functions.format(x.content) == questions[i][1]
         
       #msg = await bot.wait_for('message', check=funcc)
       
       try:
+        global msg
         msg = await bot.wait_for('message', check=funcc,timeout=5.0)
 
 
@@ -57,9 +56,11 @@ class Quiz(commands.Cog):
         # # a = 'The correct answer was'+ functions.pack_answer_set(questions[i][1])
         # # # await msg.channel.send(a)
         # await msg.channel.send("timeout, {ans}".format(ans=a))
-        global msg_ch
-        await msg_ch.send("timeout")
-        # pass
+        #global msg_ch
+        #await msg_ch.send("timeout")
+        await ctx.send("timeout")
+        order.append(i)
+        pass
 
       else:
         await msg.channel.send('{.author} got the correct answer!'.format(msg))
