@@ -35,7 +35,8 @@ class Quiz(commands.Cog):
     random.shuffle(order)
 
     for i in order:
-      await ctx.send("\n **"+questions[i][0]+"**")
+      embed=discord.Embed(title=questions[i][0], color=discord.Color.blue(),url="",description="")
+      await ctx.send(embed=embed)
           
       def funcc(x):
 
