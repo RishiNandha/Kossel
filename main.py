@@ -34,6 +34,8 @@ class Quiz(commands.Cog):
     order=list(range(1,len(questions)))
     random.shuffle(order)
 
+    correct, wrong, skipped = 0, 0, 0
+
     for i in order:
       embed=discord.Embed(title=questions[i][0], color=discord.Color.blue(),url="",description="")
       await ctx.send(embed=embed)
@@ -48,18 +50,24 @@ class Quiz(commands.Cog):
 
 
       except asyncio.TimeoutError:
-
-        await ctx.send("Timeout!, The Answer was **"+questions[i][1]+"**\n"+questions[i][2])
+        wrong += 1
+        await ctx.send("Timeout!, The Answer was:")
+        embed2 = discord.Embed(title="", color=discord.Color.red(),url="",description=questions[i][1])
+        await ctx.send(embed=embed2)
+        await ctx.send(questions[i][2])
         order.append(i)
         pass
 
       else:
         if msg.content == "quit":
           await ctx.send('{.author} has stopped the quiz'.format(msg))
+          print("correct",correct,"\n","skipped",skipped,"\n","wrong",wrong)
           break
         if msg.content == "skip":
+          skipped += 1
           continue
         else: 
+          correct += 1
           s = '{.author} got the correct answer! \n' + questions[i][2]
           await msg.channel.send(s.format(msg))
 
