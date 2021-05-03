@@ -28,7 +28,7 @@ class Quiz(commands.Cog):
     help="Use this command to work and earn a random amount of money"
   )
   
-  async def _work(self, ctx):
+  async def _work(self, ctx, timee=30):
 
     questions=functions.questions("reactions")
     order=list(range(1,len(questions)))
@@ -40,11 +40,11 @@ class Quiz(commands.Cog):
           
       def funcc(x):
 
-        return (functions.format(x.content) == functions.format(questions[i][1])) or (x.content == "quit")
+        return (functions.format(x.content) == functions.format(questions[i][1])) or (x.content == "quit") or (x.content == "skip")
 
       try:
         global msg
-        msg = await bot.wait_for('message', check=funcc,timeout=5.0)
+        msg = await bot.wait_for('message', check=funcc,timeout=float(timee))
 
 
       except asyncio.TimeoutError:
@@ -55,8 +55,10 @@ class Quiz(commands.Cog):
 
       else:
         if msg.content == "quit":
-          
+          await ctx.send('{.author} has stopped the quiz'.format(msg))
           break
+        if msg.content == "skip":
+          continue
         else: 
           s = '{.author} got the correct answer! \n' + questions[i][2]
           await msg.channel.send(s.format(msg))
