@@ -61,7 +61,7 @@ class Quiz(commands.Cog):
       else:
         if msg.content == "quit":
           await ctx.send('{.author} has stopped the quiz'.format(msg))
-          print("correct",correct,"\n","skipped",skipped,"\n","wrong",wrong)
+          await ctx.send("Correct: "+str(correct)+"\nSkipped: "+str(skipped)+"\nWrong: "+str(wrong))
           break
         if msg.content == "skip":
           skipped += 1
