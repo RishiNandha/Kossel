@@ -40,7 +40,7 @@ class Quiz(commands.Cog):
           
       def funcc(x):
 
-        return functions.format(x.content) == functions.format(questions[i][1])
+        return (functions.format(x.content) == functions.format(questions[i][1])) or (x.content == "quit")
 
       try:
         global msg
@@ -54,8 +54,12 @@ class Quiz(commands.Cog):
         pass
 
       else:
-        s = '{.author} got the correct answer! \n' + questions[i][2]
-        await msg.channel.send(s.format(msg))
+        if msg.content == "quit":
+          
+          break
+        else: 
+          s = '{.author} got the correct answer! \n' + questions[i][2]
+          await msg.channel.send(s.format(msg))
 
 bot.add_cog(Quiz(bot))
 keep_alive()
