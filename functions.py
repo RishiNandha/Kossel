@@ -1,6 +1,6 @@
 import csv
 import reactions
-import random
+
 
 def format(l):
   b=l.split("->")
