@@ -21,14 +21,14 @@ async def on_ready():
   print("I'm in")
 
 class Quiz(commands.Cog):
-  """ All Quiz commands """
+  """ Use "$quiz <time for each question>" to start the quiz. The deafault time is 30 seconds for each question. Use the "skip" command to skip the question. Use the "quit" command to quit the quiz. DM Light_Yagami#6883 or RishiNandha Vanchi#3379 if you need any help or you have any quesries regarding the bot"""
   @commands.command(
     name="quiz",
     brief="Answer some questions",
-    help="Use this command to work and earn a random amount of money"
+    help='Use "$quiz" command to start the quiz'
   )
   
-  async def _work(self, ctx, timee=30):
+  async def _work(self, ctx, timeout_=30):
 
     questions=functions.questions("reactions")
     order=list(range(1,len(questions)))
@@ -46,7 +46,7 @@ class Quiz(commands.Cog):
 
       try:
         global msg
-        msg = await bot.wait_for('message', check=funcc,timeout=float(timee))
+        msg = await bot.wait_for('message', check=funcc,timeout=float(timeout_))
 
 
       except asyncio.TimeoutError:
