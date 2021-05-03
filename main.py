@@ -36,13 +36,13 @@ class Quiz(commands.Cog):
     random.shuffle(order)
 
     for i in order:
-      await ctx.send(questions[i][0])
+      await ctx.send("\n **"+questions[i][0]+"**")
           
       #msg_ch = None
       def funcc(x):
         #global msg_ch
         #msg_ch = msg.channel
-        return functions.format(x.content) == questions[i][1]
+        return functions.format(x.content) == functions.format(questions[i][1])
         
       #msg = await bot.wait_for('message', check=funcc)
       
@@ -58,12 +58,13 @@ class Quiz(commands.Cog):
         # await msg.channel.send("timeout, {ans}".format(ans=a))
         #global msg_ch
         #await msg_ch.send("timeout")
-        await ctx.send("timeout")
+        await ctx.send("Timeout!, The Answer was **"+questions[i][1]+"**\n"+questions[i][2])
         order.append(i)
         pass
 
       else:
-        await msg.channel.send('{.author} got the correct answer!'.format(msg))
+        s = '{.author} got the correct answer! \n' + questions[i][2]
+        await msg.channel.send(s.format(msg))
       # msg = await bot.wait_for('message', check=funcc)
       # await msg.channel.send('{.author} got the correct answer!'.format(msg))
 

@@ -18,11 +18,6 @@ def questions(name):
   a = csv.reader(f)
   l=list()
   for i in a:
-    l.append([" "+i[0],format(i[1]),i[2]])
+    l.append([" "+i[0],i[1],i[2]])
   return l
 
-def pack_answer_set(l):
-  a = ""
-  for i in l[0]:
-    a += i
-  return a
