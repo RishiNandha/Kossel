@@ -10,7 +10,7 @@ from pretty_help import DefaultMenu, PrettyHelp
 
 bot = commands.Bot(command_prefix="$")
 
-nav = DefaultMenu("◀️", "▶️", "❌")
+nav = DefaultMenu("◀️", "▶️")
 bot.help_command = PrettyHelp(navigation=nav, color=discord.Colour.green())
 
 # print(len(bot.guilds), bot.guilds)
@@ -31,13 +31,13 @@ class Quiz(commands.Cog):
 
     questions=functions.questions("reactions")
     order=list(range(1,len(questions)))
-    #order=[1,2]
+    #order=[55,56]
     random.shuffle(order)
 
     correct, wrong, skipped = 0, 0, 0
 
     for i in order:
-      embed=discord.Embed(title=questions[i][0], color=discord.Color.blue(),url="",description="")
+      embed=discord.Embed(title=questions[i][0], color=discord.Color.blue(),url="",description=questions[i][3])
       await ctx.send(embed=embed)
           
       def funcc(x):
