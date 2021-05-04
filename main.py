@@ -27,7 +27,8 @@ class Quiz(commands.Cog):
     help='Use "$quiz" command to start the quiz'
   )
   
-  async def _work(self, ctx, timeout_=30):
+  async def _work(self, message, timeout_=30):
+    channel=message.channel
 
     questions=functions.questions("reactions")
     order=list(range(1,len(questions)))
@@ -38,11 +39,11 @@ class Quiz(commands.Cog):
 
     for i in order:
       embed=discord.Embed(title=questions[i][0], color=discord.Color.blue(),url="",description=questions[i][3])
-      await ctx.send(embed=embed)
+      await channel.send(embed=embed)
           
       def funcc(x):
 
-        return (functions.format(x.content) == functions.format(questions[i][1])) or (x.content == "quit") or (x.content == "skip")
+        return ((functions.format(x.content) == functions.format(questions[i][1])) or (x.content == "quit") or (x.content == "skip")) and x.channel==channel
 
       try:
         global msg
@@ -51,35 +52,39 @@ class Quiz(commands.Cog):
 
       except asyncio.TimeoutError:
         wrong += 1
-        await ctx.send("Timeout!, The Answer was:")
+        await channel.send("Timeout!, The Answer was:")
         embed2 = discord.Embed(title="", color=discord.Color.red(),url="",description=questions[i][1])
-        await ctx.send(embed=embed2)
+        await channel.send(embed=embed2)
         if len(questions[i][2])>0:
-          await ctx.send(questions[i][2])
+          await channel.send(questions[i][2])
         order.append(i)
         pass
 
       else:
         if msg.content == "quit":
-          await ctx.send('{.author} has stopped the quiz'.format(msg))
-          await ctx.send("Correct: "+str(correct)+"\nSkipped: "+str(skipped)+"\nWrong: "+str(wrong))
+          await channel.send('{.author} has stopped the quiz'.format(msg))
+          await channel.send("Correct: "+str(correct)+"\nSkipped: "+str(skipped)+"\nWrong: "+str(wrong))
           break
+
+
         if msg.content == "skip":
           skipped += 1
-          await ctx.send("Skipped!, The Answer was:")
+          await channel.send("Skipped!, The Answer was:")
           embed2 = discord.Embed(title="", color=discord.Color.red(),url="",description=questions[i][1])
-          await ctx.send(embed=embed2)
+          await channel.send(embed=embed2)
           if len(questions[i][2])>0:
-            await ctx.send(questions[i][2])
+            await channel.send(questions[i][2])
           order.append(i)
           continue
+        
         else: 
           correct += 1
           s = '{.author} got the correct answer! \n' + questions[i][2]
           await msg.channel.send(s.format(msg))
           if i==order[-1]:
             embed4=discord.Embed(title="Conquered!",color=discord.Color.gold(),url="https://www.youtube.com/watch?v=Utgrbq_CFt4",description="GGs!, You are dang OP")
-            await ctx.send(embed=embed4)
+            await channel.send(embed=embed4)
+
 
 bot.add_cog(Quiz(bot))
 keep_alive()
