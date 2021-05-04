@@ -31,6 +31,7 @@ class Quiz(commands.Cog):
 
     questions=functions.questions("reactions")
     order=list(range(1,len(questions)))
+    #order=[1,2]
     random.shuffle(order)
 
     correct, wrong, skipped = 0, 0, 0
@@ -76,6 +77,9 @@ class Quiz(commands.Cog):
           correct += 1
           s = '{.author} got the correct answer! \n' + questions[i][2]
           await msg.channel.send(s.format(msg))
+          if i==order[-1]:
+            embed4=discord.Embed(title="Conquered!",color=discord.Color.gold(),url="https://www.youtube.com/watch?v=Utgrbq_CFt4",description="GGs!, You are dang OP")
+            await ctx.send(embed=embed4)
 
 bot.add_cog(Quiz(bot))
 keep_alive()
