@@ -9,7 +9,8 @@ def format(l):
     for k in range(len(j)):
       j[k]=j[k].strip()
       for l in range(10):
-        j[k]=j[k].strip(str(l))
+        j[k]=j[k].lstrip(str(l))
+        j[k]=j[k].lower()
     b[i]=set(j)
   return b
 

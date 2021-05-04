@@ -1,10 +1,8 @@
 from keep_alive import keep_alive
-import discord
 import os
+import discord
 import asyncio
-
 import random
-
 import functions
 
 from discord.ext import commands
@@ -15,6 +13,7 @@ bot = commands.Bot(command_prefix="$")
 nav = DefaultMenu("◀️", "▶️", "❌")
 bot.help_command = PrettyHelp(navigation=nav, color=discord.Colour.green())
 
+# print(len(bot.guilds), bot.guilds)
   
 @bot.event
 async def on_ready():
@@ -54,7 +53,8 @@ class Quiz(commands.Cog):
         await ctx.send("Timeout!, The Answer was:")
         embed2 = discord.Embed(title="", color=discord.Color.red(),url="",description=questions[i][1])
         await ctx.send(embed=embed2)
-        await ctx.send(questions[i][2])
+        if len(questions[i][2])>0:
+          await ctx.send(questions[i][2])
         order.append(i)
         pass
 
@@ -65,6 +65,12 @@ class Quiz(commands.Cog):
           break
         if msg.content == "skip":
           skipped += 1
+          await ctx.send("Skipped!, The Answer was:")
+          embed2 = discord.Embed(title="", color=discord.Color.red(),url="",description=questions[i][1])
+          await ctx.send(embed=embed2)
+          if len(questions[i][2])>0:
+            await ctx.send(questions[i][2])
+          order.append(i)
           continue
         else: 
           correct += 1
