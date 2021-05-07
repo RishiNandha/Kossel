@@ -19,6 +19,7 @@ def questions(name):
   a = csv.reader(f)
   l=list()
   for i in a:
-    l.append([" "+i[0],i[1],i[2],i[3]])
+    if len(i[0])>0:
+      l.append([" "+i[0],i[1],i[2],i[3]])
   return l
 

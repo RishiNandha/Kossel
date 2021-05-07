@@ -13,11 +13,12 @@ bot = commands.Bot(command_prefix="$")
 nav = DefaultMenu("◀️", "▶️")
 bot.help_command = PrettyHelp(navigation=nav, color=discord.Colour.green())
 
-# print(len(bot.guilds), bot.guilds)
+print(len(bot.guilds), bot.guilds)
   
 @bot.event
 async def on_ready():
   print("I'm in")
+  print(len(bot.guilds), bot.guilds)
 
 class Quiz(commands.Cog):
   """ Use "$quiz <time for each question>" to start the quiz. The deafault time is 30 seconds for each question. Use the "skip" command to skip the question. Use the "quit" command to quit the quiz. DM Light_Yagami#6883 or RishiNandha Vanchi#3379 if you need any help or you have any quesries regarding the bot"""
@@ -82,6 +83,7 @@ class Quiz(commands.Cog):
           s = '{.author} got the correct answer! \n' + questions[i][2]
           await msg.channel.send(s.format(msg))
           if i==order[-1]:
+            await channel.send("Correct: "+str(correct)+"\nSkipped: "+str(skipped)+"\nWrong: "+str(wrong))
             embed4=discord.Embed(title="Conquered!",color=discord.Color.gold(),url="https://www.youtube.com/watch?v=Utgrbq_CFt4",description="GGs!, You are dang OP")
             await channel.send(embed=embed4)
 

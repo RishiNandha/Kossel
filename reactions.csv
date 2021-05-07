@@ -1,7 +1,7 @@
 ﻿Question,Answers,Comment,Instructions
 CCl4+H2O(drastic conditions),COCl2+2HCl,SN1 happens only in drastic conditions. Carbene is formed which then reacts with nucleophilic OH-,
 NF3+H2O->,no rxn,Under nondrastic conditions SN1 cant happen. SN2 will need low lying empty orbital for flank attack which is absent.,
-2HNO2->,NO2+NO+H2O,N2O3 + H2O,
+2HNO2(g)->,NO2+NO+H2O,N2O3 + H2O,
 3SiF4+4H2O->,Si(OH)4+2H2[SiF6],SiF4 being highly dq+ and empty d orbital readily complexes into d2sp3. This happens only with F-,
 4BF3+3H2O->,H3BO3+3H[BF4],"BF3 being deficient, readily gets complexated to get an octet. This happens only with F- and OH-",Write product in acid form
 BCl3+NaOH->,3NaCl+Na[B(OH)4],"Similar to BF3 complexation, Surplus of OH- in solution will complexate deficient molecule.  Same happens with BeCl2, it is a deficient yet small atom too",
@@ -50,17 +50,38 @@ I2 (Colour),Violet,,
 Iodometry/Hyposolution Reaction,I2+Na2S2O3->Na2S4O6+2NaI,,
 CuSO4+KI(excess)->,CuI(ppt)+KI3(brown)+K2SO4,,
 Nessler's Reagant Preparation,"HgI2(ppt,red)+KI->K2[HgI4]",,
-NO3- Confirmatory,NO3+H2SO4+FeSO4->[Fe(H2O)5NO](brown ring),high [H+] creates a condition similar to HNO3(conc) and NO is released. NO has an unpaired electron in antibonding and readily donates it to Fe2+ (unlike how Nitroso is formed in diazonium formation). Fe is exceptionally +1 here,Ignore byproducts for this reaction
+NO3- Confirmatory,NO3+H2SO4+FeSO4->[Fe(H2O)5NO](brown ring),"[H+] creates a condition similar to HNO3 and NO2 is oxidized by HNO3 to NO. NO has an unpaired electron in antibonding and readily donates it to Fe2+ (unlike how Nitroso is formed in diazonium formation). Fe is exceptionally +1 here. This doesnt need concentrated acid unlike NO2-- because these acid must to reduction and it wont disproportionate(not exactly, but qualitatively) like here",Ignore byproducts for this reaction
 Ce+4 (Colour Change),Yellow->Colourless,Ce(III) is colourless,
 KNO3+Zn,NH3+ZnO,This is done in conc. Basic medium to make the reaction to dissolve [Zn(OH)4]--,Ignore spectators
 NH4+ Confirmatory,"NH4+K2[HgI4]->HgO.HgNH2I(ppt,Chocolate Brown)",,Ignore byproducts for this reaction. Use dot-form of product. Use NH4 instead of NH4+.
-NaX+Pb(OAc)2->,"PbX2(ppt,soluble on heating)","Just like AgX, colour becomes yellow with PbI2 (altho not much with Br). Cl is more crystalline.",
-Cl- Confirmatory,4Cl+K2Cr2O7->2CrO2Cl2(Deep red vapour)+8NaOH->4NaCl+2Na2Cr2O4(Yellow),"Chromyl Chloride Test. For some reason Concentrated Acids (in group seperation), Chromates and Manganates don't manage to oxidize Cl- in salt.",Use Cl instead of Cl-. Ignore byproducts for this reaction. Add the reagants into reaction in the second step right away (For example like H2O in this reaction: RCHO+KCN->RCH(OH)(CN)+H2O->RCH(OH)COOH)
+NaX+Pb(OAc)2->,"PbX2(ppt,soluble on heating)+NaOAc","Just like AgX, colour becomes yellow with PbI2 (altho not much with Br). Cl is more crystalline.",
+Cl- Confirmatory,4Cl+K2Cr2O7->2CrO2Cl2(Deep red vapour)+8NaOH->4NaCl+2Na2CrO4(Yellow),"Chromyl Chloride Test. For some reason Concentrated Acids (in group seperation), Chromates and Manganates don't manage to oxidize Cl- in salt.",Use Cl instead of Cl-. Ignore byproducts for this reaction. Add the reagants into reaction in the second step right away (For example like H2O in this reaction: RCHO+KCN->RCH(OH)(CN)+H2O->RCH(OH)COOH)
 MnO2 Test for Cl-,2Cl+MnO2+2H2SO4(conc)->Cl2(greenish yellow),This indirectly oxidizes Cl- in salt. Concentrated acid gives HCl which is then oxidized by the oxidizer.,Use Cl instead of Cl-. Ignore byproducts for this reaction.
 SO4-- Confirmatory,"SO4+Pb(OAc)2->PbSO4(ppt,insoluble in acid)+2OAc",,Use SO4 instead of SO4--
 NaCl+KMnO4 [H+]->,no rxn,"For some reason Concentrated Acids (in group seperation), Chromates and Manganates don't manage to oxidize Cl- in salt.",
 KMnO4+KOH(conc)->,4K2MnO4(Green)+O2+2H2O,MnO4-- gains stability very high pH,
 Cobalt Chloride + ▲ (Colour Change),Pink->Blue,,
-Borax Bead Preparation,Na2B4O7.10H2O->2NaBO2+B2O3,B2O3 has this property of readily taking in metal oxides (Lewis Basic),
+Borax Bead Preparation,Na2B4O7.10H2O->2NaBO2+B2O3,B2O3 has this property of readily taking in metal oxides (Lewis Basic),Include hydration
 Borax Bead test in Oxidizing Flame,MO+B2O3->M(BO2)2,"Practically, Oxidizing and Non-luminous are same because atmosphere's got 32% O2 anyways",Assume metal is M(II)
 Borax Bead test in Reducing Flame,Fe2O3+2B2O3+2NaBO2+C->Fe(BO2)2(green)+Na2B4O7+CO,Reduction changes colour,Assume metal is Fe
+2HNO2(aq)->,NO+HNO3,N2O3 + H2O,
+Washing Soda Bead Test,MnO+O2+Na2CO3->Na2MnO4(Green)+CO2,"While Borax Bead test is majorly answered by lewis acidic oxides with colour giving metals, Sodium Carbonate Bead test is answered by lewis basic oxides (MnO2 and Cr2O3 are amphoteric and MnO oxidized from their stable oxidation state in oxidizing flame to this)",Assume metal is Mn
+Group I,AgCl PbCl2,,"Precipitates (Don't inclue (ppt), include colour/description)"
+Group II,PbS(black) CuS(black) HgS(red),,"Precipitates (Don't inclue (ppt), include colour/description)"
+Group III,Al(OH)3(gelatinous) Cr(OH)3(green) Fe(OH)3(brown),,"Precipitates (Don't inclue (ppt), include colour/description)"
+Group IV,MnS(flesh) ZnS(dirty white),,"Precipitates (Don't inclue (ppt), include colour/description)"
+Group V,CaCO3 BaCO3,,"Precipitates (Don't inclue (ppt), include colour/description)"
+Group VI,Mg(NH4)2PO4,,"Precipitates (Don't inclue (ppt), include colour/description)"
+HgCO3+▲->,2Hg+O2+2CO2,"Unlike regular decompositions, HgCO3 directly goes to Hg because HgO decomp temperature is pretty low too. Same with nitrates",
+NaCO3+▲->,no rxn,Alkali metal carbonates (ex. Li by diagonal rel) are thermally stable,
+HNO3+▲->,H2O+NO2+O2,"Note that same reaction happens in oxidation half. N2O5 (Has an N-O-N bond, it is the anhydride of acid not exactly a nitrogenoxide) wants to become NO2 and NO3 but NO3 is unstable.",
+H2SO4+▲->,H2O+SO2+O2,Note that same reaction happens in oxidation half.,
+(COOH)2+▲->,H2O+CO+CO2,"First decarbox at one side, and then how AcOH on dehydration, CO is given",
+NH4IO3+▲->,N2+I2+O2+4H2O,"If anion is oxidizing, NH3 is oxidized. I2 and Cl2 are not oxidizing per se, so Cl- and I- are not formed unless N2 was reducing in nature",
+NH4NO3+▲->,N2O+2H2O,"Exceptionally N2O is formed instead of N2 because this isnt redox although anion is oxidizing, this is just literally removing H2O to give :kekw:-gas",
+NH4NO2+▲->,N2+2H2O,"Unlike typical NO2 decomp, this exceptionally goes through NH4NO3 decomposition",
+(NH4)2HPO4+▲->,H3P3O9+NH3+H2O,All NH4 bonds are replaced with anhydride links,
+(NH4)3PO4+▲->,P4O10+NH3+H2O,All NH4 bonds are replaced with anhydride links,
+NaNO3+▲->,NaNO2+O2,"Unlike regular NO2-, Group I nitrites are stable similar to same stabilization that stabilizes peroxides and superoxides",
+AuCl3+▲->,AuCl+Cl2,Heating halides supports leaving of X2 even if bigger ox state is more stable if difference in stability is small enough,
+MCl2.2H2O+▲->,MO+HCl+H2O,Hydrated chloride salts at actually complexes and Cl leaves easier than O in H2O->M,
