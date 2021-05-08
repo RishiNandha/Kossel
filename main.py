@@ -48,7 +48,7 @@ class Quiz(commands.Cog):
           
       def funcc(x):
 
-        return ((functions.format(x.content) == functions.format(questions[i][1])) or (x.content == "quit") or (x.content == "skip")) and x.channel==channel
+        return ((functions.format(x.content,questions[i][4]) == functions.format(questions[i][1],questions[i][4])) or (x.content == "quit") or (x.content == "skip") or (x.content=="stop")) and x.channel==channel
 
       try:
         global msg
@@ -66,7 +66,7 @@ class Quiz(commands.Cog):
         pass
 
       else:
-        if msg.content == "quit":
+        if msg.content == "quit" or msg.content=="stop":
           await channel.send('{.author} has stopped the quiz'.format(msg))
           await channel.send("Correct: "+str(correct)+"\nSkipped: "+str(skipped)+"\nWrong: "+str(wrong))
           break
