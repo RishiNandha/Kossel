@@ -111,9 +111,14 @@ class NewDeck(commands.Cog):
     file_url = msg2.attachments[0]
     r = requests.get(file_url)
 
-    with open(file_name,"w") as f:      
-      f.write(r.text)
-      f.close()
+    if str(file_url)[-3:]=="csv":
+      open(file_name,"wb").write(r.content)
+      print("working uwu")
+    else:
+      with open(file_name,"w") as f:      
+        f.write(r.text)
+        f.close()
+        
     await msg2.channel.send(str(msg3.content)+" was added to "+str(msg2.author)+"\'s database!")
 
 
