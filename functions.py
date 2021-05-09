@@ -24,6 +24,9 @@ def questions(name):
   a = csv.reader(f)
   l=list()
   for i in a:
+    if len(i)<5:
+      for j in range(5-len(i)):
+        i.append('')
     if len(i[0])>0:
       if i[4]=='1':
         l.append([" "+i[0],i[1],i[2],i[3],1])

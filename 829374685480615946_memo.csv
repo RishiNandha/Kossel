@@ -1,0 +1,89 @@
+﻿Question,Answers,Comment,Instructions,Render as
+Calamine,ZnCO3,,Type anything in line (dont use _ or ^ for super or subscripts),Image
+IUPAC Heavy Metals (0-4),nil un bi tri quad,,Enter root word of each number space seperated,Text
+Carnallite,KCl.MgCl2.6H2O,,Type anything in line (dont use _ or ^ for super or subscripts),Image
+Potash Alum,K2SO4.Al2(SO4)3.24H2O,,Type anything in line (dont use _ or ^ for super or subscripts),Image
+d orbitals in dsp2 (Asc),dyz=dzx dxy dz^2,"Eventhough z^2 expected to be least, the shape has the cloud in xy plane and so square planar actually repels this more than xy","space seperated, use equal signs for equivalent levels",Text
+IUPAC Heavy Metals (5-9),pent hex sept oct enn,,Enter root word of each number space seperated,Text
+Periods that show Ionization Potential Exceptions by Exchange Energy,2 3 4,Xenon's period shows uniform trend,List the Periods that show exchange energy exceptions in Ionization Enthalpy (Space seperated),Text
+R = A∛M,1.2E-15,,Value of A in the below formula in scientific notation using e,Image
+1 esu,3.33E-10,"in kq^2/r^2 in cgs-esu units, k=1",Give value in SI units to three sf in scientific notation using e,Image
+1 Ci,3.7E+10,,"Give value of 1 Curie in SI units (2sf, scientific e notation)",Image
+G*=,k/G,,In terms of k and G,Image
+Is a neutron heavier or proton (n/p),n,,-,Text
+Isotones,neutrons,,Name whatever is same,Image
+Exceptional E Config in 3d series (Space seperated),Cr Cu,,-,Text
+"No. of nodal planes in orbital (3,2,0,1/2)",0,sometimes m=0 is accepted to be for dz^2 and dz^2 has exceptional shape,-,Text
+Victor Meyer 1*-OH,Red,,-,Image
+Victor Meyer 2*-OH,Blue,,-,Image
+Ionic%=AX + BX^2,16 3.5,,"A and B, Space seperated",Image
+Haematite,Fe2O3,,Name,Image
+Smallest Aldehydic Carbohydrates,Glyceraldehyde,Smallest optically active Polyhydroxy aldehyde,Type name,Text
+carbonyl-C Epimers,Anomers,alpha and beta anomers,Type the term,Image
+"Out of the standard set of test for carbonyl, list tests that glucose will not show",DNP Schiff NaHSO3,,"Standard set of tests for carbonyl here are DNP, Tollen, Fehling, Benedict, Schiff, NaHSO3, Oxime. Type names seperated by commas in same spelling as here in same order",Text
+C2 epimer of glucose,Mannose,,Type without relative naming prefix (without D-),Image
+Precursor of Glucose in Cyanohydrin step up synthesis,Arabinose,,Type without relative naming prefix (without D-),Text
+Successors of Glyceraldehyde in Killani Fischer Step up,Erythrose Threose,,"Include the RS epimer first, SS next",Text
+Reactivity Series,K Na Ca Mg Al C Zn Fe Sn Pb H Cu Hg Ag Au Pt,"H shows overpotential when seeded electrodes are used, in metallurgy H is placed where C is",Space Seperated,Image
+Anion Echem Series,OH I Br Cl NO3 SO4 F,"OH is exceptionally, more retained in solution than Cl only in Chloralkali-like processes because of bubble overpotential. Most negative Electrode potential -> Wants to give electrons to outer circuit more -> easily Auxidized","Ascending order of electrode potential, Space seperated, type without any charges",Image
+Glucose+Br2/H2O,Gluconic Acid,"Br2/H2O just like at C-C pi bonds, can react with C=O to selectively oxidize it. (Addition of Bromohydrin, elimination of HBr). Glucanoic Acid -> Gluconic Acid",Just type common name,Image
+Glucose+HNO3,Glucaric Acid Saccharic acid,Terminal groups oxidized,"Type both common names, space seperated. The name that starts with G first",Image
+Fructose+Br2/H2O,Fructose,Ketone cant be further reduced to acid,Just type common name,Image
+,,,,
+Glucose+RaNiH2,Sorbitol,,Common name,Image
+Glucose+ROH+[H+],Alkyl Glucopyranoside,SN similar to Ether formation happens but only at carbonyl carbon since that is the most acidic H,Type Common name,Image
+Glucose+phNH2NH2,Yellow Precipitate,"unlike heavily deactivaed phenylhydrazine, regular's lone pair on ph-N will attack the adjacent OH's H, and cyclic elimination gives another aldehyde there. This wont further react as once reacted twice, it cant tautomerize as the H is busy in H bonding",Type observation (don’t abbrievate anything),Image
+"In Fischer projection of α-D- Glucose, assuming Hemiacetal linkage goes to top in highest oxidized carbon, type the position of OH groups with respect to the primary chain.",RRLRR,,"Type as a string of R and L R for right, L for left.",Text
+Radius Ratios,0.155 0.225 0.414 0.732 1,Linear Triangle sp3 octahedral/dsp2 BCC ClosedPacking,space seperated in decimal form,Image
+Zinc Blende,ZnS fcc Tetrahedral,Ratio rule gives tetrahedral and only half of the total Tetravoids are occupied (like sp3 covalent solids),Formula Lattice Voids-occupied (use fcc everywhere instead of ccp),Image
+Wurtzite,ZnS hcp Tetrahedral,,Formula Lattice Voids-occupied (use fcc everywhere instead of ccp),Image
+NaCl,fcc octahedral,Just a simple linear arrangement of alternating Na and Cl (Ratio rule gives octahedral),Lattice Voids,Image
+CsCl,bcc with Cl at corners,"Ratio close to 0.9 (Cs is much smaller because Ionic radius Is taken here, not covalent)",Lattice Voids,Image
+Flourite,AX2 fcc Tetrahedral,Tetrahedral ratio,Formula Lattice Voids-occupied (use fcc everywhere instead of ccp),Image
+Antiflourite,A2X fcc Tetrahedral,Cations occupy voids here,Formula Lattice Voids-occupied (use fcc everywhere instead of ccp),Image
+Rutile,TiO2 Three-Coordination,BCC with O and Ti takes 3 coordination spots,Formula Special-property,Image
+Corrundum,Al2O3 hcp Octahedral,2/3 of Octahedral voids are taken by Al,Formula Lattice Voids-occupied (use fcc everywhere instead of ccp),Image
+Solubility,Size,,"Just name the MAJOR factor, forget exceptions for now",Image
+Self reduction,CuS PbS,,space seperated,Image
+µ0,4pie-7,,Use SI units,Image
+R∞,1.097e+7,,Use SI units,Image
+R (in Latm/Kmol),0.0821,,Type the reading!,Image
+R (in cal/K),2,,Type the reading!,Image
+Coefficient of ln term in nernst equation,-0.059,negative sign signifies that Ecell decreases as reaction progresses,Use SI units,Text
+G,6.67e-11,,Use SI units,Image
+Bohr Radius,0.529,,Use A,Image
+1Debye,e-10,,in A and esu,Image
+Figure of Merit,1/(current sensitivity),,Type the reading!,Text
+First 5 Emission Series,Lyman Balmer Paschen Bracket Pfund,,Space seperated,Text
+Stark Effect,Electric Field,,Magnetic Field or Electric Field?,Image
+Light Bands (Asc. of f),Radiowave TV Microwave IR Visible UV X y Cosmic,,Use y instead of gamma,Text
+General Atomic mass of first 20 elements interms of Z (odd),2Z+1,,Type the reading!,Text
+General Atomic mass of first 20 elements interms of Z (even),2Z,,Type the reading!,Text
+Exceptions to General Atomic mass emperical formulas for first 20 Elements,H Be N Cl Ar,,Type the reading!,Text
+Atomic Mass of Mn,55,,Type the reading!,Image
+Atomic Mass of Fe,56,,Type the reading!,Image
+Atomic Mass of Cu,63.5,,Type the reading!,Image
+Atomic Mass of Zn,65,,Type the reading!,Image
+Atomic Mass of Br,79,,Type the reading!,Image
+Atomic Mass of I,127,,Type the reading!,Image
+Atomic Mass of Ba,137,,Type the reading!,Image
+Atomic Mass of Ag,108,,Type the reading!,Image
+Smallest elemental paramagnetic gas,B2,,Type the reading!,Text
+"H2O2 dihedral angle (compare (g) and (s),Asc.)",(s)<(g),,A nice cubic lattice can be formed,Text
+I and II Carbonates,Stable Unstable,,Type the reading!,Image
+Thermal Stability within group (s block),Ionic%,"Flourides are an exception, Bond length so small that dr/r^2 becomes dominating","Just name the MAJOR factor, forget exceptions for now",Text
+sblock in Ammonia,Blue,,Type the reading!,Image
+Excess sblock in Ammonia,Brown,,Type the reading!,Text
+Vcritical,3nb,,Type the reading!,Image
+Pcritical,a/(27b^2),Can be found from dP/dV=0 (and dT=0 because we are working with isotherms),Type the reading!,Image
+Zcritical,3/8,,Type the reading!,Image
+Atomic Mass of Be,9,,Type the reading!,Image
+Atomic Mass of Ar,40,,Type the reading!,Image
+Atomic Mass of Cl,35.5,,Type the reading!,Image
+Blue Vitrol,CuSO4.5H2O,,Type the reading!,Image
+Green Vitrol,FeSO4.7H2O,,Type the reading!,Image
+Hydration of MgCl2,6,,Type the reading!,Image
+Gypsum,CaSO4.2H2O,,Type the reading!,Image
+Plaster of Paris,CaSO4.1/2H2O,,Type the reading!,Image
+Epsom,MgSO4.7H2O,,Type the reading!,Image
+,,,,Image
