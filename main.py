@@ -40,7 +40,7 @@ class Quiz(commands.Cog):
     #order=[55,56]
     random.shuffle(order)
     # print(order)
-    correct, wrong, skipped, continoustimeout = 0, 0, 0, 0
+    correct, wrong, skipped, continoustimeout = dict(), 0, 0, 0
 
     for i in order:
       embed=discord.Embed(title=questions[i][0], color=discord.Color.blue(),url="",description=questions[i][3])
@@ -68,7 +68,14 @@ class Quiz(commands.Cog):
       else:
         if msg.content == "quit" or msg.content=="stop":
           await channel.send('{.author} has stopped the quiz'.format(msg))
-          await channel.send("Correct: "+str(correct)+"\nSkipped: "+str(skipped)+"\nWrong: "+str(wrong))
+                    
+          correct=sorted(correct.items(), key=lambda x: x[1], reverse=True)
+          embed5=discord.Embed(color=0xb1dd8b,title="Scores:")
+          for j in correct:
+            embed5.add_field(name=str(j[0])[:-5]+":",value=str(j[1]),inline=False)
+          embed5.add_field(name="Skipped:",value=str(skipped),inline=False)
+          embed5.add_field(name="Wrong:",value=str(wrong),inline=False)
+          await channel.send(embed=embed5)
           break
 
 
@@ -83,11 +90,21 @@ class Quiz(commands.Cog):
           continue
         
         else: 
-          correct += 1
+          if msg.author.id in correct:
+            correct[msg.author] += 1
+          else:
+            correct[msg.author]=1
           s = '{.author} got the correct answer! \n' + questions[i][2]
           await msg.channel.send(s.format(msg))
           if i==order[-1]:
-            await channel.send("Correct: "+str(correct)+"\nSkipped: "+str(skipped)+"\nWrong: "+str(wrong))
+                        
+            correct=sorted(correct.items(), key=lambda x: x[1], reverse=True)
+            embed5=discord.Embed(color=0xb1dd8b,title="Scores:")
+            for j in correct:
+              embed5.add_field(name=str(j[0])[:-5]+":",value=str(j[1]),inline=False)
+            embed5.add_field(name="Skipped:",value=str(skipped),inline=False)
+            embed5.add_field(name="Wrong:",value=str(wrong),inline=False)
+            await channel.send(embed=embed5)
             embed4=discord.Embed(title="Conquered!",color=discord.Color.gold(),url="https://www.youtube.com/watch?v=Utgrbq_CFt4",description="GGs!, You are dang OP")
             await channel.send(embed=embed4)
 
