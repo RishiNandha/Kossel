@@ -90,7 +90,7 @@ class Quiz(commands.Cog):
           continue
         
         else: 
-          if msg.author.id in correct:
+          if msg.author in correct:
             correct[msg.author] += 1
           else:
             correct[msg.author]=1
