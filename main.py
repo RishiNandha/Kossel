@@ -146,10 +146,16 @@ class invite(commands.Cog):
   async def _work(self, ctx):
     invite_link="https://discord.com/api/oauth2/authorize?client_id=836658126684946432&permissions=2148006977&scope=bot"
     await ctx.channel.send(invite_link)
-
+class download(commands.Cog):
+  @commands.command(name="download")
+  
+  async def _word(self, ctx, ques):
+    ques1=str(ctx.author.id)+'_'+ques+".csv"
+    await ctx.send(file=discord.File(ques1,filename=ques+".csv"))
 
 bot.add_cog(NewDeck(bot))
 bot.add_cog(invite(bot))
+bot.add_cog(download(bot))
 
 bot.add_cog(Quiz(bot))
 keep_alive()
