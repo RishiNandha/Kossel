@@ -16,6 +16,15 @@ bot.help_command = PrettyHelp(navigation=nav, color=discord.Colour.green())
 
 # print(len(bot.guilds), bot.guilds)
   
+async def send_quit_embed(correct, skipped, timeout, channel):
+  correct=sorted(correct.items(), key=lambda x: x[1], reverse=True)
+  embed5=discord.Embed(color=0xb1dd8b,title="Scores:")
+  for j in correct:
+    embed5.add_field(name=str(j[0])[:-5]+":",value=str(j[1]),inline=False)
+  embed5.add_field(name="Skipped:",value=str(skipped),inline=False)
+  embed5.add_field(name="Timeout:",value=str(timeout),inline=False)
+  await channel.send(embed=embed5)
+
 @bot.event
 async def on_ready():
   print("I'm in")
@@ -30,20 +39,28 @@ class Quiz(commands.Cog):
   )
   
   async def _work(self, message, timeout_=60, ques="default"):
-
+    
+    ques2 = ques
     channel=message.channel
     if ques != "default":
       ques = str(message.author.id) + "_" + ques
+    try:
+      questions=functions.questions(ques)
+    except FileNotFoundError:
+      fnfe = "The reaction deck named '" + ques2 + "' was not found! Use the '$nd' command to add a new deck."
+      await channel.send(fnfe)
+      return None
 
-    questions=functions.questions(ques)
+
     order=list(range(1,len(questions)))
     #order=[55,56]
     random.shuffle(order)
     # print(order)
-    correct, wrong, skipped, continoustimeout = dict(), 0, 0, 0
+    correct, timeout, skipped, continoustimeout = dict(), 0, 0, 0
 
     for i in order:
-      embed=discord.Embed(title=questions[i][0], color=discord.Color.blue(),url="",description=questions[i][3])
+      progress='\n' + str(round(sum(correct.values())/(len(questions)-1)*100,1)) + "% quiz completed"
+      embed=discord.Embed(title=questions[i][0], color=discord.Color.blue(),url="",description=(questions[i][3]+progress))
       await channel.send(embed=embed)
           
       def funcc(x):
@@ -56,7 +73,12 @@ class Quiz(commands.Cog):
 
 
       except asyncio.TimeoutError:
-        wrong += 1
+        timeout += 1
+        continoustimeout += 1
+        if continoustimeout > 9:
+          await channel.send("Stopping the quiz because the last 10 questions went unanswered.")
+          await send_quit_embed(correct, skipped, timeout, channel)
+          break
         await channel.send("Timeout!, The Answer was:")
         embed2 = discord.Embed(title="", color=discord.Color.red(),url="",description=questions[i][1])
         await channel.send(embed=embed2)
@@ -68,21 +90,17 @@ class Quiz(commands.Cog):
       else:
         if msg.content == "quit" or msg.content=="stop":
           await channel.send('{.author} has stopped the quiz'.format(msg))
-                    
-          correct=sorted(correct.items(), key=lambda x: x[1], reverse=True)
-          embed5=discord.Embed(color=0xb1dd8b,title="Scores:")
-          for j in correct:
-            embed5.add_field(name=str(j[0])[:-5]+":",value=str(j[1]),inline=False)
-          embed5.add_field(name="Skipped:",value=str(skipped),inline=False)
-          embed5.add_field(name="Wrong:",value=str(wrong),inline=False)
-          await channel.send(embed=embed5)
+          
+          await send_quit_embed(correct, skipped, timeout, channel)
           break
 
 
         if msg.content == "skip":
           skipped += 1
-          await channel.send("Skipped!, The Answer was:")
-          embed2 = discord.Embed(title="", color=discord.Color.red(),url="",description=questions[i][1])
+          continoustimeout = 0
+          skip_send = "Skipped!, The Answer was:"
+          await channel.send(skip_send)
+          embed2 = discord.Embed(title="", color=discord.Color.red(),url="",description=(questions[i][1]))
           await channel.send(embed=embed2)
           if len(questions[i][2])>0:
             await channel.send(questions[i][2])
@@ -94,7 +112,8 @@ class Quiz(commands.Cog):
             correct[msg.author] += 1
           else:
             correct[msg.author]=1
-          s = '{.author} got the correct answer! \n' + questions[i][2]
+          continoustimeout = 0
+          s = '{.author} got the correct answer! \n' + questions[i][2] 
           await msg.channel.send(s.format(msg))
           if i==order[-1]:
                         
@@ -103,7 +122,7 @@ class Quiz(commands.Cog):
             for j in correct:
               embed5.add_field(name=str(j[0])[:-5]+":",value=str(j[1]),inline=False)
             embed5.add_field(name="Skipped:",value=str(skipped),inline=False)
-            embed5.add_field(name="Wrong:",value=str(wrong),inline=False)
+            embed5.add_field(name="Wrong:",value=str(timeout),inline=False)
             await channel.send(embed=embed5)
             embed4=discord.Embed(title="Conquered!",color=discord.Color.gold(),url="https://www.youtube.com/watch?v=Utgrbq_CFt4",description="GGs!, You are dang OP")
             await channel.send(embed=embed4)
