@@ -48,8 +48,8 @@ RCOOH+FeCl3 (Observation),Coloured ppt,"Colour is red for acetate, brown for lar
 ArOH+FeCl3 (Observation),Coloured Solution,Colour is violet for phenol,,
 I2 (Colour),Violet,,,
 Iodometry/Hyposolution Reaction,I2+Na2S2O3->Na2S4O6+2NaI,,,
-CuSO4+KI(excess)->,CuI(ppt)+KI3(brown)+K2SO4,,,
-Nessler's Reagant Preparation,"HgI2(ppt,red)+KI->K2[HgI4]",,,
+CuSO4+KI(excess)->,CuI(ppt)+KI3(brown)+K2SO4,Cu is being reduced by high I concentration. that gives I2 which with I- forms I3,,
+Nessler's Reagant Preparation,HgI2+KI->K2[HgI4],,,
 NO3- Confirmatory,NO3+H2SO4+FeSO4->[Fe(H2O)5NO](brown ring),"[H+] creates a condition similar to HNO3 and NO2 is oxidized by HNO3 to NO. NO has an unpaired electron in antibonding and readily donates it to Fe2+ (unlike how Nitroso is formed in diazonium formation). Fe is exceptionally +1 here. This doesnt need concentrated acid unlike NO2-- because these acid must to reduction and it wont disproportionate(not exactly, but qualitatively) like here",Ignore byproducts for this reaction,
 Ce+4 (Colour Change),Yellow->Colourless,Ce(III) is colourless,,
 KNO3+Zn,NH3+ZnO,This is done in conc. Basic medium to make the reaction to dissolve [Zn(OH)4]--,Ignore spectators,
@@ -86,19 +86,19 @@ NaNO3+▲->,NaNO2+O2,"Unlike regular NO2-, Group I nitrites are stable similar t
 AuCl3+▲(mild)->,AuCl+Cl2,"Heating halides supports leaving of X2 even if bigger ox state is more stable if difference in stability is small enough. Generally, Pyrolysis are driven by ppt-ing or gas-ing",,
 MCl2.2H2O+▲->,MO+HCl+H2O,Hydrated chloride salts at actually complexes and Cl leaves easier than O in H2O->M,,
 KOAc+▲->,K2CO3+CH3COCH3,"Group I carbonates are stable and won't break further. Decarbox does not happen as there is not driving force here unlike beta carbonyl in oxalate. Generally, Pyrolysis are driven by ppt-ing or gas-ing.",,
-H2SO3+▲->,H2SO4+S8(ppt)+H2O,"Acids not at their ortho ox state or mineral form disproportionate simply because the extremes are more stable than others. Generally, Pyrolysis are driven by ppt-ing or gas-ing.",,
+H2SO3+▲(extreme)->,H2SO4+S8(ppt)+H2O,"Acids not at their ortho ox state or mineral form disproportionate simply because the extremes are more stable than others. Generally, Pyrolysis are driven by ppt-ing or gas-ing which is S8 here. Mild heating gives H2O+SO2, on extreme heating SO2 reacts further with H2SO3.",,
 HOCl+▲->,HCl+HClO3,Acids not at their ortho ox state or mineral form disproportionate simply because the extremes are more stable than others.,,
 HClO3+▲->,HClO4+ClO2+H2O,"Cl2O5+H2O. This is already at ortho ox state, this reaction is more similar to HNO2-> N2O5. Generally, Pyrolysis are driven by ppt-ing or gas-ing.",,
 H3PO2+▲->,H3PO4+PH3,"Acids not at their ortho ox state or mineral form disproportionate simply because the extremes are more stable than others. Generally, Pyrolysis are driven by ppt-ing or gas-ing.",,
 Ag2C2O4+▲->,Ag+CO2,"Although AgO+CO+CO2 is expected like in AgCO3, AgO + CO -> Ag + CO2. Generally, Pyrolysis are driven by ppt-ing or gas-ing.",,
 C+H2O (high T),CO+H2,"At high T, CO becomes highly stable as compared to CO2 and C becomes highly reducing",,
-Water Gas + Steam,CO+H2+H2O->2H2+CO2,At lower temperatures CO2 is more stable,,
-3D Ampho Oxides,V2O5 Cr2O3 MnO2 ZnO,,,1
+Water Gas + Steam,CO+H2+H2O->2H2+CO2,At lower temperatures CO2 is more stable,Write Full reaction,
+3d-series Amphoteric Oxides,V2O5 Cr2O3 MnO2 ZnO,,,1
 Neutral Oxides of N,N2O NO,,,1
-Amphoteric Maingroup Metal Oxides,SnO PbO2 As2O3 Sb2O3 Sb2O5 GeO4,,Other than BeO Al2O3 Ga2O3 SnO2 PbO,1
-CH4+H2O (high T),CO+H2,"At high T, CO becomes highly stable as compared to CO2 and C becomes highly reducing",,
-Water Gas + Cu Catalyst,CO+H2->CH3OH,This is an exceptional case where Cu doesnt do dehydrogenation but hydrogenates,,
-Haber's Process,NH3+H2+Fe->NH3,,Include catalyst as if it was a reactant,
+Amphoteric Maingroup Metal Oxides,SnO PbO2 As2O3 Sb2O3 Sb2O5 GeO2,,Other than BeO Al2O3 Ga2O3 SnO2 PbO,1
+CH4+H2O (high T),CO+H2,"At high T, CO becomes highly stable as compared to CO2 and even combustion results in CO",,
+Synthetic Gas + Cu Catalyst,CO+H2->CH3OH,This is an exceptional case where Cu doesnt do dehydrogenation but hydrogenates,Write Full reaction,
+Haber's Process,N2+H2+Fe->NH3,,Include catalyst as if it was a reactant,
 NaBH4 synthesis,B(OCH3)3+NaH->Na[BH4]+NaOCH3,,Use Complex form NaBH4. Use salt-form of by products,
 PbSO4+CaH2->,"PbS(ppt,black)+Ca(OH)2",Reducing nature of H-,,
 CO+NaH,HCOONa+C,"NaH + CO -> C + NaOH is formed, CO is not that stable so CO->CO2+C. Both combined CO2 is acidic and HCOONa is formed",,
@@ -110,13 +110,13 @@ Excess S block in NH3,Brown,,,
 S block in NH3 upon standing,MNH2 + H2,S block is highly reducing. Just like M+H2O->MOH+H2,Use M,
 Li3N+▲->,Li+N2,,,
 NaN3+▲->,Na+N2,,,
-Baryta Water + CO2(excess),Ba(OH)2+2CO2->Ba(HCO3)2,This is more sensitive than Lime water,,
+Baryta Water + CO2(excess),Ba(HCO3)2,This is more sensitive than Lime water,,
 Caustic Soda,NaOH,Soda-Na; ,,
 Na+N2->,no rxn,Group 1 Nitrides are unstable,,
 [Co(NH3)5Cl]Cl2+NaOH->,Co2O3+NaCl+NH3+H2O,NaOH is strong enough to remove solvation from metal ion and react. They liberate NH3 from ammine complexes,,
 Preperation of K2Cr2O7,FeCr2O4+Na2CO3+O2->Na2CrO4+H2SO4->Na2Cr2O7+KCl->K2Cr2O7,FeCr2O4 is found as ore FeO+Cr2O3 (Not FeCrO4). Cr2O7 is just CrO4 after making an anhydride link catalysed by acid.,Add the reagants into reaction in the subsequent steps right away (For example like H2O in this reaction: RX+Mg->MgRX+H2O->RH+MgXOH). Ignore byproducts for this reaction. Ignore colours.,
 K2Cr2O7+▲->,K2CrO4(yellow)+Cr2O3+O2,One of the Cr is going to stable ox state. The anhydride link is broken just like in N2O5. Generally pyrolysis driven by gas-ing or ppt-ing,,
-Preparation of KMnO4,MnO2+KOH+O2->K2MnO4(green)+Cl2->KMnO4(purple),"MnO2 is found as ore. MnO4-- is stabilized in extremely basic medium, it servers as a good intermediate to move to MnO4-",Add the reagants into reaction in the subsequent steps right away (For example like H2O in this reaction: RX+Mg->MgRX+H2O->RH+MgXOH). Ignore byproducts for this reaction.,
+Preparation of KMnO4,MnO2+KOH+O2->K2MnO4(green)+Cl2->KMnO4(purple),"MnO2 is found as ore. MnO4-- is stabilized in extremely basic medium, it servers as a good intermediate to move to MnO4-. Cl is used as its both a mild oxidizer and works against pH.",Add the reagants into reaction in the subsequent steps right away (For example like H2O in this reaction: RX+Mg->MgRX+H2O->RH+MgXOH). Ignore byproducts for this reaction.,
 Preparation of Na2CrO4,3Na2O2(pale yellow)+Cr2O3(green)+H2O->2Na2CrO4(yellow)+NaOH,Na2O2+2H2O->2NaOH+H2O2; Cr+3 -> Cr+6;,,
 Metal centres for which NH3 & pyridine are weak splitting,Co(II) Fe(II) Cu(II) Mn(II) Ni(IV),,"Use Roman numerals, Space seperated.",1
 Sr+O2->,SrO,"According to Na,K,Sr,Ba it is expected to be peroxide, but nope",,
@@ -135,9 +135,13 @@ Mg/NH3+▲(mild)->,[Mg(NH3)6],"Unlike group I, Group II will not lose the NH3 wi
 Cations that cause Scum,Mg Ca,,Yeet Charge,1
 Anions for Temporary Hardness,HCO3,,Yeet Charge,1
 Anions for Permanent Hardness,SO4 Cl,,Yeet Charge,1
-Clark's Process,M(HCO3)->MCO3(ppt)+CO2+H2O,,Don't notate heating. Assume metal is M,
+Clark's Process,M(HCO3)2->MCO3(ppt)+CO2+H2O,,Don't notate heating. Assume metal is M,
 Ion Exchangers for Permanent Hardness,Na6P6O18(calgon) NaAlSiO4(zeolite/permutit) RSO3H(Resin),Calgon is a Hexametaphosphate (not the usual H3P3O9 but H6P6O18);,,1
 Lime-soda process,CaSO4+Na2CO3->CaCO3(ppt)+Na2SO4,Lime- Ca; Soda- Na; Used to remove permanent hardness,No not fresh lime soda.,
 Washing Soda,Na2CO3,,,
 Baking Soda,NaHCO3,,,
 Castner Kellner Process,NaCl+H2O->NaOH+Cl2+H2,Chloralkali,,
+Bleaching Powder,Ca(OCl)2 Ca(OH)2 CaCl2,Often abrievated as CaOCl2,,1
+Be+C->,Be2C,"Like Al4C3, Gives methane not ethyne",,
+BeX2 salts are extremely soluble even though being largely covalent due to the formation of:,[Be(H2O)4]X2,,,
+CaC2+N2->,CaNCN+C,-N=C=N-,,

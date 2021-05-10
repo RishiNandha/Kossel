@@ -42,7 +42,7 @@ class Quiz(commands.Cog):
     
     ques2 = ques
     channel=message.channel
-    if ques != "default":
+    if ques not in [x.split('.')[0] for x in os.listdir()]:
       ques = str(message.author.id) + "_" + ques
     try:
       questions=functions.questions(ques)
@@ -117,13 +117,7 @@ class Quiz(commands.Cog):
           await msg.channel.send(s.format(msg))
           if i==order[-1]:
                         
-            correct=sorted(correct.items(), key=lambda x: x[1], reverse=True)
-            embed5=discord.Embed(color=0xb1dd8b,title="Scores:")
-            for j in correct:
-              embed5.add_field(name=str(j[0])[:-5]+":",value=str(j[1]),inline=False)
-            embed5.add_field(name="Skipped:",value=str(skipped),inline=False)
-            embed5.add_field(name="Wrong:",value=str(timeout),inline=False)
-            await channel.send(embed=embed5)
+            await send_quit_embed(correct, skipped, timeout, channel)
             embed4=discord.Embed(title="Conquered!",color=discord.Color.gold(),url="https://www.youtube.com/watch?v=Utgrbq_CFt4",description="GGs!, You are dang OP")
             await channel.send(embed=embed4)
 
@@ -179,7 +173,7 @@ class download(commands.Cog):
 class update(commands.Cog):
   @commands.command(name="update")
   async def _work(self,message,ques):
-    if int(message.author.id) in [829374685480615946,299120006438846465,773182724957536307]:
+    if int(message.author.id) in [829374685480615946,299120006438846465,773182724957536307,812609048511381524]:
       open(str(ques)+".csv","wb").write(requests.get(message.message.attachments[0]).content)
       await message.channel.send("Updation Complete!")
 bot.add_cog(update(bot))
