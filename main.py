@@ -176,6 +176,14 @@ class download(commands.Cog):
       ques1=str(ctx.author.id)+'_'+ques+".csv"
     await ctx.send(file=discord.File(ques1,filename=ques+".csv"))
 
+class update(commands.Cog):
+  @commands.command(name="update")
+  async def _work(self,message,ques):
+    if int(message.author.id) in [829374685480615946,299120006438846465,773182724957536307]:
+      open(str(ques)+".csv","wb").write(requests.get(message.message.attachments[0]).content)
+      await message.channel.send("Updation Complete!")
+bot.add_cog(update(bot))
+
 bot.add_cog(NewDeck(bot))
 bot.add_cog(invite(bot))
 bot.add_cog(download(bot))
