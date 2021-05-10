@@ -22,7 +22,7 @@ async def on_ready():
   print("number of server I'm in:", len(bot.guilds))
 
 class Quiz(commands.Cog):
-  """ Use "$quiz <time for each question>" to start the quiz. The deafault time is 30 seconds for each question. Use the "skip" command to skip the question. Use the "quit" command to quit the quiz. DM Light_Yagami#6883 or RishiNandha Vanchi#3379 if you need any help or you have any quesries regarding the bot"""
+  """ Use "$quiz <time for each question>" to start the quiz. The deafault time is 30 seconds for each question. Use the "skip" command to skip the question. Use the "quit" command to quit the quiz. DM Light_Yagami#6883 or RishiNandha Vanchi#3379 if you need any help or you have any quesries regarding the bot."""
   @commands.command(
     name="quiz",
     brief="Answer some questions",
@@ -111,7 +111,8 @@ class Quiz(commands.Cog):
 class NewDeck(commands.Cog):
   '''Add your own reactions using this command'''
   @commands.command(
-    name="nd"
+    name="nd",
+    help="Add your own reactions using this command. Use "
   )
 
   async def _work(self, ctx):
@@ -150,7 +151,10 @@ class download(commands.Cog):
   @commands.command(name="download")
   
   async def _word(self, ctx, ques):
-    ques1=str(ctx.author.id)+'_'+ques+".csv"
+    if ques=="default":
+      ques1="default.csv"
+    else:
+      ques1=str(ctx.author.id)+'_'+ques+".csv"
     await ctx.send(file=discord.File(ques1,filename=ques+".csv"))
 
 bot.add_cog(NewDeck(bot))
