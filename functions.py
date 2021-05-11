@@ -13,6 +13,12 @@ def format(l,mode=0):
           j[k]=j[k].lower()
       b[i]=set(j)
     return b
+  elif mode==2:
+    b=l.split(",")
+    b=[i.strip() for i in b]
+    b=[i.lower() for i in b]
+    b=set(b)
+    return b
   else:
     b=l.split()
     b=[i.lower() for i in b]
@@ -32,6 +38,8 @@ def questions(name):
     if len(i[0])>0:
       if i[4]=='1':
         l.append([" "+i[0],i[1],i[2],i[3],1])
+      elif i[4]=='2':
+        l.append([" "+i[0],i[1],i[2],i[3],2])
       else:
         l.append([" "+i[0],i[1],i[2],i[3],0])
   return l
