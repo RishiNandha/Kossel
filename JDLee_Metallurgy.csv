@@ -1,0 +1,9 @@
+H,,,
+Depressant Reactions,ZnS+4NaCN->2Na[Zn(CN)4]+Na2S,Complexing property of Zn is exploited to make ZnS less float-y and settle down,Assume impurity in given ore is Zinc based
+Cationic Activation Reaction (Froth Floatation),ZnS+CuSO4->CuS+ZnSO4,CuS is the best floater,Assume given ore is Zinc Blende
+Anionic Activation Reaction (Froth Floatation),CuCO3+Na2S->CuS+Na2CO3,"CuS is the best floater. Although it is meant for sulphide ores, other ores can also be concentrated by froth floatation when such reactions are possible.",Assume given ore is Malachite
+Leaching Bauxite,Al2O3+2NaOH+3H2O->2Na[Al(OH)4],"Ampho property of Al2O3 and solubility is exploited. Problem with this is that SiO2 which is an acidic oxide, will persist",Write product in complex form
+Leaching Silver,Ag2S+4NaCN->2Na[Ag(CN)2]+Na2S,Complexing property of Ag is exploited to precipitate it,
+Mond Process,Ni+4CO->[Ni(CO)4]->Ni+4CO,[Ni(CO)4] is volatile and will also thermally decompose once Seperationerated,
+Van Arkel Reaction,M+2I2->MI4->M+2I2,MI4 volatile and also decomposes,Assume the metal is M
+Leaching Gold,4Au+O2+8NaCN->4Na[Au(CN)2]+2Na2O,,
