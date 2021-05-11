@@ -163,9 +163,9 @@ class invite(commands.Cog):
 class download(commands.Cog):
   @commands.command(name="download")
   
-  async def _word(self, ctx, ques):
-    if ques=="default":
-      ques1="default.csv"
+  async def _word(self, ctx, ques="default"):
+    if ques in [x.split('.')[0] for x in os.listdir()]:
+      ques1=ques+".csv"
     else:
       ques1=str(ctx.author.id)+'_'+ques+".csv"
     await ctx.send(file=discord.File(ques1,filename=ques+".csv"))
@@ -178,6 +178,14 @@ class update(commands.Cog):
       await message.channel.send("Updation Complete!")
 bot.add_cog(update(bot))
 
+class publicdecks(commands.Cog):
+  @commands.command(name="publicdecks")
+  async def _work(self,ctx):
+    await ctx.channel.send("Public decks:")
+    for i in os.listdir():
+      if i[0] not in [str(j) for j in range(10)] and i[-3:]=="csv":
+        await ctx.channel.send(" - "+i.split(".")[0])
+bot.add_cog(publicdecks(bot))
 bot.add_cog(NewDeck(bot))
 bot.add_cog(invite(bot))
 bot.add_cog(download(bot))
