@@ -152,13 +152,20 @@ class NewDeck(commands.Cog):
 
     await msg2.channel.send(str(msg3.content)+" was added to "+str(msg2.author)+"\'s database!")
 
+class serverinvite(commands.Cog):
+  @commands.command(name="serverinvite")
+  
+
+  async def _work(self, ctx):
+    invite_link="https://discord.gg/X6zkYTan"
+    await ctx.channel.send(invite_link)
 
 class invite(commands.Cog):
   @commands.command(name="invite")
   
 
   async def _work(self, ctx):
-    invite_link="https://discord.com/api/oauth2/authorize?client_id=836658126684946432&permissions=2148006977&scope=bot"
+    invite_link="https://tinyurl.com/ankikopybotinvite"
     await ctx.channel.send(invite_link)
 class download(commands.Cog):
   @commands.command(name="download")
@@ -189,7 +196,7 @@ bot.add_cog(publicdecks(bot))
 bot.add_cog(NewDeck(bot))
 bot.add_cog(invite(bot))
 bot.add_cog(download(bot))
-
 bot.add_cog(Quiz(bot))
+bot.add_cog(serverinvite(bot))
 keep_alive()
 bot.run(os.getenv("TOKEN"))
