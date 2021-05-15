@@ -40,6 +40,7 @@ class Quiz(commands.Cog):
   
   async def _work(self, message, timeout_=60, ques="default"):
     
+
     ques2 = ques
     channel=message.channel
     if ques not in [x.split('.')[0] for x in os.listdir()]:
@@ -193,6 +194,20 @@ class publicdecks(commands.Cog):
       if i[0] not in [str(j) for j in range(10)] and i[-3:]=="csv":
         await ctx.channel.send(" - "+i.split(".")[0])
 bot.add_cog(publicdecks(bot))
+
+class announce(commands.Cog):
+  @commands.command(name="announce")
+  async def broadcast(self, ctx, *args):
+    if int(ctx.author.id) in [829374685480615946,299120006438846465]:
+      for guild in bot.guilds:
+        for channel in guild.text_channels:
+            if(channel.name in ["bot-testing","inorganic","inorganic-flashcards","anki","ankikopy","botspam","change-log"]):
+              try:
+                await channel.send(" ".join(args[:]))
+              except (discord.HTTPException, discord.Forbidden,AttributeError):
+                continue
+bot.add_cog(announce(bot))
+
 bot.add_cog(NewDeck(bot))
 bot.add_cog(invite(bot))
 bot.add_cog(download(bot))
