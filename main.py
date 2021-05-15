@@ -181,7 +181,7 @@ class download(commands.Cog):
 class update(commands.Cog):
   @commands.command(name="update")
   async def _work(self,message,ques):
-    if int(message.author.id) in [829374685480615946,299120006438846465,773182724957536307,812609048511381524]:
+    if int(message.author.id) in [829374685480615946,299120006438846465,773182724957536307,812609048511381524,562608039224410112]:
       open(str(ques)+".csv","wb").write(requests.get(message.message.attachments[0]).content)
       await message.channel.send("Updation Complete!")
 bot.add_cog(update(bot))
@@ -198,7 +198,7 @@ bot.add_cog(publicdecks(bot))
 class announce(commands.Cog):
   @commands.command(name="announce")
   async def broadcast(self, ctx, *args):
-    if int(ctx.author.id) in [829374685480615946,299120006438846465]:
+    if int(ctx.author.id) in [829374685480615946,299120006438846465,562608039224410112]:
       for guild in bot.guilds:
         for channel in guild.text_channels:
           if(channel.name in ["bot-testing","inorganic","inorganic-flashcards","anki","ankikopy","botspam","change-log"]):
