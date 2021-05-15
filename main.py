@@ -201,11 +201,11 @@ class announce(commands.Cog):
     if int(ctx.author.id) in [829374685480615946,299120006438846465]:
       for guild in bot.guilds:
         for channel in guild.text_channels:
-            if(channel.name in ["bot-testing","inorganic","inorganic-flashcards","anki","ankikopy","botspam","change-log"]):
-              try:
-                await channel.send(" ".join(args[:]))
-              except (discord.HTTPException, discord.Forbidden,AttributeError):
-                continue
+          if(channel.name in ["bot-testing","inorganic","inorganic-flashcards","anki","ankikopy","botspam","change-log"]):
+            try:
+              await channel.send(" ".join(args[:]))
+            except (discord.HTTPException, discord.Forbidden,AttributeError):
+              continue
 bot.add_cog(announce(bot))
 
 bot.add_cog(NewDeck(bot))
