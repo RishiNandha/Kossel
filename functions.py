@@ -10,7 +10,8 @@ def format(l,mode=0):
         j[k]=j[k].strip()
         for l in range(10):
           j[k]=j[k].lstrip(str(l))
-          j[k]=j[k].lower()
+        j[k]=j[k].lower()
+        j[k]=j[k].replace(" ", "")
       b[i]=set(j)
     return b
   elif mode==2:
