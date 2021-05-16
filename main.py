@@ -337,8 +337,8 @@ class SM2(commands.Cog):
                 break
           data[author][pos].remove(i)
           if pos+1 not in data[author]:
-            data[author][pos+1]=list()
-          data[author][pos+1].append(i)
+            data[author][pos+2]=list()
+          data[author][pos+2].append(i)
         pickle.dump(data,open("data.dat","wb"))
 
 bot.add_cog(SM2(bot))
