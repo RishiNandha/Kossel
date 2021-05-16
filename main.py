@@ -9,7 +9,7 @@ import requests
 from discord.ext import commands
 from pretty_help import DefaultMenu, PrettyHelp
 
-bot = commands.Bot(command_prefix="$")
+bot = commands.Bot(command_prefix="!")
 
 nav = DefaultMenu("◀️", "▶️")
 bot.help_command = PrettyHelp(navigation=nav, color=discord.Colour.green())
@@ -213,5 +213,123 @@ bot.add_cog(invite(bot))
 bot.add_cog(download(bot))
 bot.add_cog(Quiz(bot))
 bot.add_cog(serverinvite(bot))
+
+#Spaced Repetition
+import pickle
+#pickle.dump(dict(),open("data.dat","wb"))
+data=pickle.load(open("data.dat","rb"))
+
+class SM2(commands.Cog):
+  @commands.command(name="sm2")
+  async def _work(self,message,session=""):
+    questions=functions.questions("default")
+    author=message.author.id
+    channel=message.channel
+    if author not in data or session=="reset":
+      data[author]={"session":1,1:list(range(1,len(questions)))}
+    elif session!="continue":
+      data[author]["session"]+=1
+    pickle.dump(data,open("data.dat","wb"))
+    timeout_=120
+
+    order=list()
+    for i in data[author]:
+      if type(i)==int:
+        if data[author]["session"]%i==0:
+          order+=data[author][i]
+    random.shuffle(order)
+
+    correct, timeout, skipped, continoustimeout = dict(), 0, 0, 0
+
+    for i in order:
+      progress='\n' + str(round(sum(correct.values())/(len(questions)-1)*100,1)) + "% quiz completed"
+      embed=discord.Embed(title=questions[i][0], color=discord.Color.blue(),url="",description=(questions[i][3]+progress))
+      await channel.send(embed=embed)
+          
+      def funcc(x):
+
+        return ((functions.format(x.content,questions[i][4]) == functions.format(questions[i][1],questions[i][4])) or (x.content == "quit") or (x.content == "skip") or (x.content=="stop")) and x.channel==channel and x.author.id==author
+
+      try:
+        global msg
+        msg = await bot.wait_for('message', check=funcc,timeout=float(timeout_))
+
+
+      except asyncio.TimeoutError:
+        timeout += 1
+        continoustimeout += 1
+        if continoustimeout > 9:
+          await channel.send("Stopping the quiz because the last 10 questions went unanswered.")
+          await send_quit_embed(correct, skipped, timeout, channel)
+          break
+        await channel.send("Timeout!, The Answer was:")
+        embed2 = discord.Embed(title="", color=discord.Color.red(),url="",description=questions[i][1])
+        await channel.send(embed=embed2)
+        if len(questions[i][2])>0:
+          await channel.send(questions[i][2])
+        for j in data[author]:
+          if type(j)==int:
+            if i in data[author][j]:
+              data[author][j].remove(i)
+        data[author][1].append(i)
+        order.append(i)
+        pickle.dump(data,open("data.dat","wb"))
+        pass
+
+      else:
+        if msg.content == "quit" or msg.content=="stop":
+          await channel.send('{.author} has stopped the quiz'.format(msg))
+          
+          await send_quit_embed(correct, skipped, timeout, channel)
+          for j in data[author]:
+            if type(j)==int:
+              if i in data[author][j]:
+                data[author][j].remove(i)
+          data[author][1].append(i)
+          break
+
+
+        if msg.content == "skip":
+          skipped += 1
+          continoustimeout = 0
+          skip_send = "Skipped!, The Answer was:"
+          await channel.send(skip_send)
+          embed2 = discord.Embed(title="", color=discord.Color.red(),url="",description=(questions[i][1]))
+          await channel.send(embed=embed2)
+          if len(questions[i][2])>0:
+            await channel.send(questions[i][2])
+          for j in data[author]:
+            if type(j)==int:
+              if i in data[author][j]:
+                data[author][j].remove(i)
+          data[author][1].append(i)
+          order.append(i)
+          continue
+        
+        else: 
+          if msg.author in correct:
+            correct[msg.author] += 1
+          else:
+            correct[msg.author]=1
+          continoustimeout = 0
+          s = '{.author} got the correct answer! \n' + questions[i][2] 
+          await msg.channel.send(s.format(msg))
+          if i==order[-1]:
+                        
+            await send_quit_embed(correct, skipped, timeout, channel)
+            embed4=discord.Embed(title="Conquered!",color=discord.Color.gold(),url="https://www.youtube.com/watch?v=Utgrbq_CFt4",description="GGs!, You are dang OP")
+            await channel.send(embed=embed4)
+          for j in data[author]:
+            if type(j)==int:
+              if i in data[author][j]:
+                pos=j
+                break
+          data[author][pos].remove(i)
+          if pos+1 not in data[author]:
+            data[author][pos+1]=list()
+          data[author][pos+1].append(i)
+        pickle.dump(data,open("data.dat","wb"))
+
+bot.add_cog(SM2(bot))
 keep_alive()
 bot.run(os.getenv("TOKEN"))
