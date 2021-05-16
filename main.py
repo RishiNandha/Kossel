@@ -9,7 +9,7 @@ import requests
 from discord.ext import commands
 from pretty_help import DefaultMenu, PrettyHelp
 
-bot = commands.Bot(command_prefix="!")
+bot = commands.Bot(command_prefix="$")
 
 nav = DefaultMenu("◀️", "▶️")
 bot.help_command = PrettyHelp(navigation=nav, color=discord.Colour.green())
@@ -24,6 +24,14 @@ async def send_quit_embed(correct, skipped, timeout, channel):
   embed5.add_field(name="Skipped:",value=str(skipped),inline=False)
   embed5.add_field(name="Timeout:",value=str(timeout),inline=False)
   await channel.send(embed=embed5)
+
+async def send_quit_embed_sm2(correct, skipped, timeout, channel):
+  correct=sorted(correct.items(), key=lambda x: x[1], reverse=True)
+  embed6=discord.Embed(color=0xb1dd8b,title="Progress:")
+  for j in correct:
+    embed6.add_field(name="Cards moved to higher level"+":",value=str(j[1]),inline=False)
+  embed6.add_field(name="Cards moved back to level 1:",value=str(skipped+timeout),inline=False)
+  await channel.send(embed=embed6)
 
 @bot.event
 async def on_ready():
@@ -240,7 +248,10 @@ class SM2(commands.Cog):
     random.shuffle(order)
 
     correct, timeout, skipped, continoustimeout = dict(), 0, 0, 0
-
+    
+    if len(order)<1:
+      done_embed=discord.Embed(title="Looks like your memory's so good that you have nothing for this session 🥳", description="Use the command again to proceed with the next session or $sm2 reset to reset progress",color=discord.Color.gold(),url="https://ncase.me/remember/")
+      await ctx.send(embed=done_embed)
     for i in order:
       progress='\n' + str(round(sum(correct.values())/(len(questions)-1)*100,1)) + "% quiz completed"
       embed=discord.Embed(title=questions[i][0], color=discord.Color.blue(),url="",description=(questions[i][3]+progress))
@@ -260,7 +271,7 @@ class SM2(commands.Cog):
         continoustimeout += 1
         if continoustimeout > 9:
           await channel.send("Stopping the quiz because the last 10 questions went unanswered.")
-          await send_quit_embed(correct, skipped, timeout, channel)
+          await send_quit_embed_sm2(correct, skipped, timeout, channel)
           break
         await channel.send("Timeout!, The Answer was:")
         embed2 = discord.Embed(title="", color=discord.Color.red(),url="",description=questions[i][1])
@@ -280,7 +291,7 @@ class SM2(commands.Cog):
         if msg.content == "quit" or msg.content=="stop":
           await channel.send('{.author} has stopped the quiz'.format(msg))
           
-          await send_quit_embed(correct, skipped, timeout, channel)
+          await send_quit_embed_sm2(correct, skipped, timeout, channel)
           for j in data[author]:
             if type(j)==int:
               if i in data[author][j]:
@@ -316,8 +327,8 @@ class SM2(commands.Cog):
           await msg.channel.send(s.format(msg))
           if i==order[-1]:
                         
-            await send_quit_embed(correct, skipped, timeout, channel)
-            embed4=discord.Embed(title="Conquered!",color=discord.Color.gold(),url="https://www.youtube.com/watch?v=Utgrbq_CFt4",description="GGs!, You are dang OP")
+            await send_quit_embed_sm2(correct, skipped, timeout, channel)
+            embed4=discord.Embed(title="Conquered this session!",color=discord.Color.gold(),url="https://www.youtube.com/watch?v=Utgrbq_CFt4",description="GGs!, You are dang OP")
             await channel.send(embed=embed4)
           for j in data[author]:
             if type(j)==int:
