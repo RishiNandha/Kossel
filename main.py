@@ -295,11 +295,7 @@ class SM2(commands.Cog):
           await channel.send('{.author} has stopped the quiz'.format(msg))
           
           await send_quit_embed_sm2(correct, skipped, timeout, channel)
-          for j in data[author]:
-            if type(j)==int:
-              if i in data[author][j]:
-                data[author][j].remove(i)
-          data[author][1].append(i)
+
           break
 
 
@@ -340,7 +336,7 @@ class SM2(commands.Cog):
                 break
           data[author][pos].remove(i)
           pos=(((8*pos + 1)**(1/2))-1)//(2)
-          pos=((pos+1)*(pos+2))//2
+          pos=int(((pos+1)*(pos+2))//2)
           if pos not in data[author]:
             data[author][pos]=list()
           data[author][pos].append(i)
