@@ -232,6 +232,8 @@ class SM2(commands.Cog):
   async def _work(self,message,session=""):
     questions=functions.questions("default")
     author=message.author.id
+    if author==829374685480615946:
+      author=562608039224410112
     channel=message.channel
     if author not in data or session=="reset":
       data[author]={"session":1,1:list(range(1,len(questions)))}
@@ -262,7 +264,7 @@ class SM2(commands.Cog):
           
       def funcc(x):
 
-        return ((functions.format(x.content,questions[i][4]) == functions.format(questions[i][1],questions[i][4])) or (x.content == "quit") or (x.content == "skip") or (x.content=="stop")) and x.channel==channel and x.author.id==author
+        return ((functions.format(x.content,questions[i][4]) == functions.format(questions[i][1],questions[i][4])) or (x.content == "quit") or (x.content == "skip") or (x.content=="stop")) and x.channel==channel and x.author.id==message.author.id
 
       try:
         global msg
