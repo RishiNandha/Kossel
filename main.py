@@ -238,7 +238,7 @@ class SM2(commands.Cog):
     elif session!="continue":
       data[author]["session"]+=1
     pickle.dump(data,open("data.dat","wb"))
-    timeout_=120
+    timeout_=135
 
     order=list()
     for i in data[author]:
@@ -269,7 +269,7 @@ class SM2(commands.Cog):
       except asyncio.TimeoutError:
         timeout += 1
         continoustimeout += 1
-        if continoustimeout > 9:
+        if continoustimeout > 4:
           await channel.send("Stopping the quiz because the last 10 questions went unanswered.")
           await send_quit_embed_sm2(correct, skipped, timeout, channel)
           break
@@ -336,9 +336,10 @@ class SM2(commands.Cog):
                 pos=j
                 break
           data[author][pos].remove(i)
-          if pos+1 not in data[author]:
-            data[author][pos+2]=list()
-          data[author][pos+2].append(i)
+          pos=(pos*(pos+1))//2
+          if pos not in data[author]:
+            data[author][pos]=list()
+          data[author][pos].append(i)
         pickle.dump(data,open("data.dat","wb"))
 
 bot.add_cog(SM2(bot))
