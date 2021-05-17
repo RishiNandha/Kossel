@@ -256,7 +256,7 @@ class SM2(commands.Cog):
       done_embed=discord.Embed(title="Looks like your memory's so good that you have nothing for this session 🥳", description="Use the command again to proceed with the next session or $sm2 reset to reset progress",color=discord.Color.gold(),url="https://ncase.me/remember/")
       await message.send(embed=done_embed)
     for i in order:
-      progress='\n' + str(round(sum(correct.values())/(len(questions)-1)*100,1)) + "% quiz completed"
+      progress='\n' + str(round(sum(correct.values())/(len(order)-1)*100,1)) + "% quiz completed"
       embed=discord.Embed(title=questions[i][0], color=discord.Color.blue(),url="",description=(questions[i][3]+progress))
       await channel.send(embed=embed)
           
