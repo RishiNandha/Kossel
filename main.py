@@ -336,6 +336,7 @@ class SM2(commands.Cog):
                 pos=j
                 break
           data[author][pos].remove(i)
+          pos=(((8*pos + 1)**(1/2))-1)//(2)
           pos=(pos*(pos+1))//2
           if pos not in data[author]:
             data[author][pos]=list()
