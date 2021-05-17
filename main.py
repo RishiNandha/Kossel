@@ -240,6 +240,9 @@ class SM2(commands.Cog):
     pickle.dump(data,open("data.dat","wb"))
     timeout_=135
 
+    if author==562608039224410112:
+      await message.send(data[author])
+
     order=list()
     for i in data[author]:
       if type(i)==int:
@@ -251,7 +254,7 @@ class SM2(commands.Cog):
     
     if len(order)<1:
       done_embed=discord.Embed(title="Looks like your memory's so good that you have nothing for this session 🥳", description="Use the command again to proceed with the next session or $sm2 reset to reset progress",color=discord.Color.gold(),url="https://ncase.me/remember/")
-      await ctx.send(embed=done_embed)
+      await message.send(embed=done_embed)
     for i in order:
       progress='\n' + str(round(sum(correct.values())/(len(questions)-1)*100,1)) + "% quiz completed"
       embed=discord.Embed(title=questions[i][0], color=discord.Color.blue(),url="",description=(questions[i][3]+progress))
@@ -337,7 +340,7 @@ class SM2(commands.Cog):
                 break
           data[author][pos].remove(i)
           pos=(((8*pos + 1)**(1/2))-1)//(2)
-          pos=(pos*(pos+1))//2
+          pos=((pos+1)*(pos+2))//2
           if pos not in data[author]:
             data[author][pos]=list()
           data[author][pos].append(i)
