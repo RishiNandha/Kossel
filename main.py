@@ -24,7 +24,7 @@ async def send_quit_embed(correct, skipped, timeout, channel):
   embed5.add_field(name="Skipped:",value=str(skipped),inline=False)
   embed5.add_field(name="Timeout:",value=str(timeout),inline=False)
   await channel.send(embed=embed5)
-  print(str(channel.guild.name)+": quiz ended",end="\n")
+  print(str(channel.guild.name)+"."+str(channel.name)+": quiz ended  ")
 
 async def send_quit_embed_sm2(correct, skipped, timeout, channel):
   correct=sorted(correct.items(), key=lambda x: x[1], reverse=True)
@@ -33,7 +33,7 @@ async def send_quit_embed_sm2(correct, skipped, timeout, channel):
     embed6.add_field(name="Cards moved to higher level"+":",value=str(j[1]),inline=False)
   embed6.add_field(name="Cards moved back to level 1:",value=str(skipped+timeout),inline=False)
   await channel.send(embed=embed6)
-  print(str(channel.guild.name)+": quiz ended",end="\n")
+  print(str(channel.guild.name)+"."+str(channel.name)+": quiz ended  ")
 
 @bot.event
 async def on_ready():
@@ -50,7 +50,7 @@ class Quiz(commands.Cog):
   
   async def _work(self, message, *args):
 
-    print(str(message.guild.name)+": quiz ongoing",end="\n")
+    print(str(message.guild.name)+"."+str(message.channel.name)+": quiz ongoing")
     args = list(args)
     timeout_= functions.find_num(args)
     ques = ""
@@ -251,7 +251,7 @@ data=pickle.load(open("data.dat","rb"))
 class SM2(commands.Cog):
   @commands.command(name="sm2")
   async def _work(self,message,session=""):
-    print(str(message.guild.name)+": quiz ongoing",end="\n")
+    print(str(message.guild.name)+"."+str(message.channel.name)+": quiz ongoing")
     questions=functions.questions("default")
     author=message.author.id
     if author==829374685480615946:
