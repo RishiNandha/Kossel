@@ -14,7 +14,7 @@ bot = commands.Bot(command_prefix="$")
 nav = DefaultMenu("◀️", "▶️")
 bot.help_command = PrettyHelp(navigation=nav, color=discord.Colour.green())
 
-# print(len(bot.guilds), bot.guilds)
+#  print(len(bot.guilds), bot.guilds)
   
 async def send_quit_embed(correct, skipped, timeout, channel):
   correct=sorted(correct.items(), key=lambda x: x[1], reverse=True)
@@ -46,12 +46,20 @@ class Quiz(commands.Cog):
     help='Use "$quiz" command to start the quiz'
   )
   
-  async def _work(self, message, timeout_=60, ques="default"):
-    
+  async def _work(self, message, *args):
 
+    print("quiz ongoing   ",end="\r")
+    args = list(args)
+    timeout_= functions.find_num(args)
+    ques = ""
+    for arg in args:
+      if arg.isnumeric() != True:
+        ques += (arg+" ")
+    ques = ques.rstrip()
+    if ques == "": ques="default"
     ques2 = ques
     channel=message.channel
-    if ques not in [x.split('.')[0] for x in os.listdir()]:
+    if ques != "default":
       ques = str(message.author.id) + "_" + ques
     try:
       questions=functions.questions(ques)
@@ -59,6 +67,7 @@ class Quiz(commands.Cog):
       fnfe = "The reaction deck named '" + ques2 + "' was not found! Use the '$nd' command to add a new deck."
       await channel.send(fnfe)
       return None
+
 
 
     order=list(range(1,len(questions)))
@@ -101,6 +110,7 @@ class Quiz(commands.Cog):
           await channel.send('{.author} has stopped the quiz'.format(msg))
           
           await send_quit_embed(correct, skipped, timeout, channel)
+          print("no quiz ongoing",end="\r")
           break
 
 
@@ -147,7 +157,7 @@ class NewDeck(commands.Cog):
     msg2 = await bot.wait_for('message', check=funccc)
     await msg2.channel.send("Name of the new deck:")
     msg3 = await bot.wait_for('message', check=funccc)
-    file_name = str(msg2.author.id) + "_" + msg3.content + ".csv"
+    file_name = "Decks/" +str(msg2.author.id) + "_" + msg3.content + ".csv"
     file_url = msg2.attachments[0]
     r = requests.get(file_url)
 

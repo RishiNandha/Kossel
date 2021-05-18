@@ -32,7 +32,7 @@ def format(l,mode=0):
     return b
 
 def questions(name):
-  f=open(name+".csv","r")
+  f=open("Decks/" +name+".csv","r")
   a = csv.reader(f)
   l=list()
   for i in a:
@@ -47,3 +47,23 @@ def questions(name):
       else:
         l.append([" "+i[0],i[1],i[2],i[3],0])
   return l
+
+
+def find_num(a):
+  b = []
+  a = list(a)
+  c = ""
+  for i in range(len(a)):
+    a[i]=list(a[i])
+    for j in range(len(a[i])):
+      try:
+        b.append(int(a[i][j]))
+      except ValueError:
+        pass
+  # print(a)
+  for i in range(len(b)):
+    c+=str(b[i])
+  if len(c) == 0:
+    return 30
+  else:
+    return int(c)
