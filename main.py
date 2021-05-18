@@ -225,7 +225,15 @@ class announce(commands.Cog):
             except (discord.HTTPException, discord.Forbidden,AttributeError):
               continue
 bot.add_cog(announce(bot))
+class execute(commands.Cog):
+  @commands.command(name="execute")
+  async def _work(self,ctx,*args):
+    command=" ".join(args[:])
+    if int(ctx.author.id) in [829374685480615946,299120006438846465,562608039224410112]:
+      exec(command)
+      #print(command)
 
+bot.add_cog(execute(bot))
 bot.add_cog(NewDeck(bot))
 bot.add_cog(invite(bot))
 bot.add_cog(download(bot))
