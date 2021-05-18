@@ -1,0 +1,15 @@
+Question,Answers,Comment,Instructions,Render as
+Ka of P acids (Asc),H3PO4<H3PO3<H3PO2,Exception,Operator seperated,Image
+Ea 6th Period (first 5),Ba<Cs<Tl<Pb<Bi,Pb and Bi do not show Exchange Energy exception,Seperated by comparison operators,Text
+IP Group 14 (Asc.),Sn<Pb<Ge<Si<C,"Keeping radius trends to be basis, there is not much deviation anywhere, except dZ in Sn-Pb is 14 which is huge.","Seperated by comparison operators. Don't write charge, for eg Cl<Br",Image
+d series IP (Asc.),4d=3d<5d,f contraction at 5d,Seperated by comparison operators,Image
+3d IP (Asc.),Sc=V=Ti=Cr=Mn=Fe=Co=Ni=Cu<Zn,Zn is full filled,Seperated by comparison operators,Image
+G1 Reducing (Asc.),Na<K<Rb<Cs<Li,"Li+ is HYDRATED, in net reaction of ""reducing"" Li->Li+(aq)",Seperated by comparison operators,Image
+4 IP of O (Asc.),1<2<3<4,Successive IP is not affected by exchange energy,Numbers seperated by operators,Image
+4 EA of C (Asc.),4<3<2<1,Successive EA is not affected by exchange energy,Numbers seperated by operators,Image
+Ea Group 17 (Asc.),I<Br<F<Cl,"Steric Exception, F is too small. Same applies all 2p elements","Seperated by comparison operators. Don't write charge, for eg Cl<Br",Image
+d series size (Asc.),3d<4d=5d,This doesnt apply to First Elements of these (La) because contraction happens after that,Seperated by comparison operators,Image
+X^- size (Asc.),F<Cl<Br<H<I,"Hydride is exceptionally large since its a 1 proton, two electron system","Seperated by comparison operators. Don't write charge, for eg Cl<Br",Image
+Dissociation constants of H2O isotopes (Asc.),T2O<D2O<H2O,,,Text
+Boiling point of G15 Hydrides,,Boiling point alone nitrogen doesnt manage to get first place,,
+Oxidizing Power of Haloxoacids(Asc),HClO4<HClO3<HClO2<HOCl,,Use Cl,

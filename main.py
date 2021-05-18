@@ -56,11 +56,12 @@ class Quiz(commands.Cog):
       if arg.isnumeric() != True:
         ques += (arg+" ")
     ques = ques.rstrip()
+    ques2=ques
     if ques == "": ques="default"
-    ques2 = ques
+
     channel=message.channel
-    if ques != "default":
-      ques = str(message.author.id) + "_" + ques
+    if ques not in [x.split('.')[0] for x in os.listdir("Decks/")]:
+      ques =  str(message.author.id) + "_" + ques 
     try:
       questions=functions.questions(ques)
     except FileNotFoundError:

@@ -33,6 +33,7 @@ def format(l,mode=0):
 
 def questions(name):
   f=open("Decks/" +name+".csv","r")
+
   a = csv.reader(f)
   l=list()
   for i in a:
