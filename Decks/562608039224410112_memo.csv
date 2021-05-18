@@ -1,4 +1,4 @@
-﻿Question,Answers,Comment,Instructions,Render as
+Question,Answers,Comment,Instructions,Render as
 Calamine,ZnCO3,,Type anything in line (dont use _ or ^ for super or subscripts),Image
 IUPAC Heavy Metals (0-4),nil un bi tri quad,,Enter root word of each number space seperated,Text
 Carnallite,KCl.MgCl2.6H2O,,Type anything in line (dont use _ or ^ for super or subscripts),Image
@@ -72,8 +72,8 @@ Smallest elemental paramagnetic gas,B2,,Type the reading!,Text
 "H2O2 dihedral angle (compare (g) and (s),Asc.)",(s)<(g),,A nice cubic lattice can be formed,Text
 I and II Carbonates,Stable Unstable,,Type the reading!,Image
 Thermal Stability within group (s block),Ionic%,"Flourides are an exception, Bond length so small that dr/r^2 becomes dominating","Just name the MAJOR factor, forget exceptions for now",Text
-,,,Type the reading!,Image
-,,,Type the reading!,Text
+"In an ellipse, if N is x intersept of normal: NF1/NF2=",PF1/PF2,Because its angle bisector,Type the reading!,Image
+Vapour Density (in chemistry),M/2,Sadists dont wanna go with m/V but wanna go with (m)/(m)of Hydrogen in same conditions,Type the reading!,Text
 Vcritical,3nb,,Type the reading!,Image
 Pcritical,a/(27b^2),Can be found from dP/dV=0 (and dT=0 because we are working with isotherms),Type the reading!,Image
 Zcritical,3/8,,Type the reading!,Image

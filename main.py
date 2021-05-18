@@ -190,17 +190,17 @@ class download(commands.Cog):
   @commands.command(name="download")
   
   async def _word(self, ctx, ques="default"):
-    if ques in [x.split('.')[0] for x in os.listdir()]:
+    if ques in [x.split('.')[0] for x in os.listdir("Decks/")]:
       ques1=ques+".csv"
     else:
       ques1=str(ctx.author.id)+'_'+ques+".csv"
-    await ctx.send(file=discord.File(ques1,filename=ques+".csv"))
+    await ctx.send(file=discord.File("Decks/"+ques1,filename=ques+".csv"))
 
 class update(commands.Cog):
   @commands.command(name="update")
   async def _work(self,message,ques):
     if int(message.author.id) in [829374685480615946,299120006438846465,773182724957536307,812609048511381524,562608039224410112]:
-      open(str(ques)+".csv","wb").write(requests.get(message.message.attachments[0]).content)
+      open("Decks/"+str(ques)+".csv","wb").write(requests.get(message.message.attachments[0]).content)
       await message.channel.send("Updation Complete!")
 bot.add_cog(update(bot))
 
@@ -208,7 +208,7 @@ class publicdecks(commands.Cog):
   @commands.command(name="publicdecks")
   async def _work(self,ctx):
     await ctx.channel.send("Public decks:")
-    for i in os.listdir():
+    for i in os.listdir("Decks/"):
       if i[0] not in [str(j) for j in range(10)] and i[-3:]=="csv":
         await ctx.channel.send(" - "+i.split(".")[0])
 bot.add_cog(publicdecks(bot))
