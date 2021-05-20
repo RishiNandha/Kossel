@@ -9,7 +9,8 @@ import requests
 from discord.ext import commands
 from pretty_help import DefaultMenu, PrettyHelp
 
-bot = commands.Bot(command_prefix="$")
+activity = discord.Activity(type=discord.ActivityType.watching, name="you become Inorganic! | $help")
+bot = commands.Bot(command_prefix="$",activity=activity)
 
 nav = DefaultMenu("◀️", "▶️")
 bot.help_command = PrettyHelp(navigation=nav, color=discord.Colour.green())
