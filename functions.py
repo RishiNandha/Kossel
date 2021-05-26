@@ -1,4 +1,12 @@
 import csv
+from replit import db
+
+def addtorepldb(deck,name,authorid):
+  print(deck,name,authorid)
+  print((str(authorid)+"_"+str(name)))
+  # db[(str(authorid)+str(name))]=deck
+  db[(str(authorid)+"_"+str(name))]=deck
+
 
 
 def format(l,mode=0):
@@ -35,6 +43,24 @@ def questions(name):
   f=open("Decks/" +name+".csv","r")
 
   a = csv.reader(f)
+  l=list()
+  for i in a:
+    if len(i)<5:
+      for j in range(5-len(i)):
+        i.append('')
+    if len(i[1])==0:
+      i[1]="Error: Answer was not given"
+    if len(i[0])>0:
+      if i[4] in [str(j) for j in range(10)]:
+        l.append([" "+i[0],i[1],i[2],i[3],int(i[4])])
+      else:
+        l.append([" "+i[0],i[1],i[2],i[3],0])
+  return l
+
+def questions_repldb(file):
+  # f=open("Decks/" +name+".csv","r")
+
+  a = csv.reader(file)
   l=list()
   for i in a:
     if len(i)<5:

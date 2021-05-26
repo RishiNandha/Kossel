@@ -172,6 +172,20 @@ version = "0.0.1"
 
 [[package]]
 category = "main"
+description = "A library for interacting with features of repl.it"
+name = "replit"
+optional = false
+python-versions = ">=3.8,<4.0"
+version = "3.0.0"
+
+[package.dependencies]
+aiohttp = ">=3.6.2,<4.0.0"
+flask = ">=1.1.2,<2.0.0"
+typing_extensions = ">=3.7.4,<4.0.0"
+werkzeug = ">=1.0.1,<2.0.0"
+
+[[package]]
+category = "main"
 description = "Backported and Experimental Type Hints for Python 3.5+"
 name = "typing-extensions"
 optional = false
@@ -203,7 +217,7 @@ idna = ">=2.0"
 multidict = ">=4.0"
 
 [metadata]
-content-hash = "402a3f7512cdafa449755187742296e0c5473d8bc50c068b31503b54f762dee1"
+content-hash = "b23b451eae749b1c47035991bc45420c76f90b0b9348e3c677006ddf3869798c"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -370,6 +384,10 @@ pickle-repl = [
 ]
 reactions = [
     {file = "reactions-0.0.1.tar.gz", hash = "sha256:c74058033f224baf5d5a57aeb909c4cc37e064ec31980be5511f290ff9d15a93"},
+]
+replit = [
+    {file = "replit-3.0.0-py3-none-any.whl", hash = "sha256:3dd4f21b8b2a44b8c645a15e87398fa129b356cb6a88faa5eedd30374cc404e1"},
+    {file = "replit-3.0.0.tar.gz", hash = "sha256:7558e5ce46333062849b2c3be058a90d7769f6d7b1ad2382e78981cfaede2aa1"},
 ]
 typing-extensions = [
     {file = "typing_extensions-3.10.0.0-py2-none-any.whl", hash = "sha256:0ac0f89795dd19de6b97debb0c6af1c70987fd80a2d62d1958f7e56fcc31b497"},
