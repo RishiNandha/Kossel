@@ -226,7 +226,7 @@ class download(commands.Cog):
     @commands.command(name="download")
     async def _word(self, ctx, ques="default"):
         if ques in [x.split('.')[0] for x in os.listdir("Decks/")]:
-            ques1 = ques.lower() + ".csv"
+            ques1 = ques + ".csv"
         else:
             ques1 = str(ctx.author.id) + '_' + ques + ".csv"
         await ctx.send(
