@@ -209,7 +209,7 @@ class serverinvite(commands.Cog):
     '''Use "$serverinvite" to get the link to the support server.'''
     @commands.command(name="serverinvite")
     async def _work(self, ctx):
-        invite_link = "https://discord.gg/bTpb45Xp5Q"
+        invite_link = "<https://discord.gg/buUmFPhf>"
         await ctx.channel.send(invite_link)
 
 
@@ -217,7 +217,7 @@ class invite(commands.Cog):
     '''Use "$invite" to get the invite link for the bot.'''
     @commands.command(name="invite")
     async def _work(self, ctx):
-        invite_link = "https://tinyurl.com/ankikopybotinvite"
+        invite_link = "<https://tinyurl.com/ankikopybotinvite>"
         await ctx.channel.send(invite_link)
 
 
@@ -309,6 +309,7 @@ data = pickle.load(open("data.dat", "rb"))
 
 
 class SM2(commands.Cog):
+    '''SM2 is a spaced-repetition algorithm abridged for Discord. Use $sm2 to start your own. Unlike Anki, you will have tell the bot if you want to continue a day or move on to next day with "$sm2 continue". SM2 quizes are User-specific (Solo basically) unlike $quiz since the bot will have to store user data of levels of cards '''
     @commands.command(name="sm2",help="Spaced repition algorithm.")
     async def _work(self, message, session=""):
         print(
