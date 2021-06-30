@@ -1,4 +1,5 @@
 import csv
+import random
 from replit import db
 
 def addtorepldb(deck,name,authorid):
@@ -7,7 +8,43 @@ def addtorepldb(deck,name,authorid):
   # db[(str(authorid)+str(name))]=deck
   db[(str(authorid)+"_"+str(name))]=deck
 
-
+def formatq(q,a,mode=0):
+  # print(q,a,mode,"in here")
+  if mode != 5:
+    arr=[q]
+    return arr
+  if mode == 5:
+    b=q.split(",")
+    c=a.split(",")
+    arr = []
+    n = []
+    ques_o = []
+    ans_o = []
+    for i in range(len(b)):
+      n.append(i)
+    random.shuffle(n)
+    for i in range(len(b)):
+      ques_o.append(b[n[i]])
+      ans_o.append(c[n[i]])
+    
+    for i in range(len(b)):
+      arr.append(random.randint(0,1))
+    ques = []
+    ans = []
+    for i in range(len(b)):
+      if arr[i] == 0:
+        ques.append(ans_o[i])
+        ans.append(ques_o[i])
+      elif arr[i] == 1:
+        ques.append(ques_o[i])
+        ans.append(ans_o[i])
+    s =""
+    for i in range(len(ques)):
+      s+=ques[i]
+      if i != (len(ques)-1):
+        s+=", "
+    arr = [s,ans]
+    return arr
 
 def format(l,mode=0):
   if mode==0:
@@ -33,6 +70,10 @@ def format(l,mode=0):
     b=[i.strip() for i in b]
     b=[i.lower() for i in b]
     return b
+  elif mode ==5:
+    l=[i.strip() for i in l]
+    l=[i.lower() for i in l]
+    return l
   else:
     b=l.split()
     b=[i.lower() for i in b]
@@ -94,3 +135,11 @@ def find_num(a):
     return 30
   else:
     return int(c)
+
+def returnvalsofarray(a):
+  s = ""
+  for i in range(len(a)):
+    s+=a[i]
+    if i != (len(a) -1):
+      s+=","
+  return s

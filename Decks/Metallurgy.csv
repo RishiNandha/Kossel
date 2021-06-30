@@ -1,9 +1,16 @@
-H,,,
-Depressant Reactions,ZnS+4NaCN->2Na[Zn(CN)4]+Na2S,Complexing property of Zn is exploited to make ZnS less float-y and settle down,Assume impurity in given ore is Zinc based
-Cationic Activation Reaction (Froth Floatation),ZnS+CuSO4->CuS+ZnSO4,CuS is the best floater,Assume given ore is Zinc Blende
-Anionic Activation Reaction (Froth Floatation),CuCO3+Na2S->CuS+Na2CO3,"CuS is the best floater. Although it is meant for sulphide ores, other ores can also be concentrated by froth floatation when such reactions are possible.",Assume given ore is Malachite
-Leaching Bauxite,Al2O3+2NaOH+3H2O->2Na[Al(OH)4],"Ampho property of Al2O3 and solubility is exploited. Problem with this is that SiO2 which is an acidic oxide, will persist",Write product in complex form
-Leaching Silver,Ag2S+4NaCN->2Na[Ag(CN)2]+Na2S,Complexing property of Ag is exploited to precipitate it,
-Mond Process,Ni+4CO->[Ni(CO)4]->Ni+4CO,[Ni(CO)4] is volatile and will also thermally decompose once Seperationerated,
-Van Arkel Reaction,M+2I2->MI4->M+2I2,MI4 volatile and also decomposes,Assume the metal is M
-Leaching Gold,4Au+O2+8NaCN->4Na[Au(CN)2]+2Na2O,,
+H,,,,
+Depressant Reaction,ZnS+4NaCN->2Na2[Zn(CN)4]+Na2S,Complexing property of Zn is exploited to make ZnS less float-y and settle down,Assume impurity in given ore is Zinc based,
+Cationic Activation Reaction (Froth Floatation),ZnS+CuSO4->CuS+ZnSO4,CuS is the best floater,Assume given ore is Zinc Blende,
+Anionic Activation Reaction (Froth Floatation),CuCO3+Na2S->CuS+Na2CO3,"CuS is the best floater. Although it is meant for sulphide ores, other ores can also be concentrated by froth floatation when such reactions are possible.",Assume given ore is Malachite,
+Leaching Bauxite,Al2O3+2NaOH+3H2O->2Na[Al(OH)4],"Ampho property of Al2O3 and solubility is exploited. Problem with this is that SiO2 which is an acidic oxide, will persist",Write product in complex form,
+Leaching Silver,Ag2S+4NaCN->2Na[Ag(CN)2]+Na2S,Complexing property of Ag is exploited to precipitate it,,
+Mond Process,Ni+4CO->[Ni(CO)4]->Ni+4CO,[Ni(CO)4] is volatile and will also thermally decompose once Seperationerated,,
+Van Arkel Reaction,M+2I2->MI4->M+2I2,MI4 volatile and also decomposes,Assume the metal is M,
+Leaching Gold,4Au+O2+8NaCN->4Na[Au(CN)2]+2Na2O,,,
+"Al2(OH)4Si2O5,Fe2O3,Fe3O4","Kaolinite,Haematite,Magnetite",Kaolinite is a form of clay.,"Comma separated, order matters.",5
+"Fe2O3.3H2O,FeCO3,Cu2O","Limonite,Siderite,Cuprite",,"Comma separated, order matters.",5
+"CuCO3.Cu(OH)2,ZnO,ZnCO3","Malachite,Zincite,Calamine",,"Comma separated, order matters.",5
+"TiO2,U3O8,Ag2S","Rutile,Pitch Blende,Argentite",Argentite is also known as Silver Glance.,"Comma separated, order matters.",5
+"HgS,SnO2,AgCl","Cinnabar,Cassiterite,Horn Silver",Cassiterite is also known as Tinstone.,"Comma separated, order matters.",5
+"PbO,PbCO3,MnO2","Litharge,Cerrusite,Pyrolusite",,"Comma separated, order matters.",5
+"Name of ZnS ore, in which it is in CCP and HCP form respectively:","Zinc Blende,Wurtzite",,"Comma separated, order matters.	",3

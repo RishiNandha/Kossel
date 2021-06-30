@@ -67,7 +67,8 @@ class Quiz(commands.Cog):
                 ques += (arg + " ")
         ques = ques.rstrip()
         ques2 = ques
-        if ques == "": ques = "default"
+        if ques == "" or ques == " ":
+          ques = "default"
 
         channel = message.channel
         if ques not in [x.split('.')[0] for x in os.listdir("Decks/")]:
@@ -89,19 +90,32 @@ class Quiz(commands.Cog):
             progress = '\n' + str(
                 round(sum(correct.values()) /
                       (len(questions) - 1) * 100, 1)) + "% quiz completed"
-            embed = discord.Embed(title=questions[i][0],
+            # print("im here")
+            # print(questions[i][0])
+            tup = functions.formatq(questions[i][0],questions[i][1],questions[i][4])
+            # print(tup)
+            # print("im here tooo")
+            # print(tup[0])
+            embed = discord.Embed(title=tup[0],
                                   color=discord.Color.blue(),
                                   url="",
                                   description=(questions[i][3] + progress))
             await channel.send(embed=embed)
+            if questions[i][4] != 5:
+              def funcc(x):
 
-            def funcc(x):
-
-                return ((functions.format(x.content, questions[i][4])
-                         == functions.format(questions[i][1], questions[i][4]))
-                        or (x.content == "quit") or (x.content == "skip") or
-                        (x.content == "stop")) and x.channel == channel
-
+                  return ((functions.format(x.content, questions[i][4])
+                          == functions.format(questions[i][1], questions[i][4]))
+                          or (x.content == "quit") or (x.content == "skip") or
+                          (x.content == "stop")) and x.channel == channel
+            if questions[i][4] == 5:
+              def funcc(x):
+                  # print(x.content,tup[1],functions.format(x.content,3),functions.format(tup[1],5))
+                  return ((functions.format(x.content, 3)
+                          == functions.format(tup[1], 5))
+                          or (x.content == "quit") or (x.content == "skip") or
+                          (x.content == "stop")) and x.channel == channel
+                          
             try:
                 global msg
                 msg = await bot.wait_for('message',
@@ -118,15 +132,25 @@ class Quiz(commands.Cog):
                     await send_quit_embed(correct, skipped, timeout, channel)
                     break
                 await channel.send("Timeout!, The Answer was:")
-                embed2 = discord.Embed(title="",
-                                       color=discord.Color.red(),
-                                       url="",
-                                       description=questions[i][1])
-                await channel.send(embed=embed2)
-                if len(questions[i][2]) > 0:
-                    await channel.send(questions[i][2])
-                order.append(i)
-                pass
+                if questions[i][4] != 5:
+                  embed2 = discord.Embed(title="",
+                                        color=discord.Color.red(),
+                                        url="",
+                                        description=questions[i][1])
+                  await channel.send(embed=embed2)
+                  if len(questions[i][2]) > 0:
+                      await channel.send(questions[i][2])
+                  order.append(i)
+                  pass
+                if questions[i][4] == 5:
+                  embed2 = discord.Embed(title="",
+                                        color=discord.Color.red(),
+                                        url="",description=functions.returnvalsofarray(tup[1]))
+                  await channel.send(embed=embed2)
+                  if len(questions[i][2]) > 0:
+                      await channel.send(questions[i][2])
+                  order.append(i)
+                  pass
 
             else:
                 if msg.content == "quit" or msg.content == "stop":
@@ -142,15 +166,25 @@ class Quiz(commands.Cog):
                     continoustimeout = 0
                     skip_send = "Skipped!, The Answer was:"
                     await channel.send(skip_send)
-                    embed2 = discord.Embed(title="",
-                                           color=discord.Color.red(),
-                                           url="",
-                                           description=(questions[i][1]))
-                    await channel.send(embed=embed2)
-                    if len(questions[i][2]) > 0:
-                        await channel.send(questions[i][2])
-                    order.append(i)
-                    continue
+                    if questions[i][4] != 5:
+                      embed2 = discord.Embed(title="",
+                                            color=discord.Color.red(),
+                                            url="",
+                                            description=(questions[i][1]))
+                      await channel.send(embed=embed2)
+                      if len(questions[i][2]) > 0:
+                          await channel.send(questions[i][2])
+                      order.append(i)
+                      continue
+                    if questions[i][4] == 5:
+                      embed2 = discord.Embed(title="",
+                                            color=discord.Color.red(),
+                                            url="",
+                                            description=(functions.returnvalsofarray(tup[1])))
+                      await channel.send(embed=embed2)
+                      if len(questions[i][2]) > 0:
+                          await channel.send(questions[i][2])
+                      order.append(i)
 
                 else:
                     if msg.author in correct:
@@ -209,7 +243,7 @@ class serverinvite(commands.Cog):
     '''Use "$serverinvite" to get the link to the support server.'''
     @commands.command(name="serverinvite")
     async def _work(self, ctx):
-        invite_link = "<https://discord.gg/buUmFPhf>"
+        invite_link = "<https://discord.gg/bTpb45Xp5Q>"
         await ctx.channel.send(invite_link)
 
 
@@ -269,11 +303,11 @@ class announce(commands.Cog):
         ]:
             for guild in bot.guilds:
                 for channel in guild.text_channels:
-                    if (channel.name in [
-                        "bot-testing", "inorganic", "inorganic-flashcards",
-                        "anki", "ankikopy", "botspam", "change-log",
+                    if ((channel.name in [
+                        "bot-testing", "inorganic", "inorganic-marathon",
+                        "anki", "ankikopy","bot-spam", "botspam", "change-log",
                         "⋅inorganic-bot"
-                    ]):
+                    ]) or (channel.id in [836630878179557506,843308288665583640,840554264292098098,859489830655361049])):
                         try:
                             await channel.send(" ".join(args[:]))
                         except (discord.HTTPException, discord.Forbidden,

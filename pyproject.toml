@@ -12,6 +12,7 @@ reactions = "^0.0.1"
 discord-pretty-help = "^1.3.0"
 pickle-repl = "^1.0.1"
 replit = "^3.0.0"
+"discord.py" = "^1.7.3"
 
 [tool.poetry.dev-dependencies]
 
