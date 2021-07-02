@@ -9,6 +9,8 @@ from replit import db
 from discord.ext import commands
 from pretty_help import DefaultMenu, PrettyHelp
 
+
+
 activity = discord.Activity(type=discord.ActivityType.watching, name="you become Inorganic! | $help")
 bot = commands.Bot(command_prefix="$",activity=activity)
 
@@ -16,6 +18,17 @@ nav = DefaultMenu("◀️", "▶️")
 bot.help_command = PrettyHelp(navigation=nav, color=discord.Colour.green())
 
 
+# async def log(string,channelname=None,servername=None,membername=None):
+#   await bot.get_channel(860153556883472434).send(string+ "by"+membername+"at"+(servername+channelname))
+
+# from discord.ext.commands import CommandNotFound
+
+# @bot.event
+# async def on_command_error(ctx, error):
+#     if isinstance(error, CommandNotFound):
+#         await log(("Command not found error encountered by"+" on command "+"  "+ ctx.message.content),(" " + ctx.guild.name + " "),("  "+ctx.channel.name+" "),ctx.author.name)
+#         # print(ctx.message)
+#     raise error
 #  print(len(bot.guilds), bot.guilds)
 async def send_quit_embed(correct, skipped, timeout, channel):
     correct = sorted(correct.items(), key=lambda x: x[1], reverse=True)
@@ -29,6 +42,7 @@ async def send_quit_embed(correct, skipped, timeout, channel):
     await channel.send(embed=embed5)
     print(str(channel.guild.name) + "." + str(channel.name) + ": quiz ended  ")
 
+    # await log(("Quiz stopped byy"),(" " + channel.guild.name + " "),("  "+channel.name+" ")," ")
 
 async def send_quit_embed_sm2(correct, skipped, timeout, channel):
     correct = sorted(correct.items(), key=lambda x: x[1], reverse=True)
@@ -48,6 +62,7 @@ async def send_quit_embed_sm2(correct, skipped, timeout, channel):
 async def on_ready():
     print("I'm in")
     print("number of server I'm in:", len(bot.guilds))
+    # print(bot.guilds)
 
 
 class Quiz(commands.Cog):
@@ -56,9 +71,8 @@ class Quiz(commands.Cog):
                       help="")
     async def _work(self, message, *args):
 
-        print(
-            str(message.guild.name) + "." + str(message.channel.name) +
-            ": quiz ongoing")
+        # await log(("Quiz started byy"+" on topic  "+"  "+ args[0]),(" " + message.guild.name + " "),("  "+message.channel.name+" "),message.author.name)
+
         args = list(args)
         timeout_ = functions.find_num(args)
         ques = ""
@@ -79,6 +93,9 @@ class Quiz(commands.Cog):
             fnfe = "The reaction deck named '" + ques2 + "' was not found! Use the '$nd' command to add a new deck."
             await channel.send(fnfe)
             return None
+        print(
+            str(message.guild.name) + "." + str(message.channel.name) +
+            ": quiz ongoing")
         # questions  = functions.questions_repldb(db[(str(message.author.id) + "_" +ques)])
         order = list(range(1, len(questions)))
         #order=[55,56]
@@ -209,7 +226,7 @@ class Quiz(commands.Cog):
 class NewDeck(commands.Cog):
     '''Use "$nd" to add a new custom deck of your own. Use "$help nd" to know more about the required format.'''
     @commands.command(name="nd",
-                      help="Add your own reactions using this command. Make sure you use the correct format. The deck file may be eaither in csv or txt. Each line must have only a single question. In each line, 5 comma separated values should be present. For ex: \n Question,Answer, Comments, Instructions, mode. If the answer is a usual reaction, set the mode = 0. If the answer is comma separated, where order does not matter, set mode = 2. If the answer is comma separated where the order matters,set the mode=3.")
+                      help="Add your own reactions using this command. Make sure you use the correct format. The deck file may be eaither in csv or txt. Each line must have only a single question. In each line, 5 comma separated values should be present. For ex: \n Question,Answer, Comments, Instructions, mode. \n Mode 0: For reactions,  Strips answers to ignore stochiometric coefficients Mode 1: Space seperate order wont matterMode 2: For comma separated answers, order doesnt matter Mode 3: Comma separated answers, order matters Mode 5: For interchangable ques and ans (like in the name of ores case in metallurgy deck). \n Also sometime decks may get deleted due repl getting reset, so its recommended to keep an offline version in case. If it gets deleted many times, contact a bot-manager.")
     async def _work(self, ctx):
         await ctx.channel.send(
             "Send the reactions which you want to add in appropriate format:")
