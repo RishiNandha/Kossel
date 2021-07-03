@@ -324,7 +324,7 @@ class announce(commands.Cog):
                         "bot-testing", "inorganic", "inorganic-marathon",
                         "anki", "ankikopy","bot-spam", "botspam", "change-log",
                         "⋅inorganic-bot"
-                    ]) or (channel.id in [836630878179557506,843308288665583640,840554264292098098,859489830655361049])):
+                    ]) or (channel.id in [836630878179557506,843308288665583640,840554264292098098,859489830655361049,840554264292098098])):
                         try:
                             await channel.send(" ".join(args[:]))
                         except (discord.HTTPException, discord.Forbidden,
