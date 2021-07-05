@@ -378,8 +378,8 @@ class SM2(commands.Cog):
         pickle.dump(data, open("data.dat", "wb"))
         timeout_ = 135
 
-        if author == 562608039224410112:
-            await message.send(data[author])
+        #if author == 562608039224410112:
+            #await message.send(data[author])
 
         order = list()
         for i in data[author]:
