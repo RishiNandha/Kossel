@@ -286,7 +286,7 @@ class download(commands.Cog):
 
 class update(commands.Cog):
     @commands.command(name="update",hidden=True)
-    async def _work(self, message, ques="0JEE"):
+    async def _work(self, message, ques="JEE"):
         if int(message.author.id) in [
             829374685480615946, 299120006438846465, 773182724957536307,
             812609048511381524, 562608039224410112
@@ -305,7 +305,7 @@ class publicdecks(commands.Cog):
     async def _work(self, ctx):
         await ctx.channel.send("Public decks:")
         for i in os.listdir("Decks/"):
-            if i[0] not in [str(j) for j in range(10)] and i[-3:] == "csv":
+            if i[0] not in [str(j) for j in range(10)] and i[-3:] == "csv" and i!="JEE.csv":
                 await ctx.channel.send(" - " + i.split(".")[0])
 
 
@@ -366,7 +366,7 @@ class SM2(commands.Cog):
         print(
             str(message.guild.name) + "." + str(message.channel.name) +
             ": quiz ongoing")
-        questions = functions.questions("0JEE")
+        questions = functions.questions("JEE")
         author = message.author.id
         if author == 829374685480615946:
             author = 562608039224410112
