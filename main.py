@@ -286,7 +286,7 @@ class download(commands.Cog):
 
 class update(commands.Cog):
     @commands.command(name="update",hidden=True)
-    async def _work(self, message, ques):
+    async def _work(self, message, ques="0JEE"):
         if int(message.author.id) in [
             829374685480615946, 299120006438846465, 773182724957536307,
             812609048511381524, 562608039224410112
@@ -366,7 +366,7 @@ class SM2(commands.Cog):
         print(
             str(message.guild.name) + "." + str(message.channel.name) +
             ": quiz ongoing")
-        questions = functions.questions("default")
+        questions = functions.questions("0JEE")
         author = message.author.id
         if author == 829374685480615946:
             author = 562608039224410112
