@@ -24,8 +24,8 @@ def formatq(q,a,mode=0):
       n.append(i)
     random.shuffle(n)
     for i in range(len(b)):
-      ques_o.append(b[n[i]])
-      ans_o.append(c[n[i]])
+      ques_o.append(b[n[i]].strip())
+      ans_o.append(c[n[i]].strip())
     
     for i in range(len(b)):
       arr.append(random.randint(0,1))
