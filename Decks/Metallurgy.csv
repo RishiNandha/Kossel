@@ -1,4 +1,4 @@
-H,,,,
+Hy,,,,
 Depressant Reaction,ZnS+4NaCN->2Na2[Zn(CN)4]+Na2S,Complexing property of Zn is exploited to make ZnS less float-y and settle down,Assume impurity in given ore is Zinc based,
 Cationic Activation Reaction (Froth Floatation),ZnS+CuSO4->CuS+ZnSO4,CuS is the best floater,Assume given ore is Zinc Blende,
 Anionic Activation Reaction (Froth Floatation),CuCO3+Na2S->CuS+Na2CO3,"CuS is the best floater. Although it is meant for sulphide ores, other ores can also be concentrated by froth floatation when such reactions are possible.",Assume given ore is Malachite,
@@ -10,7 +10,10 @@ Leaching Gold,4Au+O2+8NaCN->4Na[Au(CN)2]+2Na2O,,,
 "Al2(OH)4Si2O5,Fe2O3,Fe3O4","Kaolinite,Haematite,Magnetite",Kaolinite is a form of clay.,"Comma separated, order matters.",5
 "Fe2O3.3H2O,FeCO3,Cu2O","Limonite,Siderite,Cuprite",,"Comma separated, order matters.",5
 "CuCO3.Cu(OH)2,ZnO,ZnCO3","Malachite,Zincite,Calamine",,"Comma separated, order matters.",5
-"TiO2,U3O8,Ag2S","Rutile,Pitch Blende,Argentite",Argentite is also known as Silver Glance.,"Comma separated, order matters.",5
+"TiO2,U3O8,FeO.TiO2","Rutile,Pitch Blende,Ilmenite",,"Comma separated, order matters.",5
 "HgS,SnO2,AgCl","Cinnabar,Cassiterite,Horn Silver",Cassiterite is also known as Tinstone.,"Comma separated, order matters.",5
 "PbO,PbCO3,MnO2","Litharge,Cerrusite,Pyrolusite",,"Comma separated, order matters.",5
 "Name of ZnS ore, in which it is in CCP and HCP form respectively:","Zinc Blende,Wurtzite",,"Comma separated, order matters.	",3
+"KNO3,NaNO3,BaSO4","Indian Saltpetre,Chile Saltpetre,Baryte",,"Comma separated, order matters.",5
+"Al2O3.3H2O,Al2O3.2H2O,Al2O3.H2O","Gibbsite,Bauxite,Diaspore",,"Comma separated, order matters.",5
+"Ag2S,Al2O3,PbS","Argentite,Corrundum,Galena",Argentite is also known as Silver Glance.,"Comma separated, order matters.",5
