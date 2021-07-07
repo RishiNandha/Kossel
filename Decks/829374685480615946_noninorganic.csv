@@ -1,0 +1,88 @@
+kek,,,,
+Pthalic Anhydride + Resourcinol + AgCl,Green ppt,Adsorptive indication. AgCl adsorbs the formed dye from Pthalic Anhydride test for Phenols. The reaction looks holy damn cool in slowmotion btw.,Type Observation,
+Which adsorption is endothermic out of physisorption and chemisorption,Neither,Both are exothermic except exception weird cases where there's some adsorbate's bond breaken,,
+"Solid Sol, Liquid Aerosol, Solid Aerosol, Emulsion","Solid-Solid, Liquid-Gas, Solid-Gas,Liquid-Liquid","Solid Sol*id*, Sprays, New Emulsion Paints",Format: Dispersed Phase-Dispersion Medium,5
+"Gel, Sol, Foam","Liquid-Solid, Solid-Liquid, Gas-Liquid","Unlike popular belief, Gel isnt solid dissolved in liquid but Liquid suspended in solid mass, hair gels isnt really a gel, better example of gel is gelatin, Old dissolved paints that flake off with time, whipped cream",Format: Dispersed Phase-Dispersion Medium,5
+"S8, Pt, AgI/KI, Solution-sized Dirt, Water-Oil Emulsion","Chemical, Bredig's Arc, Peptization, Micelle, Emulsification ","Chemically Colloidal S8 is made, Bredig's Arc is the shattering of a metal electrode with high current, Peptization is breaking of large solids into smaller aggregates, Micelle formation is stepping is smaller ones using surfactants like Sodium Stereate. Essentially anything that achieves colloidal size work for Sol formation (10^-6 to 10^-9). Emulsification is binding two liquids together to avoid density-seperation using things like Soap, Protiens, Fatty Acids, etc.",Common Sols and Method of preparation,3
+Wavelength Range for Tyndall Effect with Colloids,>10^-9,"1. Colloidal Size. Tyndall Scattering needs wavelength larger than particle size to scatter. \n 2. Its just anologous to Rayleigh Scatter, demands that refractive index of particle and medium are greatly different (In victinity of particle, permittivity is obviously different since if not, then there wont be any electric field effects and so sqrt(eµ) is also different.) \n 3. Just like Rayleigh scattering, Smaller lambda are more affected by µ and hence more scattered. This also determines colour of colloid, lowest possible wavelength scattered = Colour when scattered ones are viewed, opposite when transmitted are viewed.",Format: <comparison operator>10^-x (without spaces in between),1
+AgI/I-,"-ve,I-,K+","Charge of Colloid is decided by Stationary phase. In Electrophoresis, only Stationary phase sticks with colloid particles, mobile phase is dynamic \n At small concentrations: Formation of Electric Double Layer will stabilize Lyophobic Colloid (Lyophilic does not require this stabilization) by preventing aggregation by putting a Electrostatic potential barrier between the Vanderwaals minima and outside. \n Excess of Electrolyte: will cause opposite charged mobile phase for both Lyophilic and Lyophobic so dominating that just after the Electrostatic Potential barrier(Maxima) another Electrostatic Minima will occur and cause Aggregation.","Format: Charge(+ve/-ve), Stationary Layer, Mobile Layer. (Assume I- is from KI)",3
+"Fe(OH)3/Hot Water, Fe(OH)3/NaOH, Metal Sol, Sulphide Sol, Oxide Sol, Organic Sol, Blood","+ve,-ve,-ve,-ve,+ve,-ve,+ve","Fe(OH)3/Fe, Fe(OH)3/OH, Metal sols are almost like complexes with anions getting an effective -ve, Sulphides are negative because S-- are adsorbed by vanderwaals (S is pretty covalent), Oxides are just like metal hydroxides,Common organic ones such as starch are colloided by micelle formation and +ve end of the micelle is towards inside by donation of lone pairs from organic functional groups and -ve end is shown outwards, Blood is positive even though Haemoglobin being an Organic one is negative, this is because Biological systems are OP and an anticoagulant makes Blood a positive colloid. Now when blood is exposed to air, Haemoglobin and Blood cancel out to bloodclot. \n Its Important not to confuse organic sols with something like Fe(OH)3/Fe(III) whose Stationary layer is an ion and gives same charge to colloid, not a micelle that gives outer charge by orientation.",Common Sols and their Charge (+ve/-ve),3
+"Fe(OH)3/Hot Water, Fe(OH)3/NaOH, Metal Sol, Sulphide Sol, Oxide Sol, Organic Sol, RBC, Milk","No,No,No,No,No,Yes,Yes,Yes",Only Organic ones are Lyophilic,Common Sols and Lyophilicity (Yes/No),3
+"Azo Dyes, Pthalein Dyes","+ve, -ve","These are unlike Organic ones. Like Fe(OH)3+Hot water and Equivalent for acidic. These arent micelled, these are MeBlue/H+ and Pthal/OH",Common Sols and their Charge (+ve/-ve),3
+"Give expression for Floccuation Value using C:Concentration of Electrolyte, T: Time it takes to Flocculate M:Concentration of Sol (Both Lyophilic and Phobic)",(1000CT)/(7200),Concentration of Electrolyte needed in millimoles per litre to flocculate in 2 hours. Follows very weird kinetics but roughly \n d(fraction of sol left)/dt = kC. \n f = (1000)/(7200k) and kCT=1 \n f = (1000CT)/(7200),Format: (numerator)/(denominator); Do not cancel out factors in numerator and denominator,
+"Blood, Milk, Mist, Soil, Milk of Magnesia, Latex, (Old) Paint, Fog, Cu2S(froth), Whipped Cream, Butter, Hair Gel, Gelatin","Sol, Emulsion, Aerosol, Solid sol, sol, Sol, Sol, Aerosol, foam, foam, Gel, Emulsion, Gel","Hair gel is actually an Emulsion of liquid medium and liquid stuff that keep hair rigid. Real gels are liquid suspended in solid. Hair is NOT a sol, its not solid stuff that is suspended in it.",Types of Colloid,3
+Self reduction,CuS PbS,This is also called Bessemerization when Air is flushed into hot ore to make oxide which will then react with sulphide,Space Seperate,1
+"Carnallite,Potash Alum, Mohr's Salt","KCl.MgCl2.6H2O, [K(H2O)6]2[Al(H2O)6]2(SO4)4, (NH4)2SO4.FeSO4.6H2O",,Use true forms including Hydration,5
+"Zincite, Cuprite, Pyrolusite, Magnetite, Hematite","ZnO, Cu2O, MnO2,Fe3O4, Fe2O3","Common Oxide ores. Cu(II) was stable because of hydration which isnt there in ores, so Cu(I)",,5
+"Gypsum,Plaster of Paris,Epsom","CaSO4.2H2O, CaSO4.0.5H2O, MgSO4.7H2O",,Use decimal in case of fractional coefficients,5
+"Cinnabar, Argentite, Galena","HgS, Ag2S, PbS",Common Sulphide ores other than Zinc based ones,,5
+"Indian Saltpetre, Chile Saltpetre","KNO3, NaNO3",Nitrate ores,,5
+"Calamine, Copper Pyrite, Siderite, Bauxite, Chalcocite, Pyrite","ZnCO3, CuFeS2, FeCO3, Al2O3.2H2O, Cu2S, FeS2",Non oxide ores of Iron are found in Fe(II) state. The ore was formed deep below and stability reasons for Fe(III) isnt present anymore. Some are even more weird that it looks like Fe(I) but its because of self bonding in sulphur (This isnt the case with Chalcopyrite though). Chalco- seems to refer to Cu generally,Use dot-form,5
+"Fluorspar, Dolomite, Cryolite, Litharge","CaF2, CaCO3.MgCO3, Na3AlF6, PbO",,,5
+"Casseterite, Quick Lime, Slaked Lime, Blue Vitrol, Magnesia","SnO2, CaO, Ca(OH)2, [Cu(H2O)4]SO4.H2O, MgO",Cu likes 4x coordination generally,Use true form for Blue Vitrol,5
+"Brass, Bronze","Cu+Zn, Cu+Sn",S and Z exchange,,5
+"FeCr2O4, Sulphides, Oxides","Magnetic, Froth, Lavigation",Lavigation is using stream of water to seperate using densities. Oxide lattices are very dense,Concentration Methods (Use just the first word of the process for Typing's sake),3
+"Semiconductors, Metals with Low MP, Metals with Low affinity to Oxygen","Zone, Liquation, Cupellation",Zone Refining uses that Impurities like staying dissolved but slowly melting the entire metal lengthwise. Cupellation uses atm O2 to sediment impurities as oxides. ,Refinining Methods (Use just first word),3
+Green Wood + Cu2O + ▲(Heavy)->,Cu+CO+H2,"This is called Poling. CO is more stable at High T, this is almost like displacement of Cu driven by high Temperature bond breaking, except H2O+C a high Temp also goes to CO+H2",,
+"Pine Oil, Sodium Xanthate, Cresol, Aniline, Fatty Acids","Collector, Collector, Stabilizer, Stabilizer, Collector","Collectors make lyophilic colloids and protect the sulphide colloids (both are -ve). Once the froth is out of the solution, stabilizers will make sure they don't go back in",Collector/Stabilizer,3
+Ellingham Diagrams have delta G values for (Oxidation/Reduction),Oxidation,,,
+Reaction that happens at the upper half of Blast Furnace,Fe2O3+CO->Pig Iron+CO2,"C->CO happens at bottom, this CO rises up and since T is lower now, this goes to CO2",Use Common name for Iron products,
+Hall Heroults Process,Al2O3+Na3AlF6+CaF2->Al+O2,Electrolysis,,
+"Azurite, Chalcanthite, Magnesite, Limonite","Cu(OH)2.CuCO3, CuSO4.5H2O, MgCO3, Fe2O3.3H2O","Azurite is malachite without water, limonite is hematite with water. Magnesite is NOT MgO but MgCO3, Chalcanthite is just blue vitrol",,5
+"Cerrusite, Anglesite, Horn Silver, Kaolinite, Feldspar","PbCO3, PbSO4, AgCl, Al2O3.SiO2.H2O, K2O.Al2O3.SiO2",Kaolinite is just sand with higher Aluminium,Ignore Coefficients in Dot form of ore (they vary),5
+"Out of the standard set of test for carbonyl, list tests that glucose will not show",DNP Schiff NaHSO3,,"Standard set of tests for carbonyl here are DNP, Tollen, Fehling, Benedict, Schiff, NaHSO3, Oxime. Type names seperated by commas in same abbrievation as here",1
+Smallest Aldehydic Carbohydrates,Glyceraldehyde,Smallest optically active Polyhydroxy aldehyde,Type name,
+C2 epimer of glucose,Mannose,,Type without relative naming prefix (without D-),
+Precursor of Glucose in Cyanohydrin step up synthesis,Arabinose,,Type without relative naming prefix (without D-),
+Successors of Glyceraldehyde in Killani Fischer Step up,Erythrose Threose,,,1
+Reactivity Series,K Na Ca Mg Al Cr C Zn Fe Sn Pb H Cu Hg Ag Au Pt,"H shows overpotential when seeded electrodes are used, in metallurgy H is placed where C is",Space Seperated,
+Anion Echem Series,OH I Br Cl NO3 SO4 F,"OH is exceptionally, more retained in solution than Cl only in Chloralkali-like processes because of bubble overpotential. Most negative Electrode potential -> Wants to give electrons to outer circuit more -> easily Auxidized","Ascending order of electrode potential, Space seperated, type without any charges",
+Glucose+Br2/H2O,Gluconic Acid,"Br2/H2O just like at C-C pi bonds, can react with C=O to selectively oxidize it. (Addition of Bromohydrin, elimination of HBr). Glucanoic Acid -> Gluconic Acid",Just type common name,
+Glucose+HNO3,"Glucaric Acid,Saccharic acid",Terminal groups oxidized,Comma Seperate Common names,2
+Fructose+Br2/H2O,no rxn,Ketone cant be further reduced to acid,Just type common name,
+5 Homologues of Oxalic Acid,"Oxalic, Malonic, Succinic, Glutaric, Adipic",,"Including Oxalic acid, Comma seperate",3
+Glucose+RaNiH2,Sorbitol,,Common name,
+Glucose+ROH+[H+],Alkyl Glucopyranoside,SN similar to Ether formation happens but only at carbonyl carbon since that is the most acidic H,"Use Alkyl for R, Common Name",
+Glucose+phNH2NH2,"Yellow Precipitate, Osazone, 3","unlike heavily deactivaed phenylhydrazine, regular's lone pair on ph-N will attack the adjacent OH's H, and cyclic elimination gives another aldehyde there. This wont further react as once reacted twice, it cant tautomerize as the H is busy in H bonding","Observation and Common Name of product, No. of moles of phNHNH2 used",2
+"Purine rings out of A=T, C=G",A G,AuGmented size,Space seperate first letters alone,1
+"H-, CH3-, Isopropyl-, Isobutyl-","Glycine, Alanine, Valine, Leucine",,"Match R- against protien name. Use common name for isoalkyl groups, Structural formula in expanded form for others.",5
+"phCH2-, COOHCH2-, COOHCH2CH2-, NH2CH2CH2CH2CH2-","Phenylalanine, Aspartic Acid, Glutamic Acid, Lysine",,"Match R- against protien name. Use common name for isoalkyl groups, Structural formula in expanded form for others. Use ph for C6H5",5
+"Pepsin, Diastase, Maltase","Protein->Amino Acids, Starch->Maltose, Maltose->Glucose",,Enzymatic Action. Format: Reactant->Product (Without space in between t->P),5
+Action of Enzyme produced by Yeast,Zymase+Glucose->C2H5OH+CO2,,"Use common names in reactants side, Add enzyme like a reactant",
+"Invertase,Urease","Sucrose,Urea","Urea-ase, Invertase is because of inversion of optical rotation from sucrose to glucose+fructose from +ve to -ve (ie Fructose's activity overpowers)",Enzyme and Substrate,5
+"Nylon-x,y",x,Not x-2,No. of Carbons in diammine monomer,3
+Monomers of Synthetic Rubbers,"Butadiene, Chloroprene, Acrylonitrile",Vinyl and Acrylic are the same things. Chloroprene is butadiene but with a Cl at 2nd carbon,"Include monomers of both the two, Comma seperate, Common names",2
+"Dry Lubricant, Water Pipes, Sportwear, Tyre Stitches, Conveyor belts, Oil Seals","Teflon, PVC, Nylon-66, Nylon-6, Neoprene, Buna-N",,"Choose from Teflon, PVC, Nylon-66, Nylon-6, Neoprene, Buna-N and from Dry Lubricant, Water Pipes, Sportwear, Tyre Stitches, Conveyor belts, Oil Seals",5
+"Foodwear, Raincoats, Fishing Nets, Ropes, Hoses, Tank linings","Teflon, PVC, Nylon-66, Nylon-6, Neoprene, Buna-N",,"Choose from Teflon, PVC, Nylon-66, Nylon-6, Neoprene, Buna-N and from Foodwear, Raincoats, Fishing Nets, Ropes, Hoses, Tank linings",5
+Sucrose,C2-b-D-Fructose + C1-a-D-Glucose,Both the carbonyls are involved. ,Format: C#-a/b-D/L-Someose + C#-a/b-D/L-Someotherose,
+Maltose,C1-a-D-Glucose + C4-a-D-Glucose,"Beta is more stable, but alpha is more easily produced. Until a pathway is given for glucose to mutarotate, alpha will stay alpha",Format: C#-a/b-D/L-Someose + C#-a/b-D/L-Someotherose,
+Lactose,C1-b-D-Glucose + C4-b-D-Glucose,"Lactose is just maltose on beta Glucose.Beta is more stable, but alpha is more easily produced. Until a pathway is given for glucose to mutarotate, alpha will stay alpha. In Lactose this pathway is enable because of the medium (Milk).",Format: C#-a/b-D/L-Someose + C#-a/b-D/L-Someotherose,
+Amylose,C1-a-D-Glucose + C4-a-D-Glucose,Polymeric version of Maltose. Solubility comes from how CH2OH group is not hindered for H-bonding unlike the other 4.,Format: C#-a/b-D/L-Someose + C#-a/b-D/L-Someotherose (+ C#-a/b-D/L-Someotherose),
+Cellulose,C1-b-D-Glucose + C4-b-D-Glucose,"Polymeric Version of Lactose. Similar to lactose, Cellulose is given the pathway to become beta, this is wantedly done to keep the cell wall the most stable one. Insoluble in Water because unlike Amylose, C6 is equitorial for beta and hindered",Format: C#-a/b-D/L-Someose + C#-a/b-D/L-Someotherose,
+Amylopectin,C1-a-D-Glucose + C4-a-D-Glucose + C6-a-D-Glucose,Amylose but branching using C1-C6 too. Not soluble since the C6 (CH2OH) group is bonded now.,Format: C#-a/b-D/L-Someose + C#-a/b-D/L-Someotherose (+ C#-a/b-D/L-Someotherose),
+"Solubility, Helix/Sheet, Protein Code, Tangling with other proteins/Peptization","3*, 2*, 1*, 4*","Solubility depends on Globular or Fiberous - 3* is the structure of vanderwaals interaction between several strands. alpha Helix or beta Sheet is decided by Hydrogen bonding (and sometimes other chemical bonding like -S-). 4* is just physical arrangement, nothing chemical.",Match the Characteristic with degree of structure for Proteins (use #*),3
+Gly-Alanine,(NH2CH2CONH2)(CH3)CHCOOH,Order of naming for Proteins is opposite of Nylon. COOH's side comes first here,Structural formula without - or spaces,
+Coefficient in Emperical formula for nucleic radius,1.2e-15,,"Scientific notation using e, Represent 2 sf",3
+1 esu,3.33e-10,"in kq^2/r^2 in cgs-esu units, k=1","Scientific notation using e, Represent 3 sf",3
+1 Ci,3.7e+10,,"Scientific notation using e, Represent 2 sf",3
+G*=,k/G,,In terms of k and G,3
+µ0,4pie-7,,"Scientific notation using e, Use pi for pi",3
+R∞,1.097e+7,,"Scientific notation using e, Represent 4 sf",3
+R (in Latm/Kmol),0.0821,,,3
+R (in cal/K),2,, ,3
+Coefficient of ln term in nernst equation,-0.059,negative sign signifies that Ecell decreases as reaction progresses,,3
+G,6.67e-11,,"Scientific notation using e, Represent 3 sf",3
+Bohr Radius,52.9,,Express in picometres upto 2 sf,3
+1Debye,1e-10,,Scientific notation using e,3
+First 5 Emission Series,"Lyman, Balmer, Paschen, Bracket, Pfund",,Comma Seperate,3
+Light Bands in increasing order of Energy,"Radiowave,TV,Microwave,IR,Visible,UV,X,y,Cosmic",,"Use y instead of gamma, X instead of X rays",3
+Boyle,PV,,Expression for the invariant,
+Charles,V/T,,Expression for the invariant,
+Gay Lussac,P/T,,Expression for the invariant,
+Avagadro Law,V/n,,Expression for the invariant,
+"Coefficients within Sqrt for Vmost prob, Vmean, Vrms","2,8/pi,3",,Assume Monoatomic. Comma Seperate,3
+Boyle Temperature,a/Rb,Just dimensional analyse,,
+Vapour Density (in chemistry),M/2,Sadists dont wanna go with m/V but wanna go with (m)/(m)of Hydrogen in same conditions, ,
+Vcritical,3nb,, ,3
+Pcritical,a/(27b^2),"an^2/V^2; V=3nb, but then it should have a 27. So a/27b^2", ,
+Zcritical,3/8,, ,3

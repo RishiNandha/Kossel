@@ -187,7 +187,8 @@ Diamagnetic Lanthanoids,Ce(IV) Yb(II) Lu(III),The actually lie after one d eleme
 Fe+H2SO4->,FeSO4+H2,Fe(II) gains stability when full t2g prefered (Mostly in solution),,
 FeSO4+Air+▲->,Fe2O3+SO2+SO3,Fe(III) is more stable in air,,
 Fe(COO)2 on Calcination->,FeO+CO+CO2,FeO is stable at high temperature (Almost like CO and CO2) given no free O2 around. It will move to Fe2O3 and Fe on cooling,,
-FeCl2+O2->,Fe2O3+FeCl3,Fe(III) is more stable in air. The Cl released oxidizes more FeCl2 even thought Fe(II) is more stable in solution. Cl2 is formed only on excess of FeCl2,,
+FeCl2+O2->,Fe2O3+FeCl3,Fe(III) is more stable in air. Cl- cant really be oxidized by O2 so FeCl3 is also formed,,
+FeCl2+O3->,Fe2O3+Cl2,Anion is oxidizable too,,
 FeCl2+H2O->,Fe3O4+HCl+H2,"Readily hydrolysed, in absense of O2 Magnetite is formed exceptionally",,
 Preparation of Na2O,Na+NaNO3->Na2O+N2,"Na is so reducing that it reduces NO3 to N2, not just take an O to make it NaNO2",,
 Mg+C->,Mg2C3,Propanide,,
@@ -306,6 +307,7 @@ HClO3+▲->,HClO4+ClO2+H2O,this reaction is more similar to HNO2->HNO3+NO+H2O an
 KClO3->,KClO4+KCl,"Extremes are more stable, except in salt form ClO4 is the clear winner",,
 NaClO4+H2SO4(conc)->,no rxn,ClO4- anions are not like CO3 or SO2 to release ClO2. Its too weak a base to become HClO4 with acid and then decompose because of high concentration of HClO4->ClO2+HCl+H2O,,
 HClO2(conc)->,ClO2+HCl+H2O,"Concentrated oxoacids of Halogens readily decompose,Cl2+O2 if not ClO2",,
+Li2CO3+▲->,Li2O+CO2,Group 2 Carbonates are thermally unstable unlike Group I,,
 AgCl+HCN(excess)->,H[Ag(CN)2]+HCl,"Just like S2O3, NH3, SCN... AgCl dissolves here by complexation",,
 Group II ppts that dissolve in Yellow Ammonium Sulphide,SnS(brown) SnS2(yellow),All the amphoteric ones basically,"Include Tin precipitates, Tin isnt there in qualitative an. syllabus but is studied in block chemistry",1
 PbCl2+H3PO4,HCl+Pb3(PO4)2(ppt),"Pb follows colours same as Ag's compounds except PO4, Chromate and Oxide",,
@@ -325,7 +327,6 @@ ZnCl2+K4[Fe(CN)6]->,"KCl+Zn2[Fe(CN)6](ppt,bluish white)",,,
 Mn(OH)2+Air->,H2MnO3(brown),,,
 (CH3COO)2Ca+K2CrO4->,no rxn,"By HSAB, Calcium Chromate ppt is not formed. This is why CH3COOH is poured before doing test for Barium. (CH3COOH is already at acid and not oxidized). BaCrO4 is Yellow",,
 Ca(COO)2+CH3COOH->,no rxn,"Unlike Ba, CaC2O4 is insoluble and confirms that its Ca. But BaC2O4 is soluble by HSAB. CH3COO is harder than (COO)2. Dissolving is either complexation or HSAB by Acid-Base (NOT DISPLACEMENT)",,
-FeCl2+O3->,Fe2O3+Cl2,Anion is oxidizable too,,
 P4O6+H2O->,H3PO3,"Water will allow identical treatment of all P, H3PO3 may disproportionate to PH3+3H3PO4 though",,
 F2 (Colour),Flourescent,,,
 Aqua Regia + Au,NOCl+Cl2+HCl+Au->H[AuCl4]+NO,Au3+ prefers 4 coordination like Al3+,,
@@ -355,15 +356,15 @@ AgI/I-,"-ve,I-,K+","Charge of Colloid is decided by Stationary phase. In Electro
 "Fe(OH)3/Hot Water, Fe(OH)3/NaOH, Metal Sol, Sulphide Sol, Oxide Sol, Organic Sol, Blood","+ve,-ve,-ve,-ve,+ve,-ve,+ve","Fe(OH)3/Fe, Fe(OH)3/OH, Metal sols are almost like complexes with anions getting an effective -ve, Sulphides are negative because S-- are adsorbed by vanderwaals (S is pretty covalent), Oxides are just like metal hydroxides,Common organic ones such as starch are colloided by micelle formation and +ve end of the micelle is towards inside by donation of lone pairs from organic functional groups and -ve end is shown outwards, Blood is positive even though Haemoglobin being an Organic one is negative, this is because Biological systems are OP and an anticoagulant makes Blood a positive colloid. Now when blood is exposed to air, Haemoglobin and Blood cancel out to bloodclot. \n Its Important not to confuse organic sols with something like Fe(OH)3/Fe(III) whose Stationary layer is an ion and gives same charge to colloid, not a micelle that gives outer charge by orientation.",Common Sols and their Charge (+ve/-ve),3
 "Fe(OH)3/Hot Water, Fe(OH)3/NaOH, Metal Sol, Sulphide Sol, Oxide Sol, Organic Sol, RBC, Milk","No,No,No,No,No,Yes,Yes,Yes",Only Organic ones are Lyophilic,Common Sols and Lyophilicity (Yes/No),3
 "Azo Dyes, Pthalein Dyes","+ve, -ve","These are unlike Organic ones. Like Fe(OH)3+Hot water and Equivalent for acidic. These arent micelled, these are MeBlue/H+ and Pthal/OH",Common Sols and their Charge (+ve/-ve),3
-"Give expression for Floccuation Value using C:Concentration of Electrolyte, T: Time it takes to Flocculate M:Concentration of Sol (Both Lyophilic and Phobic)",(1000CT)/(7200),Concentration of Electrolyte needed in millimoles per litre to flocculate in 2 hours. Follows very weird kinetics but roughly \n d(fraction of sol left)/dt = kC. \n f = (1000)/(7200k) and kCT=1 \n f = (1000CT)/(7200),Format: (numerator)/(denominator); Do not cancel out factors in numerator and denominator,
+"Give expression for Floccuation Value using C:Concentration of Electrolyte, T: Time it takes to Flocculate M:Concentration of Sol required (Both Lyophilic and Phobic)",(1000CT)/(7200),Concentration of Electrolyte needed in millimoles per litre to flocculate in 2 hours. Follows very weird kinetics but roughly \n d(fraction of sol left)/dt = kC. \n f = (1000)/(7200k) and kCT=1 \n f = (1000CT)/(7200),Format: (numerator)/(denominator); Do not cancel out factors in numerator and denominator,
 "Blood, Milk, Mist, Soil, Milk of Magnesia, Latex, (Old) Paint, Fog, Cu2S(froth), Whipped Cream, Butter, Hair Gel, Gelatin","Sol, Emulsion, Aerosol, Solid sol, sol, Sol, Sol, Aerosol, foam, foam, Gel, Emulsion, Gel","Hair gel is actually an Emulsion of liquid medium and liquid stuff that keep hair rigid. Real gels are liquid suspended in solid. Hair is NOT a sol, its not solid stuff that is suspended in it.",Types of Colloid,3
+Gold Number is the ________ of Sol required to prevent coag. of ____ of Standard Au(sol) by ____ of ____ NaCl,milligrams 10ml 1ml 10%,,Space seperate,1
 ,,,,
 ,Inorganic Trends,,,
 ,,,,
 Periods that show Ionization Potential Exceptions by Exchange Energy,2 3 4,Xenon's period shows uniform trend,List the Periods that show exchange energy exceptions in Ionization Enthalpy (Space seperated),1
-Greater H2O2 dihedral angle is in,Solid,A nice cubic lattice can be formed,Solid or Gas,
-I and II Carbonates,"Stable,Unstable",, ,3
-Thermal Stability Exception in s block is shown by,Flourides,"Flourides are an exception, Bond length so small that dr/r^2 becomes dominating",,
+Greater H2O2 dihedral angle is in,Gas,A nice cubic lattice can be formed is dihedral = 90* and the other is whatever. The other angle is close to 109.5. In gas exact flip,Solid or Gas,
+Thermal Stability ______ down the group except for ________ in s block,"Increases, Flourides","Flourides are an exception, Bond length so small that dr/r^2 becomes dominating",Comma Seperate,3
 Ionic%=AX + BX^2,16 3.5,,Space Seperate and enter A and B,1
 General Atomic mass of first 20 elements interms of Z (odd),2Z+1,, ,
 General Atomic mass of first 20 elements interms of Z (even),2Z,, ,
@@ -387,7 +388,7 @@ Self reduction,CuS PbS,This is also called Bessemerization when Air is flushed i
 Radius Ratios,0.155 0.225 0.414 0.732 1,Linear Triangle sp3 Octahedral/dsp2 BCC ClosedPacking,space seperated in decimal form,1
 Wurtzite,ZnS hcp Tetrahedral,,Space Seperate. Formula Lattice Voids-occupied (use fcc everywhere instead of ccp),1
 Zinc Blende,ZnS fcc Tetrahedral,Ratio rule gives tetrahedral and only half of the total Tetravoids are occupied (like sp3 covalent solids),Formula Lattice Voids-occupied (use fcc everywhere instead of ccp),1
-NaCl,fcc octahedral,Just a simple linear arrangement of alternating Na and Cl (Ratio rule gives octahedral),Lattice Voids,1
+NaCl,fcc octahedral Cl,"Just a simple linear arrangement of alternating Na and Cl (Ratio rule gives octahedral). Cl decides lattice size, Na+ is not larger than Cl like Na. Na+ is of lower shell.",Lattice Voids Atom-that-decides-lattice-size,1
 CsCl,"Cs,Cl",,BodyCentre Corners. Comma Seperate,3
 Flourite,AX2 fcc Tetrahedral,Tetrahedral ratio,Formula Lattice Voids-occupied (use fcc everywhere instead of ccp).  Drop Coefficients.,1
 Antiflourite,A2X fcc Tetrahedral,Cations occupy voids here,Formula Lattice Voids-occupied (use fcc everywhere instead of ccp). Drop Coefficients.,1
@@ -412,7 +413,7 @@ Hall Heroults Process,Al2O3+Na3AlF6+CaF2->Al+O2,Electrolysis,,
 ,,,,
 ,Polymers & Biomolecules,,,
 ,,,,
-"Out of the standard set of test for carbonyl, list tests that glucose will not show",DNP Schiff NaHSO3,,"Standard set of tests for carbonyl here are DNP, Tollen, Fehling, Benedict, Schiff, NaHSO3, Oxime. Type names seperated by commas in same abbrievation as here",1
+"Out of the standard set of test for carbonyl, list tests that glucose will not show",DNP Schiff NaHSO3,,"Standard set of tests for carbonyl here are DNP, Tollen, Fehling, Benedict, Schiff, NaHSO3, Oxime. Type names seperated by spaces in same abbrievation as here",1
 Smallest Aldehydic Carbohydrates,Glyceraldehyde,Smallest optically active Polyhydroxy aldehyde,Type name,
 C2 epimer of glucose,Mannose,,Type without relative naming prefix (without D-),
 Precursor of Glucose in Cyanohydrin step up synthesis,Arabinose,,Type without relative naming prefix (without D-),
@@ -426,7 +427,7 @@ Fructose+Br2/H2O,no rxn,Ketone cant be further reduced to acid,Just type common 
 Glucose+RaNiH2,Sorbitol,,Common name,
 Glucose+ROH+[H+],Alkyl Glucopyranoside,SN similar to Ether formation happens but only at carbonyl carbon since that is the most acidic H,"Use Alkyl for R, Common Name",
 Glucose+phNH2NH2,"Yellow Precipitate, Osazone, 3","unlike heavily deactivaed phenylhydrazine, regular's lone pair on ph-N will attack the adjacent OH's H, and cyclic elimination gives another aldehyde there. This wont further react as once reacted twice, it cant tautomerize as the H is busy in H bonding","Observation and Common Name of product, No. of moles of phNHNH2 used",2
-"Purine rings out of A=T, C=G",A G,AuGmented size,Space seperate first letters alone,1
+"Purine rings out of A=T, C=G",A G,AuGmented size. And also AT^2 - A and T are 2 H bond pairs. UT - Uracil is primitive Thyamine,Space seperate first letters alone,1
 "H-, CH3-, Isopropyl-, Isobutyl-","Glycine, Alanine, Valine, Leucine",,"Match R- against protien name. Use common name for isoalkyl groups, Structural formula in expanded form for others.",5
 "phCH2-, COOHCH2-, COOHCH2CH2-, NH2CH2CH2CH2CH2-","Phenylalanine, Aspartic Acid, Glutamic Acid, Lysine",,"Match R- against protien name. Use common name for isoalkyl groups, Structural formula in expanded form for others. Use ph for C6H5",5
 "Pepsin, Diastase, Maltase","Protein->Amino Acids, Starch->Maltose, Maltose->Glucose",,Enzymatic Action. Format: Reactant->Product (Without space in between t->P),5
@@ -442,22 +443,64 @@ Lactose,C1-b-D-Glucose + C4-b-D-Glucose,"Lactose is just maltose on beta Glucose
 Amylose,C1-a-D-Glucose + C4-a-D-Glucose,Polymeric version of Maltose. Solubility comes from how CH2OH group is not hindered for H-bonding unlike the other 4.,Format: C#-a/b-D/L-Someose + C#-a/b-D/L-Someotherose (+ C#-a/b-D/L-Someotherose),
 Cellulose,C1-b-D-Glucose + C4-b-D-Glucose,"Polymeric Version of Lactose. Similar to lactose, Cellulose is given the pathway to become beta, this is wantedly done to keep the cell wall the most stable one. Insoluble in Water because unlike Amylose, C6 is equitorial for beta and hindered",Format: C#-a/b-D/L-Someose + C#-a/b-D/L-Someotherose,
 Amylopectin,C1-a-D-Glucose + C4-a-D-Glucose + C6-a-D-Glucose,Amylose but branching using C1-C6 too. Not soluble since the C6 (CH2OH) group is bonded now.,Format: C#-a/b-D/L-Someose + C#-a/b-D/L-Someotherose (+ C#-a/b-D/L-Someotherose),
-"Solubility, Helix/Sheet, Protein Code, Tangling with other proteins/Peptization","3*, 2*, 1*, 4*","Solubility depends on Globular or Fiberous - 3* is the structure of vanderwaals interaction between several strands. alpha Helix or beta Sheet is decided by Hydrogen bonding (and sometimes other chemical bonding like -S-). 4* is just physical arrangement, nothing chemical.",Match the Characteristic with degree of structure for Proteins (use #*),3
+"Solubility, Helix/Sheet, Protein Code, Tangling with other proteins/Peptization","3, 2, 1, 4","Solubility depends on Globular or Fiberous - 3* is the structure of vanderwaals interaction between several strands. alpha Helix or beta Sheet is decided by Hydrogen bonding (and sometimes other chemical bonding like -S-). 4* is just physical arrangement, nothing chemical.",Match the Characteristic with degree of structure for Proteins (use just numbers),3
 Gly-Alanine,(NH2CH2CONH2)(CH3)CHCOOH,Order of naming for Proteins is opposite of Nylon. COOH's side comes first here,Structural formula without - or spaces,
 ,,,,
 ,Indefinite Integrals,,,
 ,,,,
+Integral secx dx = ,ln|secx + tanx|,All secx and tanx results translate to secx -> cosecx and tanx -> -cotx,,
+Substitution for an integral in sqrt(a-x) uses the idea that,sqrt(1-cos2x)=sqrt(2)sinx,Resort to standard subsitutions only if brainy integration fails.,,
+Substitutions for integral with both sqrt(a-x) and sqrt(x-b) uses the idea that,sqrt(a-acos^2x+bsin^2x)=sqrt(a+b)sinx,Similar tanx and secx relation can also be used for sqrt(x-a) and sqrt(x-b) if subbing sqrt(x-a) itself fails. Resort to standard subsitutions only if brainy integration fails.,,
+Substitution for Integral with (x-a)^n and (x-b)^m uses the idea that:,(b-a)/(x-b)=(x-a)/(x-b)-1,Same for integrals of form ((x-a)/(x-b))^n. Resort to standard subsitutions only if brainy integration fails.,,
+Quick manipulation to use result of integral 1/sqrt(x^2+a^2) to solve integral sqrt(x^2-a^2) is by using,Integration By Parts,I = xsqrt(x^2-a^2) - I - integral 1/sqrt(x^2-a^2). and we know that this integral and integral 1/sqrt(x^2+a^2) differ only by sign of a^2 (x is secant and tan is sqrt(x^2+a^2)). Resort to standard subsitutions only if brainy integration fails.,,
+Most Important Strategies in Integration,"Splitting Numerator, Moving x powers",into denom+denom'+c or 1-x^2 + 1+x^2 or Partial fractions or (x^2-kx+1)(x^2+kx+1) or radical + radical' + c. Moving powers between num/denom or between roots and outside.Resort to standard subsitutions only if brainy integration fails.,Comma Seperate,2
+Coefficiant in integral 1/(x^2+a^2),1/a,Resort to standard subsitutions only if brainy integration fails.,,
+Coefficient in integral 1/sqrt(x^2+a^2),1,"When denom is a sqrt, a from d(af(x)) and denominator cancel out. Resort to standard subsitutions only if brainy integration fails.",,
+Integral with sin and cos in even powers convert into,"tanx, secx",Resort to standard subsitutions only if brainy integration fails.,Comma seperate,2
+"Integral with tan and sec, all substitutions fail then do",Integration By Parts,Resort to standard subsitutions only if brainy integration fails.,,
+Integrals with 2x angles and x mixed use the idea that:,cos2x=(cosx+sinx)(cosx-sinx),Resort to standard subsitutions only if brainy integration fails.,,
+Substitution for integral 1/((linear)^m.sqrt(quadratic)),1/(linear),Resort to standard subsitutions only if brainy integration fails.,,
+Substitution for integral 1/((px^2+q).sqrt(ax^2+b)) is t=,sqrt(a+b/x^2),Resort to standard subsitutions only if brainy integration fails.,,
+"If Integral is a function of x and a quadratic, Substitution uses the idea that:",log(x+sqrt(quadratic))' = 1/sqrt(quadratic),Resort to standard subsitutions only if brainy integration fails.,,
+"B(n,m) integrand is:",x^(n-1)(1-x)^(m-1),,,
+Gamma integration limits is:,0 to infinity,,,
+Gamma(n) integrand is:,x^(n-1)e^(-x),,,
+"B(n,m) in terms of Gamma()",Gamma(n)Gamma(m)/Gamma(m+n),,,
+Gamma(n),(n-1)!,,,
+Gamma(1/2),sqrt(pi),,,
+,,,,
 ,Conic Sections,,,
 ,,,,
-"In an ellipse, if N is x intersept of normal: NF1/NF2=",PF1/PF2,Because its angle bisector, ,
+"In an ellipse, if N is x intersept of normal: NF1/NF2=",PF1/PF2,Because its angle bisector / Reflection, ,
 Confocal Conics,Orthogonal,,,
+Bisector of side containing Origin,l1=l2,l1 and l2 are such that constant terms are positive,"l1 = ax+by+c; l2 = px + qy + r; r,c>0",
+Angle Bisectors of a pair of SL: ax^2+2hxy+by^2,(x^2-y^2)/(a-b)=xy/h,NOT xy/2h.,,
+HGO Ratio,2:1,,,
+HNO Ratio,1:1,,,
+h^2<ab then the Conic is a,Ellipse,"Because for hyperbola, slope of asymptotes must have real solution",,
+First row in discriminant determinant for Pair of SL ax^2 + by^2 + 2hxy + 2gx + 2fy + c = 0,"a, h, g",,comma seperate,3
+Orthogonal Circles,gg+ff=(c+c)/2,,"g for g of both, f for f of both, c for c of both",
+Focal chord divided by focus into PF and QF then:,1/PF+1/QF=2/f,f is the focal length of latus rectum,,
+"For all conics, Tangent Segment until Directrix",Subtends Right angle at Focus,,,
+Product of Perpendiculars to a tangent from focii = ,b^2,Can be quickly verified using tangent at semiminor axis,,
+Radius of Auxiliary Circle of Hyperbola and Line from abscissa of a point make a ____ angle,right,,,
+"For Ellipse and Hyperbola, Focal Tangents intersect at ____ angle",not right,Plot Twist,,
+"For Ellipse and Hyperbola, Tangents at right angle intersect at",Director Circle,Equivalent to Directrix of Parabola,,
+Slope form Normal Equation for Hyperbola,y=mx+m(a^2+b^2)/sqrt(a^2-m^2b^2),"For ellipse, it can be gotten by putting tantheta = mb/a and thus sintheta. Hyperbola will just be ellipse with an inverted b^2.",Use + instead of + or -,
+Product of Perpendicular Distances to Asymptotes from a point,1/(1/a^2+1/b^2),"Can be checked using (a,0)",,
+Perpendiculat to Tangent from a Focus lies on (For Parabola),Vertex Tangent,,,
+Parametric point of tangent for Parabola,"(att, a(t+t))",Plug Joaschmithal substitution,Use t for both,
 ,,,,
 ,General Mathematics,,,
+,,,,
+,,,,
 ,,,,
 ,Organic Chemistry,,,
 ,,,,
 Victor Meyer 2*-OH,Blue,,,
 Victor Meyer 1*-OH,Red,,,
+"FeCl3 + Alcohol, FeCl3 + AcOH, FeCl3+ Larger COOH","Coloured soln, Red Soln, Brown ppt",,Comma seperate observations (use soln and ppt instead of Solution and Precipitate),3
+Cyclocompounds naming exception precedence order:,Chain Length > FG,,Format: Something > Something else (with spaces in b/w),
 ,,,,
 ,Coordination Compounds,,,
 ,,,,
@@ -466,20 +509,26 @@ d orbitals in dsp2 (Asc),"dyz=dzx,dxy,dz^2","Eventhough z^2 expected to be least
 ,,,,
 ,Physical Chemistry & Physics,,,
 ,,,,
-Coefficient in Emperical formula for nucleic radius,1.2e-15,,"Scientific notation using e, Represent 2 sf",3
+Coefficient in Emperical formula for nucleic radius,1.2,,"2sf, in fermimeter",3
 1 esu,3.33e-10,"in kq^2/r^2 in cgs-esu units, k=1","Scientific notation using e, Represent 3 sf",3
 1 Ci,3.7e+10,,"Scientific notation using e, Represent 2 sf",3
 G*=,k/G,,In terms of k and G,3
 µ0,4pie-7,,"Scientific notation using e, Use pi for pi",3
+k(electric prop. constant),9e+9,,,
+STP Temperature and Pressure,273 100000,,"Space seperate, Enter as Integers",1
 R∞,1.097e+7,,"Scientific notation using e, Represent 4 sf",3
 R (in Latm/Kmol),0.0821,,,3
 R (in cal/K),2,, ,3
 Coefficient of ln term in nernst equation,-0.059,negative sign signifies that Ecell decreases as reaction progresses,,3
 G,6.67e-11,,"Scientific notation using e, Represent 3 sf",3
-Bohr Radius,52.9,,Express in picometres upto 2 sf,3
-1Debye,1e-10,,Scientific notation using e,3
+Bohr Radius,52.9,,Express in picometres upto 3 sf,3
+1 Gauss,1e-4,,Scientific notation using e,3
+σ ,5.67e-8,,Scientific notation using e upto 3sf,3
+Bohr energy is proportional to (in terms of Z and n),Z^2/n^2,,An Expression,
+Spin multiplicity (s=total spin),2s+1,,,
+1 Debye,1e-10,,Scientific notation using e,3
 First 5 Emission Series,"Lyman, Balmer, Paschen, Bracket, Pfund",,Comma Seperate,3
-Light Bands in increasing order of Energy,"Radiowave,TV,Microwave,IR,Visible,UV,X,y,Cosmic",,"Use y instead of gamma, X instead of X rays",3
+Light Bands in increasing order of Energy,"Radio,TV,Micro,IR,Visible,UV,X,y,Cosmic",,"Use y instead of gamma, X instead of X rays. Comma seperate.",3
 Boyle,PV,,Expression for the invariant,
 Charles,V/T,,Expression for the invariant,
 Gay Lussac,P/T,,Expression for the invariant,
@@ -490,4 +539,9 @@ Vapour Density (in chemistry),M/2,Sadists dont wanna go with m/V but wanna go wi
 Vcritical,3nb,, ,3
 Pcritical,a/(27b^2),"an^2/V^2; V=3nb, but then it should have a 27. So a/27b^2", ,
 Zcritical,3/8,, ,3
-,,,,
+"Purity, Strength, molality, Volume Strength, %Oleum, Hardness of Water","m/m, m/V, n/M, V/V, m/m, m/m",Volume Strength = Vol of O2/Vol of H2O2; %Oleum = mass after H2O/mass before; Hardness = mass of CaCO3 that would precipitate if both Mg and Ca were Ca/mass of water (same as volume because density = 1) in ppm,"V-Volume of Solution or Solute, m-Mass of solution or solute or whatever mass appears, M-Mass of solvent, n-mols of solute or solution",3
+Magnetic nature of the product of pyrolysis of Boron:,Paramagnetic,MOT has pi below for smaller atoms. Crossing happens at no of e > 14,,
+G definition (Equation),G=H-TS,dG = dH - SdT - TdS not only TdS,,
+Most Ionic Equi formulas are quickly derivable except for Hydrolysis of salt of weak Acid and weak Base. \n pH = ,(Pkw+Pka-Pkb)/2,,Type without spaces in between. ,3
+Sound Equation,Px=rhoytt=Byxx,,"Type without Spaces. Use ""rho"" for density, Subscript notation for partial derivatives but dont notate ""_""",
+Height of HCP Lattice,4sqrt(2)a/sqrt(3),Twice the height of base tetrahedron. 2r=sqrt(2)a and h = 2(2a/sqrt(3)),,
