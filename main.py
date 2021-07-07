@@ -514,5 +514,14 @@ class SM2(commands.Cog):
 
 
 bot.add_cog(SM2(bot))
+
+class export(commands.Cog):
+    @commands.command(name="export",hidden=True)
+    async def _work(self, ctx, msg):
+      functions.export(str(msg)+".csv")
+      await ctx.send(file=discord.File("anki.txt"))
+      os.remove("anki.txt")
+
+bot.add_cog(export(bot))
 keep_alive()
 bot.run(os.getenv("TOKEN"))
