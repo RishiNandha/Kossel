@@ -334,7 +334,7 @@ class announce(commands.Cog):
 
 bot.add_cog(announce(bot))
 
-
+y=""
 class execute(commands.Cog):
     @commands.command(name="execute",hidden=True)
     async def _work(self, ctx, *args):
@@ -342,7 +342,18 @@ class execute(commands.Cog):
         if int(ctx.author.id) in [
             829374685480615946, 299120006438846465, 562608039224410112
         ]:
-            exec(command)
+            if "print" in command:
+              #y=""
+              #exec("y=y+"+str(command[6:-1]))
+              #await ctx.send(y)
+              
+              exec("y=y+str("+str(command[6:-1])+")",globals())
+              with open("anki.txt","w") as f:
+                f.write(y)
+              await ctx.send(file=discord.File("anki.txt"))
+              os.remove("anki.txt")
+            else:
+              exec(command)
             #print(command)
 
 
