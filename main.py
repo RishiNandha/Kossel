@@ -347,7 +347,7 @@ class execute(commands.Cog):
               #exec("y=y+"+str(command[6:-1]))
               #await ctx.send(y)
               
-              exec("y=y+str("+str(command[6:-1])+")",globals())
+              exec("y=str("+str(command[6:-1])+")",globals())
               with open("anki.txt","w") as f:
                 f.write(y)
               await ctx.send(file=discord.File("anki.txt"))
