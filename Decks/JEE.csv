@@ -492,3 +492,4 @@ Height of HCP Lattice,4sqrt(2)a/sqrt(3),Twice the height of base tetrahedron. 2r
 ___mm of Hg = 1 atm,760,,,3
 Ideal Gas behavious,"High T, Low P",High V essentially except Molar Volume becomes a dependent variable in most contexts. (P+an^2/V^2) NOT V^2/n^2,,3
 Work is ,Frame Dependent,,,
+Cells in Parallel,e=sum(e/r)/sum(1/r),,,
