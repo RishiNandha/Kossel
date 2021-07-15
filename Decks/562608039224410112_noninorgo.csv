@@ -1,0 +1,258 @@
+Question,Answers,Comment,Instructions,Render as
+Distinguistion of AgCl from AgBr and AgI,"AgCl + Na3AsO3 -> Ag2AsO3(ppt,yellow)",,"Drop (ppt) for AgCl, Dont drop it for the product",
+S8+KOH->,K2S2O3+K2S+H2O,"Regular hydrolysis starts. Just like P4 even though bond isnt polar, assymetric hydrolysis starts ...-S-H + HO-S-... ; but then breaking the non polar bond in the other side too becomes difficult. So on the second nucleophilic attack instead of breaking the bond, S expands octet and makes (HO)2-S=S + K-S-... and breaks bond at the other side. Now the unstable intermediates KS-SK and S=S-(OH)2 +KOH redox to give H2S2O3 and K2S. ",,
+"Carbon Suboxide, Tetrathionate, Tribromooctaoxide","O=C=C=C=O, SO3-S-S-SO3, BrO3-BrO2-BrO3",,Structures and Names. Drop charges,3
+Preparation of Na2S2O3,Na2S+Na2SO3+I2->Na2S2O3+2NaI,,Dont notate heating,
+Ca(HCO3)2+▲->,CaCO3(ppt)+CO2+H2O,"Eventhough II carbonates aren't stable, for mild heating, CaCO3 will just escape as a ppt instead of decomposing. This reaction is used in removing Temporary Hardness",,
+2-EthylAnthraquinol+Air->,H2O2(pale blue)+2-ethylanthraquinone,One big aromatic ring goes to 2 smaller aromatic rings which is more stabilizing. Pure H2O2 is pale blue. It freezes lower than water like how it evaporates higher than water. ,,
+,,,,
+,Surface Chemistry,,,
+,,,,
+Pthalic Anhydride + Resourcinol + AgCl,Green ppt,Adsorptive indication. AgCl adsorbs the formed dye from Pthalic Anhydride test for Phenols. The reaction looks holy damn cool in slowmotion btw.,Type Observation,
+Which adsorption is endothermic out of physisorption and chemisorption,Neither,Both are exothermic except exception weird cases where there's some adsorbate's bond breaken,,
+"Solid Sol, Liquid Aerosol, Solid Aerosol, Emulsion","Solid-Solid, Liquid-Gas, Solid-Gas,Liquid-Liquid","Solid Sol*id*, Sprays, New Emulsion Paints",Format: Dispersed Phase-Dispersion Medium,5
+"Gel, Sol, Foam","Liquid-Solid, Solid-Liquid, Gas-Liquid","Unlike popular belief, Gel isnt solid dissolved in liquid but Liquid suspended in solid mass, hair gels isnt really a gel, better example of gel is gelatin, Old dissolved paints that flake off with time, whipped cream",Format: Dispersed Phase-Dispersion Medium,5
+"S8, Pt, AgI/KI, Solution-sized Dirt, Water-Oil Emulsion","Chemical, Bredig's Arc, Peptization, Micelle, Emulsification ","Chemically Colloidal S8 is made, Bredig's Arc is the shattering of a metal electrode with high current, Peptization is breaking of large solids into smaller aggregates, Micelle formation is stepping is smaller ones using surfactants like Sodium Stereate. Essentially anything that achieves colloidal size work for Sol formation (10^-6 to 10^-9). Emulsification is binding two liquids together to avoid density-seperation using things like Soap, Protiens, Fatty Acids, etc.",Common Sols and Method of preparation,3
+Wavelength Range for Tyndall Effect with Colloids,>10^-9,"1. Colloidal Size. Tyndall Scattering needs wavelength larger than particle size to scatter. \n 2. Its just anologous to Rayleigh Scatter, demands that refractive index of particle and medium are greatly different (In victinity of particle, permittivity is obviously different since if not, then there wont be any electric field effects and so sqrt(eµ) is also different.) \n 3. Just like Rayleigh scattering, Smaller lambda are more affected by µ and hence more scattered. This also determines colour of colloid, lowest possible wavelength scattered = Colour when scattered ones are viewed, opposite when transmitted are viewed.",Format: <comparison operator>10^-x (without spaces in between),1
+AgI/I-,"-ve,I-,K+","Charge of Colloid is decided by Stationary phase. In Electrophoresis, only Stationary phase sticks with colloid particles, mobile phase is dynamic \n At small concentrations: Formation of Electric Double Layer will stabilize Lyophobic Colloid (Lyophilic does not require this stabilization) by preventing aggregation by putting a Electrostatic potential barrier between the Vanderwaals minima and outside. \n Excess of Electrolyte: will cause opposite charged mobile phase for both Lyophilic and Lyophobic so dominating that just after the Electrostatic Potential barrier(Maxima) another Electrostatic Minima will occur and cause Aggregation.","Format: Charge(+ve/-ve), Stationary Layer, Mobile Layer. (Assume I- is from KI)",3
+"Fe(OH)3/Hot Water, Fe(OH)3/NaOH, Metal Sol, Sulphide Sol, Oxide Sol, Organic Sol, Blood","+ve,-ve,-ve,-ve,+ve,-ve,+ve","Fe(OH)3/Fe, Fe(OH)3/OH, Metal sols are almost like complexes with anions getting an effective -ve, Sulphides are negative because S-- are adsorbed by vanderwaals (S is pretty covalent), Oxides are just like metal hydroxides,Common organic ones such as starch are colloided by micelle formation and +ve end of the micelle is towards inside by donation of lone pairs from organic functional groups and -ve end is shown outwards, Blood is positive even though Haemoglobin being an Organic one is negative, this is because Biological systems are OP and an anticoagulant makes Blood a positive colloid. Now when blood is exposed to air, Haemoglobin and Blood cancel out to bloodclot. \n Its Important not to confuse organic sols with something like Fe(OH)3/Fe(III) whose Stationary layer is an ion and gives same charge to colloid, not a micelle that gives outer charge by orientation.",Common Sols and their Charge (+ve/-ve),3
+"Fe(OH)3/Hot Water, Fe(OH)3/NaOH, Metal Sol, Sulphide Sol, Oxide Sol, Organic Sol, RBC, Milk","No,No,No,No,No,Yes,Yes,Yes",Only Organic ones are Lyophilic,Common Sols and Lyophilicity (Yes/No),3
+"Azo Dyes, Pthalein Dyes","+ve, -ve","These are unlike Organic ones. Like Fe(OH)3+Hot water and Equivalent for acidic. These arent micelled, these are MeBlue/H+ and Pthal/OH",Common Sols and their Charge (+ve/-ve),3
+"Give expression for Floccuation Value using C:Concentration of Electrolyte, T: Time it takes to Flocculate M:Concentration of Sol required (Both Lyophilic and Phobic)",(1000CT)/(7200),Concentration of Electrolyte needed in millimoles per litre to flocculate in 2 hours. Follows very weird kinetics but roughly \n d(fraction of sol left)/dt = kC. \n f = (1000)/(7200k) and kCT=1 \n f = (1000CT)/(7200),Format: (numerator)/(denominator); Do not cancel out factors in numerator and denominator,
+"Blood, Milk, Mist, Soil, Milk of Magnesia, Latex, (Old) Paint, Fog, Cu2S(froth), Whipped Cream, Butter, Hair Gel, Gelatin","Sol, Emulsion, Aerosol, Solid sol, sol, Sol, Sol, Aerosol, foam, foam, Gel, Emulsion, Gel","Hair gel is actually an Emulsion of liquid medium and liquid stuff that keep hair rigid. Real gels are liquid suspended in solid. Hair is NOT a sol, its not solid stuff that is suspended in it.",Types of Colloid,3
+Gold Number is the ________ of Sol required to prevent coag. of ____ of Standard Au(sol) by ____ of ____ NaCl,milligrams 10ml 1ml 10%,,Space seperate,1
+Minimum boiling azeotrope is a mixture in which the components ________ boil at a ______ temperature,"simultaneously, lower",,,3
+"Ethanol+Acetone, CS2+Acetone, CHCl3+Acetone, Aniline+Phenol, Benzene+Toluene","+ve,+ve,-ve,-ve,ideal","More pressure = positive. H-bonds was stronger than dipole-dipole, Dipole-dipole was stronger than Vanderwaals, H-bonding (because of 3-beta I-) is stronger than dipole-dipole, no. of H bonds per atom is effectively increasing, very similar molecules",Deviation: +ve/-ve/ideal,3
+,,,,
+,Inorganic Trends,,,
+,,,,
+Periods that show Ionization Potential Exceptions by Exchange Energy,2 3 4,Xenon's period shows uniform trend,List the Periods that show exchange energy exceptions in Ionization Enthalpy (Space seperated),1
+Greater H2O2 dihedral angle is in,Gas,"A nice cubic lattice can be formed is dihedral = 90* and the other is whatever. The other angle is close to 109.5. In gas exact flip. This is actually different from how it normally is in Organic. In organic fibre-like lattices were nicer. This is because there, it was mostly about surface area, while here it is more about dipoles and stuff",Solid or Gas,
+Thermal Stability ______ down the group except for ________ in s block,"Increases, Flourides","Flourides are an exception, Bond length so small that dr/r^2 becomes dominating",Comma Seperate,3
+Ionic%=AX + BX^2,16 3.5,,Space Seperate and enter A and B,1
+General Atomic mass of first 20 elements interms of Z (odd),2Z+1,, ,
+General Atomic mass of first 20 elements interms of Z (even),2Z,, ,
+Exceptions to General Atomic mass emperical formulas for first 20 Elements,H Be N Cl Ar,,Space Seperate,1
+Atomic Mass of Be,9,, ,3
+Atomic Mass of Ar,40,, ,3
+Atomic Mass of Cl,35.5,, ,3
+Atomic Mass of Mn,55,, ,3
+Atomic Mass of Fe,56,, ,3
+Atomic Mass of Cu,63.5,, ,3
+Atomic Mass of Zn,65,, ,3
+Atomic Mass of Br,79,, ,3
+Atomic Mass of I,127,, ,3
+Atomic Mass of Ba,137,, ,3
+Atomic Mass of Ag,108,, ,3
+,,,,
+,"Ores, Solids, Metallurgy",,,
+,,,,
+Self reduction,CuS PbS,This is also called Bessemerization when Air is flushed into hot ore to make oxide which will then react with sulphide,Space Seperate,1
+"Carnallite,Potash Alum, Mohr's Salt","KCl.MgCl2.6H2O, [K(H2O)6]2[Al(H2O)6]2(SO4)4, (NH4)2SO4.FeSO4.6H2O",,Use true forms including Hydration,5
+Radius Ratios,0.155 0.225 0.414 0.732 1,Linear Triangle sp3 Octahedral/dsp2 BCC ClosedPacking,space seperated in decimal form,1
+Wurtzite,ZnS hcp Tetrahedral,,Space Seperate. Formula Lattice Voids-occupied (use fcc everywhere instead of ccp),1
+Zinc Blende,ZnS fcc Tetrahedral,Ratio rule gives tetrahedral and only half of the total Tetravoids are occupied (like sp3 covalent solids),Formula Lattice Voids-occupied (use fcc everywhere instead of ccp),1
+NaCl,fcc octahedral Cl,"Just a simple linear arrangement of alternating Na and Cl (Ratio rule gives octahedral). Cl decides lattice size, Na+ is not larger than Cl like Na. Na+ is of lower shell.",Lattice Voids Atom-that-decides-lattice-size,1
+CsCl,"Cs,Cl",,BodyCentre Corners. Comma Seperate,3
+Flourite,AX2 fcc Tetrahedral,Tetrahedral ratio,Formula Lattice Voids-occupied (use fcc everywhere instead of ccp).  Drop Coefficients.,1
+Antiflourite,A2X fcc Tetrahedral,Cations occupy voids here,Formula Lattice Voids-occupied (use fcc everywhere instead of ccp). Drop Coefficients.,1
+Corrundum,Al2O3 hcp Octahedral,2/3 of Octahedral voids are taken by Al,Formula Lattice Voids-occupied (use fcc everywhere instead of ccp). Drop Coefficients.,1
+"Zincite, Cuprite, Pyrolusite, Magnetite, Hematite","ZnO, Cu2O, MnO2,Fe3O4, Fe2O3","Common Oxide ores. Cu(II) was stable because of hydration which isnt there in ores, so Cu(I)",,5
+"Gypsum,Plaster of Paris,Epsom","CaSO4.2H2O, CaSO4.0.5H2O, MgSO4.7H2O",,Use decimal in case of fractional coefficients,5
+"Cinnabar, Argentite, Galena","HgS, Ag2S, PbS",Common Sulphide ores other than Zinc based ones,,5
+"Indian Saltpetre, Chile Saltpetre","KNO3, NaNO3",Nitrate ores,,5
+"Calamine, Copper Pyrite, Siderite, Bauxite, Chalcocite, Pyrite","ZnCO3, CuFeS2, FeCO3, Al2O3.2H2O, Cu2S, FeS2",Non oxide ores of Iron are found in Fe(II) state. The ore was formed deep below and stability reasons for Fe(III) isnt present anymore. Some are even more weird that it looks like Fe(I) but its because of self bonding in sulphur (This isnt the case with Chalcopyrite though). Chalco- seems to refer to Cu generally,Use dot-form,5
+"Fluorspar, Dolomite, Cryolite, Litharge","CaF2, CaCO3.MgCO3, Na3AlF6, PbO",,,5
+"Casseterite, Quick Lime, Slaked Lime, Blue Vitrol, Magnesia","SnO2, CaO, Ca(OH)2, [Cu(H2O)4]SO4.H2O, MgO",Cu likes 4x coordination generally. One water molecule comes between complex and SO4,Use true form for Blue Vitrol,5
+"Brass, Bronze","Cu+Zn, Cu+Sn",S and Z exchange,,5
+"FeCr2O4, Sulphides, Oxides","Magnetic, Froth, Lavigation",Lavigation is using stream of water to seperate using densities. Oxide lattices are very dense,Concentration Methods (Use just the first word of the process for Typing's sake),3
+"Semiconductors, Metals with Low MP, Metals with Low affinity to Oxygen","Zone, Liquation, Cupellation",Zone Refining uses that Impurities like staying dissolved but slowly melting the entire metal lengthwise. Cupellation uses atm O2 to sediment impurities as oxides. ,Refinining Methods (Use just first word),3
+Green Wood + Cu2O + ▲(Heavy)->,Cu+CO+H2,"This is called Poling. CO is more stable at High T, this is almost like displacement of Cu driven by high Temperature bond breaking, except H2O+C a high Temp also goes to CO+H2",,
+"Pine Oil, Sodium Xanthate, Cresol, Aniline, Fatty Acids","Collector, Collector, Stabilizer, Stabilizer, Collector","Collectors make lyophilic colloids and protect the sulphide colloids (both are -ve). Once the froth is out of the solution, stabilizers will make sure they don't go back in",Collector/Stabilizer,3
+Ellingham Diagrams have delta G values for (Oxidation/Reduction),Oxidation,,,
+Reaction that happens at the upper half of Blast Furnace,Fe2O3+CO->Pig Iron+CO2,"C->CO happens at bottom, this CO rises up and since T is lower now, this goes to CO2",Use Common name for Iron products,
+Hall Heroults Process,Al2O3+Na3AlF6+CaF2->Al+O2,Electrolysis,,
+"Azurite, Chalcanthite, Magnesite, Limonite","Cu(OH)2.CuCO3, CuSO4.5H2O, MgCO3, Fe2O3.3H2O","Azurite is malachite without water, limonite is hematite with water. Magnesite is NOT MgO but MgCO3, Chalcanthite is just blue vitrol",,5
+"Cerrusite, Anglesite, Horn Silver, Kaolinite, Feldspar","PbCO3, PbSO4, AgCl, Al2O3.SiO2.H2O, K2O.Al2O3.SiO2",Kaolinite is just sand with higher Aluminium,Ignore Coefficients in Dot form of ore (they vary),5
+,,,,
+,Polymers & Biomolecules,,,
+,,,,
+"Out of the standard set of test for carbonyl, list tests that glucose will not show",DNP Schiff NaHSO3,DNP and Schiff are deactivated versions of Osazone and Oxime.,"Standard set of tests for carbonyl here are DNP, Tollen, Fehling, Benedict, Schiff, NaHSO3, Oxime. Type names seperated by spaces in same abbrievation as here",1
+Smallest Aldehydic Carbohydrates,Glyceraldehyde,Smallest optically active Polyhydroxy aldehyde,Type name,
+C2 epimer of glucose,Mannose,,Type without relative naming prefix (without D-),
+Precursor of Glucose in Cyanohydrin step up synthesis,Arabinose,,Type without relative naming prefix (without D-),
+Successors of Glyceraldehyde in Killani Fischer Step up,Erythrose Threose,,,1
+Reactivity Series,K Na Ca Mg Al Cr C Zn Fe Sn Pb H Cu Hg Ag Au Pt,"H shows overpotential when seeded electrodes are used, in metallurgy H is placed where C is",Space Seperated,
+Anion Echem Series,I Br OH Cl NO3 SO4 F,"OH is exceptionally, more retained in solution than Cl only in Chloralkali-like processes because of bubble overpotential. Most negative Electrode potential -> Wants to give electrons to outer circuit more -> easily Auxidized","Ascending order of electrode potential, Space seperated, type without any charges",
+Glucose+Br2/H2O,Gluconic Acid,"Br2/H2O just like at C-C pi bonds, can react with C=O to selectively oxidize it. (Addition of Bromohydrin, elimination of HBr). Glucanoic Acid -> Gluconic Acid",Just type common name,
+Glucose+HNO3,"Glucaric Acid,Saccharic acid",Terminal groups oxidized,Comma Seperate Common names,2
+Fructose+Br2/H2O,no rxn,Ketone cant be further reduced to acid,Just type common name,
+5 Homologues of Oxalic Acid,"Oxalic, Malonic, Succinic, Glutaric, Adipic",,"Including Oxalic acid, Comma seperate",3
+Glucose+RaNiH2,Sorbitol,,Common name,
+Glucose+ROH+[H+],Alkyl Glucopyranoside,SN similar to Ether formation happens but only at carbonyl carbon since that is the most acidic H,"Use Alkyl for R, Common Name",
+Glucose+phNH2NH2,"Yellow Precipitate, Osazone, 3","unlike heavily deactivaed phenylhydrazine, regular's lone pair on ph-N will attack the adjacent OH's H, and cyclic elimination gives another aldehyde there. This wont further react as once reacted twice, it cant tautomerize as the H is busy in H bonding","Observation and Common Name of product, No. of moles of phNHNH2 used",2
+"Purine rings out of A=T, C=G",A G,AuGmented size. And also AT^2 - A and T are 2 H bond pairs. UT - Uracil is primitive Thyamine,Space seperate first letters alone,1
+"H-, CH3-, Isopropyl-, Isobutyl-","Glycine, Alanine, Valine, Leucine",,"Match R- against protien name. Use common name for isoalkyl groups, Structural formula in expanded form for others.",5
+"phCH2-, COOHCH2-, COOHCH2CH2-, NH2CH2CH2CH2CH2-","Phenylalanine, Aspartic Acid, Glutamic Acid, Lysine",,"Match R- against protien name. Use common name for isoalkyl groups, Structural formula in expanded form for others. Use ph for C6H5",5
+"Pepsin, Diastase, Maltase","Protein->Amino Acids, Starch->Maltose, Maltose->Glucose",,Enzymatic Action. Format: Reactant->Product (Without space in between t->P),5
+Action of Enzyme produced by Yeast,Zymase+Glucose->C2H5OH+CO2,,"Use common names in reactants side, Add enzyme like a reactant",
+"Invertase,Urease","Sucrose,Urea","Urea-ase, Invertase is because of inversion of optical rotation from sucrose to glucose+fructose from +ve to -ve (ie Fructose's activity overpowers)",Enzyme and Substrate,5
+"Nylon-x,y",x,Not x-2,No. of Carbons in diammine monomer,3
+Monomers of Synthetic Rubbers,"Butadiene, Chloroprene, Acrylonitrile",Vinyl and Acrylic are the same things. Chloroprene is butadiene but with a Cl at 2nd carbon,"Include monomers of both the two, Comma seperate, Common names",2
+"Dry Lubricant, Water Pipes, Sportwear, Tyre Stitches, Conveyor belts, Oil Seals","Teflon, PVC, Nylon-66, Nylon-6, Neoprene, Buna-N",,"Choose from Teflon, PVC, Nylon-66, Nylon-6, Neoprene, Buna-N and from Dry Lubricant, Water Pipes, Sportwear, Tyre Stitches, Conveyor belts, Oil Seals",5
+"Foodwear, Raincoats, Fishing Nets, Ropes, Hoses, Tank linings","Teflon, PVC, Nylon-66, Nylon-6, Neoprene, Buna-N",,"Choose from Teflon, PVC, Nylon-66, Nylon-6, Neoprene, Buna-N and from Foodwear, Raincoats, Fishing Nets, Ropes, Hoses, Tank linings",5
+Sucrose,C2-b-D-Fructose + C1-a-D-Glucose,Both the carbonyls are involved. ,Format: C#-a/b-D/L-Someose + C#-a/b-D/L-Someotherose,
+Maltose,C1-a-D-Glucose + C4-a-D-Glucose,"Beta is more stable, but alpha is more easily produced. Until a pathway is given for glucose to mutarotate, alpha will stay alpha",Format: C#-a/b-D/L-Someose + C#-a/b-D/L-Someotherose,
+Lactose,C1-b-D-Glucose + C4-b-D-Glucose,"Lactose is just maltose on beta Glucose.Beta is more stable, but alpha is more easily produced. Until a pathway is given for glucose to mutarotate, alpha will stay alpha. In Lactose this pathway is enable because of the medium (Milk).",Format: C#-a/b-D/L-Someose + C#-a/b-D/L-Someotherose,
+Amylose,C1-a-D-Glucose + C4-a-D-Glucose,Polymeric version of Maltose. Solubility comes from how CH2OH group is not hindered for H-bonding unlike the other 4.,Format: C#-a/b-D/L-Someose + C#-a/b-D/L-Someotherose (+ C#-a/b-D/L-Someotherose),
+Cellulose,C1-b-D-Glucose + C4-b-D-Glucose,"Polymeric Version of Lactose. Similar to lactose, Cellulose is given the pathway to become beta, this is wantedly done to keep the cell wall the most stable one. Insoluble in Water because unlike Amylose, C6 is equitorial for beta and hindered",Format: C#-a/b-D/L-Someose + C#-a/b-D/L-Someotherose,
+Amylopectin,C1-a-D-Glucose + C4-a-D-Glucose + C6-a-D-Glucose,Amylose but branching using C1-C6 too. Not soluble since the C6 (CH2OH) group is bonded now.,Format: C#-a/b-D/L-Someose + C#-a/b-D/L-Someotherose (+ C#-a/b-D/L-Someotherose),
+"Solubility, Helix/Sheet, Protein Code, Tangling with other proteins/Peptization","3, 2, 1, 4","Solubility depends on Globular or Fiberous - 3* is the structure of vanderwaals interaction between several strands. alpha Helix or beta Sheet is decided by Hydrogen bonding (and sometimes other chemical bonding like -S-). 4* is just physical arrangement, nothing chemical.",Match the Characteristic with degree of structure for Proteins (use just numbers),3
+Gly-Alanine,(NH2CH2CONH2)(CH3)CHCOOH,Order of naming for Proteins is opposite of Nylon. COOH's side comes first here,Structural formula without - or spaces,
+,,,,
+,Indefinite Integrals,,,
+,,,,
+Integral secx dx = ,ln|secx + tanx|,All secx and tanx results translate to secx -> cosecx and tanx -> -cotx,,
+Substitution for an integral in sqrt(a-x) uses the idea that,sqrt(1-cos2x)=sqrt(2)sinx,Resort to standard subsitutions only if brainy integration fails.,,
+Substitutions for integral with both sqrt(a-x) and sqrt(x-b) uses the idea that,sqrt(a-acos^2x+bsin^2x)=sqrt(a+b)sinx,Similar tanx and secx relation can also be used for sqrt(x-a) and sqrt(x-b) if subbing sqrt(x-a) itself fails. Resort to standard subsitutions only if brainy integration fails.,,
+Substitution for Integral with (x-a)^n and (x-b)^m uses the idea that:,(b-a)/(x-b)=(x-a)/(x-b)-1,Same for integrals of form ((x-a)/(x-b))^n. Resort to standard subsitutions only if brainy integration fails.,,
+Quick manipulation to use result of integral 1/sqrt(x^2+a^2) to solve integral sqrt(x^2-a^2) is by using,Integration By Parts,I = xsqrt(x^2-a^2) - I - integral 1/sqrt(x^2-a^2). and we know that this integral and integral 1/sqrt(x^2+a^2) differ only by sign of a^2 (x is secant and tan is sqrt(x^2+a^2)). Resort to standard subsitutions only if brainy integration fails.,,
+Most Important Strategies in Integration,"Splitting Numerator, Moving x powers",into denom+denom'+c or 1-x^2 + 1+x^2 or Partial fractions or (x^2-kx+1)(x^2+kx+1) or radical + radical' + c. Moving powers between num/denom or between roots and outside.Resort to standard subsitutions only if brainy integration fails.,Comma Seperate,2
+Coefficiant in integral 1/(x^2+a^2),1/a,Resort to standard subsitutions only if brainy integration fails.,,
+Coefficient in integral 1/sqrt(x^2+a^2),1,"When denom is a sqrt, a from d(af(x)) and denominator cancel out. Resort to standard subsitutions only if brainy integration fails.",,
+Integral with sin and cos in even powers convert into,"tanx, secx",Resort to standard subsitutions only if brainy integration fails.,Comma seperate,2
+"Integral with tan and sec, all substitutions fail then do",Integration By Parts,Resort to standard subsitutions only if brainy integration fails.,,
+Integrals with 2x angles and x mixed use the idea that:,cos2x=(cosx+sinx)(cosx-sinx),Resort to standard subsitutions only if brainy integration fails.,,
+Substitution for integral 1/((linear)^m.sqrt(quadratic)),1/(linear),Resort to standard subsitutions only if brainy integration fails.,,
+Substitution for integral 1/((px^2+q).sqrt(ax^2+b)) is t=,sqrt(a+b/x^2),Resort to standard subsitutions only if brainy integration fails.,,
+"If Integral is a function of x and a quadratic, Substitution uses the idea that:",log(x+sqrt(quadratic))' = 1/sqrt(quadratic),Resort to standard subsitutions only if brainy integration fails.,,
+"B(n,m) integrand is:",x^(n-1)(1-x)^(m-1),,,
+Gamma integration limits is:,0 to infinity,,,
+Gamma(n) integrand is:,x^(n-1)e^(-x),,,
+"B(n,m) in terms of Gamma()",Gamma(n)Gamma(m)/Gamma(m+n),,,
+Gamma(n),(n-1)!,,,
+Gamma(1/2),sqrt(pi),,,
+,,,,
+,Conic Sections,,,
+,,,,
+"In an ellipse, if N is x intersept of normal: NF1/NF2=",PF1/PF2,Because its angle bisector / Reflection, ,
+Confocal Conics,Orthogonal,,,
+Bisector of side containing Origin,l1=l2,l1 and l2 are such that constant terms are positive,"l1 = ax+by+c; l2 = px + qy + r; r,c>0",
+Angle Bisectors of a pair of SL: ax^2+2hxy+by^2,(x^2-y^2)/(a-b)=xy/h,NOT xy/2h.,,
+HGO Ratio,2:1,,,
+HNO Ratio,1:1,,,
+h^2<ab then the Conic is a,Ellipse,"Because for hyperbola, slope of asymptotes must have real solution",,
+First row in discriminant determinant for Pair of SL ax^2 + by^2 + 2hxy + 2gx + 2fy + c = 0,"a, h, g",,comma seperate,3
+Orthogonal Circles,gg+ff=(c+c)/2,,"g for g of both, f for f of both, c for c of both",
+Focal chord divided by focus into PF and QF then:,1/PF+1/QF=2/f,f is the focal length of latus rectum,,
+"For all conics, Tangent Segment until Directrix",Subtends Right angle at Focus,,,
+Product of Perpendiculars to a tangent from focii = ,b^2,Can be quickly verified using tangent at semiminor axis,,
+Radius of Auxiliary Circle of Hyperbola and Line from abscissa of a point make a ____ angle,right,,,
+"For Ellipse and Hyperbola, Focal Tangents intersect at ____ angle",not right,Plot Twist,,
+"For Ellipse and Hyperbola, Tangents at right angle intersect at",Director Circle,Equivalent to Directrix of Parabola,,
+Slope form Normal Equation for Hyperbola,y=mx+m(a^2+b^2)/sqrt(a^2-m^2b^2),"For ellipse, it can be gotten by putting tantheta = mb/a and thus sintheta. Hyperbola will just be ellipse with an inverted b^2.",Use + instead of + or -,
+Product of Perpendicular Distances to Asymptotes from a point,1/(1/a^2+1/b^2),"Can be checked using (a,0)",,
+Perpendiculat to Tangent from a Focus lies on (For Parabola),Vertex Tangent,,,
+Parametric point of tangent for Parabola,"(att, a(t+t))",Plug Joaschmithal substitution,Use t for both,
+Quickest way to find Orthocentre of a triangle formed within a circle,Euler Line,,,
+,,,,
+,General Mathematics,,,
+,,,,
+cot(a+b+c+.....) = ,(S1-S3...)/(1-S2...),"Maybe surprising, but same as tan. ",Use Si for cot (not tan),
+secx + tanx =,tan(pi/4+x/4),,,
+sin(a+b+c+...)=,Pi(cosA)(S1-S3...),Si are for tan here. Hence cos can also be found,,
+sum sin(AP),(sin((n+1)d/2)/sin(d/2))sin(AM),sin((n+1)d/2)/sin(d/2) is almost like a Sum of GP term but with a 1/2. The other term is almost like Arithmetic Mean term of sum of AP.,,
+Skewed Lines are ________ and don't intersect,non-parallel,,,
+"A&B are mutually independent, then P(A|B)=",P(A),,,
+,,,,
+,Organic Chemistry,,,
+,,,,
+Victor Meyer 2*-OH,Blue,,,
+Victor Meyer 1*-OH,Red,,,
+"FeCl3 + Alcohol, FeCl3 + AcOH, FeCl3+ Larger COOH","Coloured soln, Red Soln, Brown ppt",,Comma seperate observations (use soln and ppt instead of Solution and Precipitate),3
+Cyclocompounds naming exception precedence order:,Chain Length > FG,,Format: Something > Something else (with spaces in b/w),
+Melting/Boiling point precedence order for Covalent Compounds (Desc.),"Type of Interaction, Molar Mass, Branching, Additional Factor","Additional factor for Boiling is dipole moment, Melting is compactness of lattice. For t-butyl v other butanes alone, the addition factor comes further up. Para and Trans are more compact because they fit like a thread of fibre or something into lattice. Further, lattice energy majorly depends on compactness, more than surface area. Melting point isn't directly = lattice E trends, Melting point is affected by covalency and surface area trends while lattice energy isn't",Comma Seperate,3
+Acidity order (Desc.),"HI, H2SO4, HX, RSO3H, H3O, RCOOH, HCO3, ArEH, RNH3, H2O, ROH, H2, RCHO",Aromatic OH with 1 or more NO2 like deactivation will come higher than HCO3. Aliphatic with 3 beta Hyperconj. or 2 NO2 will also come above HCO3. Amides won't dissolve in HCl unlike Amines.,Include conjugate acids of bases but don't notate charges. Position of HNO3 is disputed thus don't include it. Use E for O/N. Assume conjugate acid of Hydride is H2,3
+Electronic Effects: Substituents order (Assuming M effect is operative unlike COOH groups),"-N, -O, -NC=O, -OC=O, 3*, -ph, -allyl, -R, -H, -X, -C=O, 3 beta, -N+, -NO2","Allyl activates ring too. 3 beta can be considered pure I, -N+ is pure I",Use * for degree.,3
+Bredt Rule is that no cation of = at ________,Bridgehead,,,3
+Electronic Effects: Effects order,"M, Steric, I",Steric factors include inhibition of resonance and ortho effect. Ortho effect for conjugate of NH2 is known of Steric inhibition of protonation.,,3
+Nucleophilicity order in Aprotic solvents,"F, Cl, Br, I",Reversed because smaller ones arent solvated anymore.,,3
+SOCl2 with py,SN2,not SNi anymore. py will take the Cl from -OSOCl and now -SO2 leaves with sub from the other side (Almost like OTs),,
+Lindlar's Catalyst,Pd+Pb(OAc)2+Quinoline,,,
+"= + Hg(OAc)/NaBH4, yne + Na/NH3","neither, anti",the H- step in oxymerc demerc destroys selectivity. Na/NH3 is anti because of radicals repelling each other,Syn/Anti,3
+Reducing Metal + C=O ->,C(-)-O(-),This can further react or get clemenson reduced if highly acidic medium,The intermediate. Include charges in brackets.,
+Side Products in Kolbe Electrolysis of RCH2COOH,RCH2OCOCH2R+RCH3+R=CH2,,,
+"Diene addition, Pinacol Rearrangment, EAS (SO3H or NO2), Aldol Condensation","T, K, T, K",,Major product at room T: K / T,3
+Rearrangements in pinacol-like reactions:,"Ring Contraction, H, ph, 3*, 2*, 1*",Contraction is specific to pinacol-like while all the rest hold's for other reactions ,,3
+"Conjugated Addition: R-, RNH2, ROH","Carbonyl, Ene, Carbonyl",The line in organic is drawn between O and N unlike inorganic where NH3 was still pretty hard. HSAB C=O is a hard centre.,Carbonyl/Ene,3
+Electromeric activation order of -X in aromatic,"F, Cl, Br, I","Reverse as that expected, because F- has 2pi-2pi which becomes more deciding than the I- gradients in aromatic case alone. And anything >= F wont give friedelcraft's anymore",,3
+B2H6 won't reduce,Amines,Lewis Acid,,
+Side reactions in Clemenson are:,"SN with Cl, NO2->NH3, ArSO3H->ArH",,,3
+"Na, RaNi, O3, K2Cr2O7/high T, Cl2+Heat","Yes,No,Yes,Yes, Yes",Na and K2Cr2O7 will end up in quinol and quinol without =O. With Cl2 all 6 are subbed,Benzene reactions: Yes/No,3
+RCN+ 1. R- -> 2. H2O,R2CNH,"Only monosub because unlike COOH, CN cant gemdiol eliminate and so more than 1 charge will have to reside on N. For orgo's purposes this isnt possible.",,
+Cannizaro Majorly less steric is,Oxidized,H- transfer is the rds. This is decided more by the initial condition. Less steric aldehydes have more hydrate percentage.,,
+Basicity order of Me subbed Amines in (aq),"2*, 3*, 1*",,,3
+Basicity order of Et subbed Amines in (aq),"2*, 1*, 3*",,,3
+RCONHR + NaOH + Br2,no rxn,Acid base (Inorganic) is always faster than other organic reactions. Bromamide doesnt proceed by carbonyl attack but acid base at amide and that needs 1* Amine. ,,
+Nitrosyl test,"Yellow Oil, Clear Solution, Dark Green",,"Comma seperate observations for 2*, 3* Ali and 3* Ar",3
+Hinsberg Test,"ppt dissolves in OH, ppt, no rxn dissolves in H",,"Comma seperate observations for 2*, 3* Ali and 3* Ar",3
+"Poly EAS: Mild Activated + HNO3, Mild Activated + Br2/H2O, Strong Activated + HNO3, Strong Activated + Br2/H2O","3,1,3,3",,No. of subs,3
+Carbocation Rearrangements:,"4,3,5,2",,"Arrange descending order of: 3* product, 2* product, 5* ring relief and 4* relief using the numbers associated",3
+Terminal Alkyne ppt colours with Tollen and Fehling,"White, Red",,,3
+ROH is protected by using,Isobutylene,Add ROH similar to addition of H2O,,
+HI-lysis of ether both halves are subbed with I if reaction mixture is,hot,,,
+To oxidize aldehyde to ketone major reagants are,"DMSO, PCC",,,2
+E2 for 1* only if,Steric Base,,,
+SN1 for 2* only with,"HX, ZnCl2/HCl",,,2
+SN2 for 3* only with,"PX3, PX5, SOCl2/py",,,2
+,,,,
+,Coordination Compounds,,,
+,,,,
+d orbitals in dsp2 (Asc),"dyz=dzx,dxy,dz^2","Eventhough z^2 expected to be least, the shape has the cloud in xy plane & the cloud is of homogenous sign and so square planar actually repels this more than xy","Comma seperate, use Equal sign for degenerate, don't use ""_"" for subscripting",3
+"Splitting: [NiF6]--, [CoF6]---, [Fe(NH3)6]++, [Fe(NH3)6]+++, [Cr(OH)4]-","Strong, Weak, Weak, Strong, Weak","Ni(IV) is always strong, Co(III) always strong except F-, NH3 is strong for 3+ and weak for 2+, Cr(II) and Cu(II) are actually weak splits but make inner orbital due to distortion of dz^2",strong/weak,3
+,,,,
+,Physical Chemistry & Physics,,,
+,,,,
+Coefficient in Emperical formula for nucleic radius,1.2,,"2sf, in fermimeter",3
+1 esu,3.33e-10,"in kq^2/r^2 in cgs-esu units, k=1","Scientific notation using e, Represent 3 sf",3
+1 Ci,3.7e+10,,"Scientific notation using e, Represent 2 sf",3
+G*=,k/G,,In terms of k and G,3
+µ0,4pie-7,,"Scientific notation using e, Use pi for pi",3
+k(electric prop. constant),9e+9,,,
+STP Temperature and Pressure,273 100000,,"Space seperate, Enter as Integers",1
+R∞,1.097e+7,,"Scientific notation using e, Represent 4 sf",3
+R (in Latm/Kmol),0.0821,,,3
+R (in cal/K),2,, ,3
+Coefficient of ln term in nernst equation,-0.059,negative sign signifies that Ecell decreases as reaction progresses,,3
+G,6.67e-11,,"Scientific notation using e, Represent 3 sf",3
+Bohr Radius,52.9,,Express in picometres upto 3 sf,3
+1 Gauss,1e-4,,Scientific notation using e,3
+σ ,5.67e-8,,Scientific notation using e upto 3sf,3
+Bohr energy is proportional to (in terms of Z and n),Z^2/n^2,,An Expression,
+Spin multiplicity (s=total spin),2s+1,,,
+1 Debye,1e-10,,Scientific notation using e,3
+First 5 Emission Series,"Lyman, Balmer, Paschen, Bracket, Pfund",,Comma Seperate,3
+Light Bands in increasing order of Energy,"Radio,TV,Micro,IR,Visible,UV,X,y,Cosmic",,"Use y instead of gamma, X instead of X rays. Comma seperate.",3
+Boyle,PV,,Expression for the invariant,
+Charles,V/T,,Expression for the invariant,
+Gay Lussac,P/T,,Expression for the invariant,
+Avagadro Law,V/n,,Expression for the invariant,
+"Coefficients within Sqrt for Vmost prob, Vmean, Vrms","2,8/pi,3",,Assume Monoatomic. Comma Seperate,3
+Boyle Temperature,a/Rb,Just dimensional analyse,,
+Vapour Density (in chemistry),M/2,Sadists dont wanna go with m/V but wanna go with (m)/(m)of Hydrogen in same conditions, ,
+Vcritical,3nb,, ,3
+Pcritical,a/(27b^2),"an^2/V^2; V=3nb, but then it should have a 27. So a/27b^2", ,
+Zcritical,3/8,, ,3
+"Purity, Strength, molality, Volume Strength, %Oleum, Hardness of Water","m/m, m/V, n/M, V/V, m/m, m/m",Volume Strength = Vol of O2/Vol of H2O2; %Oleum = mass after H2O/mass before; Hardness = mass of CaCO3 that would precipitate if both Mg and Ca were Ca/mass of water (same as volume because density = 1) in ppm,"V-Volume of Solution or Solute, m-Mass of solution or solute or whatever mass appears, M-Mass of solvent, n-mols of solute or solution",3
+Magnetic nature of the product of pyrolysis of Boron:,Paramagnetic,MOT has pi below for smaller atoms. Crossing happens at no of e > 14,,
+G definition (Equation),G=H-TS,dG = dH - SdT - TdS not only TdS,,
+Most Ionic Equi formulas are quickly derivable except for Hydrolysis of salt of weak Acid and weak Base. \n pH = ,(Pkw+Pka-Pkb)/2,,Type without spaces in between. ,3
+Sound Equation,Px=rhoytt=Byxx,,"Type without Spaces. Use ""rho"" for density, Subscript notation for partial derivatives but dont notate ""_""",
+Height of HCP Lattice,4sqrt(2)a/sqrt(3),Twice the height of base tetrahedron. 2r=sqrt(2)a and h = 2(2a/sqrt(3)),,
+___mm of Hg = 1 atm,760,,,3
+Ideal Gas behavious,"High T, Low P",High V essentially except Molar Volume becomes a dependent variable in most contexts. (P+an^2/V^2) NOT V^2/n^2,,3
+Work is ,Frame Dependent,,,
+Cells in Parallel,e=sum(e/r)/sum(1/r),,,
+1 Poise,0.1,,In SI units,
+SI Unit of Magnetic Flux,Weber(Wb),,,
+Reflection from Denser to Rarer,No flip,,,

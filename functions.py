@@ -159,7 +159,9 @@ def export(name):
       rows.append(row)
   f=open("anki.txt","w")
   for row in rows:
-    if len(row[0])==0:
-      pass
-    f.write(row[0]+r"<br>"+row[3]+";"+ row[1].lower()+r"<br>"+row[2]+"\n")
+    for i in range(len(row[2])):
+      if row[2][i]==";":
+        row[2]=row[2][:i]+"."+row[2][i+1:]
+    if len(row[0])!=0:
+      f.write(row[0]+";"+ row[1].lower()+r"<br>"+row[2]+"\n")
   
