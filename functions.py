@@ -74,6 +74,18 @@ def format(l,mode=0):
     l=[i.strip() for i in l]
     l=[i.lower() for i in l]
     return l
+  elif mode == 6:
+    if "<" in l:
+      b=l.split("<")
+      b=[i.strip() for i in b]
+      b=[i.lower() for i in b]
+      return b
+    if ">" in l:
+      b=l.split(">")
+      b.reverse()
+      b=[i.strip() for i in b]
+      b=[i.lower() for i in b]
+      return b
   else:
     b=l.split()
     b=[i.lower() for i in b]
