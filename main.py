@@ -6,6 +6,7 @@ import random
 import functions
 import requests
 from replit import db
+from replit import database
 from discord.ext import commands
 from pretty_help import DefaultMenu, PrettyHelp
 
