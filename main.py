@@ -353,7 +353,7 @@ class execute(commands.Cog):
               await ctx.send(file=discord.File("anki.txt"))
               os.remove("anki.txt")
             else:
-              exec(command)
+              exec(command,globals())
             #print(command)
 
 
@@ -365,10 +365,10 @@ bot.add_cog(Quiz(bot))
 bot.add_cog(serverinvite(bot))
 
 #Spaced Repetition
-#import pickle
+import pickle
 #pickle.dump(dict(),open("data.dat","wb"))
-#data = pickle.load(open("data.dat", "rb"))
-data=db["data"]
+data = pickle.load(open("data.dat", "rb"))
+
 
 class SM2(commands.Cog):
     '''SM2 is a spaced-repetition algorithm abridged for Discord. Use $sm2 to start your own. Unlike Anki, you will have tell the bot if you want to continue a day or move on to next day with "$sm2 continue". SM2 quizes are User-specific (Solo basically) unlike $quiz since the bot will have to store user data of levels of cards '''
@@ -379,15 +379,13 @@ class SM2(commands.Cog):
             ": quiz ongoing")
         questions = functions.questions("JEE")
         author = message.author.id
-        if author == 829374685480615946:
-            author = 562608039224410112
+
         channel = message.channel
         if author not in data or session == "reset":
             data[author] = {"session": 1, 1: list(range(1, len(questions)))}
         elif session != "continue":
             data[author]["session"] += 1
-        #pickle.dump(data, open("data.dat", "wb"))
-        db["data"]=data
+        pickle.dump(data, open("data.dat", "wb"))
         timeout_ = 135
 
         #if author == 562608039224410112:
@@ -460,8 +458,7 @@ class SM2(commands.Cog):
                             data[author][j].remove(i)
                 data[author][1].append(i)
                 order.append(i)
-                #pickle.dump(data, open("data.dat", "wb"))
-                db["data"]=data
+                pickle.dump(data, open("data.dat", "wb"))
                 pass
 
             else:
@@ -523,8 +520,7 @@ class SM2(commands.Cog):
                     if pos not in data[author]:
                         data[author][pos] = list()
                     data[author][pos].append(i)
-                #pickle.dump(data, open("data.dat", "wb"))
-                db["data"]=data
+                pickle.dump(data, open("data.dat", "wb"))
 
 
 bot.add_cog(SM2(bot))
