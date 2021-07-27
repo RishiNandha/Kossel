@@ -368,7 +368,7 @@ bot.add_cog(serverinvite(bot))
 #Spaced Repetition
 import pickle
 #pickle.dump(dict(),open("data.dat","wb"))
-data = pickle.load(open("data.dat", "rb"))
+data = pickle.load(open("data.dat", "rb+"))
 
 
 class SM2(commands.Cog):
