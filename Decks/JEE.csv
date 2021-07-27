@@ -15,7 +15,7 @@ Anionic Activation Reaction (Froth Floatation),Cu(OH)2.CuCO3+Na2S->CuS+Na2CO3+Na
 Bayer's Process,Al2O3+2NaOH+3H2O->2Na[Al(OH)4],"Ampho property of Al2O3 and solubility is exploited. Problem with this is that SiO2 which is an acidic oxide, will persist",Write product in complex form,
 Mac Arthur Forest Process for Silver,Ag2S+4NaCN->2Na[Ag(CN)2]+Na2S,Complexing property of Ag is exploited to precipitate it,,
 Mond Process,Ni+4CO->[Ni(CO)4]->Ni+4CO,[Ni(CO)4] is volatile and will also thermally decompose once Seperationerated,,
-Van Arkel Reaction,M+2I2->MI4->M+2I2,MI4 volatile and also decomposes,Assume the metal is M,
+Van Arkel Reaction,M+2I2->MI4->M+2I2,"MI4 volatile and also decomposes. Zr, Ti, B are extracted like this",Assume the metal is M,
 Test for CN-,CN+FeSO4+H2SO4(conc)->Fe4[Fe(CN)6]3(Prussian Blue),"Used in Lasagne's organic tests. First complex is formed by Fe2+, then Fe2+ in solution is oxidized by concentrated H2SO4. Alternative to this is to simply add Fe(II) and Fe(III) seperately instead of letting H2SO4 do the oxidation",Use CN instead of CN-. Use typical procedure although several ways are possible. Ignore byproducts for this reaction (way too many of them).,
 IO3- (Colour Change),Colourless->Blue-Black,"In starch, I3- shows complexation",,
 CuCl2+H2O+Na2CO3->,"Cu(OH)2.CuCO3(ppt,green)+NaHCO3","Pb, Zn and Mg give HCO3 on adding CO3 ions too.",Use dot form,
@@ -79,15 +79,17 @@ Be+C->,Be2C,"Like Al4C3, Gives methane not ethyne",,
 BeX2 salts are extremely soluble even though being largely covalent due to the formation of:,[Be(H2O)4]X2,,,
 B+NaOH->,Na3BO3+H2,"H3BO3 seems to act arhenius. But this is 2Na2O.B2O3, not H3BO3+NaOH",Use oxide form,
 Thermite Reaction,Al+O2->Al2O3,HUGE Amount of heat,,
-2B2O3+P4O10,BPO4,B2O3 being weakly acidic can be forced to react by a strongly acidic oxide. B3+,,
+2B2O3+P4O10,B4P4O16,Forced Acid Base reactions are in anhydrous conditions and this isnt exactly acid base but more like oxides sharing lattice.,,
+Na2CO3+Fe2O3 (1000*C),Na2Fe2O4+CO2,Forced Acid Base reactions are in anhydrous conditions and this isnt exactly acid base but more like oxides sharing lattice.,,
 Borax - True Form,Na2[H2B4O7(OH)2].8H2O,It is a lewis A-B derivative of H2B4O7,,
 Metaborate,[B(OH)4],"Meta is a gross term. Though today its known that HBO3 -> [B(OH)4]-, back then the reaction looked like HBO3 -> BO2- and hence this was called metaborate ion",,
 Pyroboric Acid,H2B4O7,Pyroacid is when 1 H2O left. It is not a gross word and denotes a specific acid. But the guy who named Boron :clap: acids was a Moron :clap: and named H2B4O7 as pyroboric acid.,,
 B-Compounds that give characteristic flame colour,BF3(green) B(OCH3)3(green),,,1
-NaAlO2.2H2O+CO2->,"NaHCO3+Al(OH)3(ppt,gelatinous)",CO2 is more acidic than amphoteric,,
+NaAlO2.2H2O+CO2->,"NaHCO3+Al(OH)3(ppt,gelatinous)",As seen by reactivity series CO2 pka < Al2O3,,
+Na2CO3+Al2O3 (anhydrous),Na2Al2O4+CO2+H2O,"Prediction with reactivity series applies, but pka2 of H2CO3 is pretty bad. Once reacted a bit, since conditions are anhydrous, CO2 could either escape or stay as an unstable NaCO3-, it escapes",,
 LiH+AlCl3,(AlH3)n+LiCl,Tau Bonds; LiAlH4 is formed only with excess LiH,,
 Laboratory Preparation of Diborane,NaBH4+I2->B2H6+NaI+H2,,(Not from BF3),
-Industrial Preparation of Diborane,NaH+BF3->B2H6+NaF,HSAB,(Not from BF3),
+Industrial Preparation of Diborane,NaH+BF3->B2H6+NaF,HSAB,,
 Production of Diborane from B2O3,B2O3+Al+H2->Al2O3+B2H6,"The huge heat from Al causes H2 to flame and instead of H2O, B2O3 forms",,
 AlCl3+CH3MgCl->,MgCl2+Al2(CH3)6,Me shows Tau bonds too,,
 B2H6+NH3(excess) (Extreme T)->,(BN)n+H2,"Like how Benzene becomes Graphite, Borazine becomes boronitride",,
@@ -98,7 +100,7 @@ Ag+HCl(conc)->,no rxn,"Unlike Group I test conditions, conc HCl doesnt let O2 in
 Ag+Aqua Regia->,no rxn,"Although HNO3 is present, Protective layer of AgCl is formed which will prevent reaction",,
 Colours of the following compounds:,"Yellow, White, White, White, White, Pale Yellow, Yellow, Yellow, Brick Red",CO3 PO4 CrO4 Cr2O7 Br I show exceptional colours. PO4 is considered polarizable too while SO4 isnt. This can be seen like how PO4 isnt really as conjugated as SO4,"Ag2CO3, Ag2SO4, Ag2S2O3, AgOAc, AgCl, AgBr, AgI, Ag3PO4, Ag2CrO4",3
 AgNO3+NaOH->,"Ag2O(ppt,black)+NaNO3+H2O",Ag(OH) doesnt exist. Ag will not readily oxidize OH to H2O+O2.,Specify Colour too,
-AgNO3(excess)+I2+H2O->,"AgI(ppt,yellow)+AgIO3(ppt)+HNO3","Oxidation of one of the I2 is initiated by highly oxidizing medium of Ag and NO3. I2 being a weak oxidizer too, it will oxidize back the byproduct. Effectively I2 disproportionates",,
+AgNO3(excess)+I2+H2O->,"AgI(ppt,yellow)+AgIO3(ppt)+HNO3",I2 disproportionates in alkaline and Ag here is a little bit like alkaline in a sense that it can get displaced by a H+,,
 H2SO4+HgCl2+H2O->,"HgSO4.HgO(ppt,yellow)+HCl",HgO has charecteristic yellow,,
 Na2CrO4+H2O2+HCl,CrO5(blue)+H2O+NaCl,CrO5 is stabilized in presence of an organic ligand,,
 Zn(NO3)2+▲->,ZnO+NO2+O2,Can be seen like H2O+NO2+O2,,
@@ -217,7 +219,7 @@ Group II ppts that dissolve in Yellow Ammonium Sulphide,SnS(brown) SnS2(yellow),
 PbCl2+H3PO4,HCl+Pb3(PO4)2(ppt),"Pb follows colours same as Ag's compounds except PO4, Chromate and Oxide",,
 PbSO4+CH3COONH4->,(NH4)2[Pb(CH3COO)4]+(NH4)2SO4,Displacement followed by complexation,,
 AgNO3+▲->,AgNO2+O2,Surprisingly AgNO2 is stable even upto 400*C,,
-CuSO4+NH4OH-> (Colour Change),blue -> Deep Blue,"Due to complexation of Cu. Zn, Cu and Ag readily complex with NH3 and give colourless, deep blue and colourless-soluble complexes",,
+CuSO4+NH4OH-> (Colour),Deep Blue,"Due to complexation of Cu. Zn, Cu and Ag readily complex with NH3 and give colourless, deep blue and colourless-soluble complexes",,
 Group II Sulphides insoluble in conc.HCl,CuS(black) HgS(black),Less reactive than H and not displaced (HSAB),"In case of two colours, seperate by commas and add the most common colour first",1
 Group II Sulphides insoluble in conc.HNO3,HgS(black),"HgSO4.HgO - yellow ppt (HgO has a dominating yellow colour), PbSO4 is a ppt too, but Pb can displace H and so Pb(NO3)2 formed. Similarly for other sulphate ppts (and only for sulphates that ppt, otherwise SO4 is formed) too, S8 precipitates","In case of two colours, seperate by commas and add the most common colour first",1
 Cu(II) Confirmatory,"Cu+K4[Fe(CN)6]->Cu2[Fe(CN)6](ppt,chocolate brown)",Ferrocyanide is used generally,Use Cu instead of Cu++. Ignore Byproducts,
@@ -225,7 +227,9 @@ FeCl3+K3[Fe(CN)6]->,KCl+Fe[Fe(CN)6](brown),This is NOT prussian blue/turnbull bl
 CuSO4+KSCN,K2[Cu(SCN)4](black)+K2SO4,"Complexation, Fe(SCN)3 was a complexation too except one of the 3 SCN was inside coordination sphere (similar to brown ring). Cu seems to prefer coord. no. of 4 unlike iron",,
 FeCl3+K4[Fe(CN)6](excess)->,KFe[Fe(CN)4](soluble prussian blue)+KCl,True structure of Prussian Blue was Fe[FeFe(CN)6]3 and soluble prussian blue is when theres so much prusside ions that Fe doesnt have to enter coordination sphere.,,
 Main reagant in Lake Test,Litmus,Litmus is adsorbed on Al(OH)3 by surface complexation giving the precipitate colour,,
-CuS+H2SO4(conc)->,no rxn,"SO4 cant oxidize S, they are extremum of the same element",,
+CuS+H2SO4(conc)->,no rxn,"SO4 cant oxidize S, they are extremum of the same element. CuS is already a ppt too, so kinetics wont support reaction either",,
+CuS+CuSO4,Cu+SO2,"Although SO4 and S-- are extremum of same element, Self Reductions are driven by E(S to SO2) and E(M(II) to M) given a source of oxygen. So here it first goes to Cu+SO2+SO3. Unlike acid and salt state where extremum are more stable, from experience we know that SO2 is more stable in gaseous state for whatever reason. Hence CuS+SO3-> SO2+CuO",,
+Cu2O+FeS (in Air),FeO+Cu2S,"Self reduction can totally happen here, but it needs heading for activation energy. But owing to presence of the reducing S-- around, FeO is formed",,
 ZnCl2+K4[Fe(CN)6]->,"KCl+Zn2[Fe(CN)6](ppt,bluish white)",,,
 Mn(OH)2+Air->,H2MnO3(brown),,,
 (CH3COO)2Ca+K2CrO4->,no rxn,"By HSAB, Calcium Chromate ppt is not formed. This is why CH3COOH is poured before doing test for Barium. (CH3COOH is already at acid and not oxidized). BaCrO4 is Yellow",,
@@ -260,6 +264,11 @@ PbI2+HI+I2->,no rxn,"Unlike PbCl4, PbI4 doesn't exist. H2[PbI6] can't be formed"
 Metals used in Steel other than Fe:,"Cr, Mo, Mn, W, V",,,2
 "Magnetic Nature: KMnO4, K2Cr2O7, K2MnO4","T-dependent paramagnetic, diamagnetic, paramagnetic",,Paramagnetic/Diamagnetic/T-dependent Paramagnetic,3
 Cl Oxides:,"Cl2O, ClO2, Cl2O6, Cl2O7","Cl2O7 is the most stable, Cl2O6 less because of the peroxylink. ClO2 is very good at high temperature. Cl2O is the least stable, itll go BOOM",Include anhydrides,2
+PbS+YAS,no rxn,Pb complexes only with hard-ish (more like away from Group 14) ligands,,
+Al2O3+Cu+C (High T)->,CO+Al,C->CO manages to cross Al at high T,,
+Al2O3+C+N2 (High T)->,AlN+CO,N2 is obviously easier to reduce than Al,,
+NaF+AlF3->,Na3AlF6,"Cryolite is formed. Flourine shrinks d orbitals enough so that sp3d2 is pretty good now, Similar to how [NiF6] exists unlike expected using Nickel's usual coordination numbers",,
+MgO+Si (high T)->,Mg+SiO2,"Si = C, SiO2=CO. Reaction is kinda driven by acid base with another MgO, but in net only redox",,
 ,,,,
 ,Surface Chemistry,,,
 ,,,,
@@ -270,7 +279,7 @@ Which adsorption is endothermic out of physisorption and chemisorption,Neither,B
 "S8, Pt, AgI/KI, Solution-sized Dirt, Water-Oil Emulsion","Chemical, Bredig's Arc, Peptization, Micelle, Emulsification ","Chemically Colloidal S8 is made, Bredig's Arc is the shattering of a metal electrode with high current, Peptization is breaking of large solids into smaller aggregates, Micelle formation is stepping is smaller ones using surfactants like Sodium Stereate. Essentially anything that achieves colloidal size work for Sol formation (10^-6 to 10^-9). Emulsification is binding two liquids together to avoid density-seperation using things like Soap, Protiens, Fatty Acids, etc.",Common Sols and Method of preparation,3
 Wavelength Range for Tyndall Effect with Colloids,>10^-9,"1. Colloidal Size. Tyndall Scattering needs wavelength larger than particle size to scatter. \n 2. Its just anologous to Rayleigh Scatter, demands that refractive index of particle and medium are greatly different (In victinity of particle, permittivity is obviously different since if not, then there wont be any electric field effects and so sqrt(eµ) is also different.) \n 3. Just like Rayleigh scattering, Smaller lambda are more affected by µ and hence more scattered. This also determines colour of colloid, lowest possible wavelength scattered = Colour when scattered ones are viewed, opposite when transmitted are viewed.",Format: <comparison operator>10^-x (without spaces in between),1
 AgI/I-,"-ve,I-,K+","Charge of Colloid is decided by Stationary phase. In Electrophoresis, only Stationary phase sticks with colloid particles, mobile phase is dynamic \n At small concentrations: Formation of Electric Double Layer will stabilize Lyophobic Colloid (Lyophilic does not require this stabilization) by preventing aggregation by putting a Electrostatic potential barrier between the Vanderwaals minima and outside. \n Excess of Electrolyte: will cause opposite charged mobile phase for both Lyophilic and Lyophobic so dominating that just after the Electrostatic Potential barrier(Maxima) another Electrostatic Minima will occur and cause Aggregation.","Format: Charge(+ve/-ve), Stationary Layer, Mobile Layer. (Assume I- is from KI)",3
-"Fe(OH)3/Hot Water, Fe(OH)3/NaOH, Metal Sol, Sulphide Sol, Oxide Sol, Organic Sol, Blood","+ve,-ve,-ve,-ve,+ve,-ve,+ve","Ionic- In metal bases onces, Metal is always easier to get adsorbed by complexation giving a net +ve, given A/B medium the other get's adsorbed giving net charge, Metal sols are almost like complexes getting a net negative, Sulphides sols have S-- adsorbed. \n Covalent - Oxides are hygroscopic, when water complexes, outer end becomes +ve, Organic molecules are electron donors, when something else complexes outer becomes negative, Blood is an exception, biological systems are op and blood will clot by +ve -ve cancelling",Common Sols and their Charge (+ve/-ve),3
+"Fe(OH)3/Hot Water, Fe(OH)3/NaOH, Metal Sol, Sulphide Sol, Oxide Sol, Organic Sol, Blood","+ve,-ve,-ve,-ve,+ve,-ve,+ve","Ionic- In metal bases onces, Metal is always easier to get adsorbed by complexation giving a net +ve, given A/B medium the other get's adsorbed giving net charge, Metal sols are almost like complexes of OH- getting a net negative, Sulphides sols have S-- adsorbed. \n Covalent - Oxides are hygroscopic, when water complexes, outer end becomes +ve, Organic molecules are electron donors, when something else complexes outer becomes negative, Blood is an exception, biological systems are op and blood will clot by +ve -ve cancelling",Common Sols and their Charge (+ve/-ve),3
 "Fe(OH)3/Hot Water, Fe(OH)3/NaOH, Metal Sol, Sulphide Sol, Oxide Sol, Organic Sol, RBC, Milk","No,No,No,No,No,Yes,Yes,Yes",Only Organic ones are Lyophilic,Common Sols and Lyophilicity (Yes/No),3
 "Azo Dyes, Pthalein Dyes","+ve, -ve","Organic Acid Bases are counted under ionic. Just like Fe(OH)3, NH3 easily gets net positive by donating to another cation, and acidic H easily becomes net negative but giving away H",Common Sols and their Charge (+ve/-ve),3
 "Give expression for Floccuation Value using C:Concentration of Electrolyte, T: Time it takes to Flocculate M:Concentration of Sol required (Both Lyophilic and Phobic)",(1000CT)/(7200),Concentration of Electrolyte needed in millimoles per litre to flocculate in 2 hours. Follows very weird kinetics but roughly \n d(fraction of sol left)/dt = kC. \n f = (1000)/(7200k) and kCT=1 \n f = (1000CT)/(7200),Format: (numerator)/(denominator); Do not cancel out factors in numerator and denominator,
@@ -337,7 +346,8 @@ Smallest Aldehydic Carbohydrates,Glyceraldehyde,Smallest optically active Polyhy
 C2 epimer of glucose,Mannose,,Type without relative naming prefix (without D-),
 Precursor of Glucose in Cyanohydrin step up synthesis,Arabinose,,Type without relative naming prefix (without D-),
 Successors of Glyceraldehyde in Killani Fischer Step up,Erythrose Threose,,,1
-Reactivity Series,K Na Ca Mg Al Cr C Zn Fe Sn Pb H Cu Hg Ag Au Pt,"H shows overpotential when seeded electrodes are used, in metallurgy H is placed where C is",Space Seperated,
+"Hexose, Hexulose, Furan, Pyran","Aldehyde, Ketone, Aromatic, Diene",,"Functional Group/Chemical Description (Drop ""heteroatom ring"" everytime)",3
+Reactivity Series,K Na Ca Mg Al Cr C Mn Zn Fe Sn Pb H Cu Hg Ag Au Pt,"H shows overpotential when seeded electrodes are used, in metallurgy H is placed where C is. Acid Base reactions can also be predicted with roughly",Space Seperated,
 Anion Echem Series,I Br OH Cl NO3 SO4 F,"OH is exceptionally, more retained in solution than Cl only in Chloralkali-like processes because of bubble overpotential. Most negative Electrode potential -> Wants to give electrons to outer circuit more -> easily Auxidized","Ascending order of electrode potential, Space seperated, type without any charges",
 Glucose+Br2/H2O,Gluconic Acid,"Br2/H2O just like at C-C pi bonds, can react with C=O to selectively oxidize it. (Addition of Bromohydrin, elimination of HBr). Glucanoic Acid -> Gluconic Acid",Just type common name,
 Glucose+HNO3,"Glucaric Acid,Saccharic acid",Terminal groups oxidized,Comma Seperate Common names,2
@@ -347,13 +357,16 @@ Glucose+RaNiH2,Sorbitol,,Common name,
 Glucose+ROH+[H+],Alkyl Glucopyranoside,SN similar to Ether formation happens but only at carbonyl carbon since that is the most acidic H,"Use Alkyl for R, Common Name",
 Glucose+phNH2NH2,"Yellow Precipitate, Osazone, 3","After one =N addition, Another N-N acts like inorganic hydrazine and redoxes. Now another =N happens. Reaction stops here because of H bonded cycle.","Observation and Common Name of product, No. of moles of phNHNH2 used",2
 "Purine rings out of A=T, C=G",A G,AuGmented size. And also AT^2 - A and T are 2 H bond pairs. UT - Uracil is primitive Thyamine,Space seperate first letters alone,1
-"H-, CH3-, Isopropyl-, Isobutyl-","Glycine, Alanine, Valine, Leucine",,"Match R- against protien name. Use common name for isoalkyl groups, Structural formula in expanded form for others.",5
+"H-, CH3-, Isopropyl-, Isobutyl-, Secbutyl-","Glycine, Alanine, Valine, Leucine, Isoleucine",,"Match R- against protien name. Use common name for isoalkyl groups, Structural formula in expanded form for others.",5
 "phCH2-, COOHCH2-, COOHCH2CH2-, NH2CH2CH2CH2CH2-","Phenylalanine, Aspartic Acid, Glutamic Acid, Lysine",,"Match R- against protien name. Use common name for isoalkyl groups, Structural formula in expanded form for others. Use ph for C6H5",5
+"NH2COCH2CH2-,NH2COCH2-, OHCH2-, SHCH2-","Glutamine, Asparagine, Serine, Cysteine",,"Match R- against protien name. Use common name for isoalkyl groups, Structural formula in expanded form for others. Use ph for C6H5",5
+"OHphCH2-, CH2CH2CH2-","Tyrosine, Proline",Proline has a ring,"Enter only the R- even if its chelating, remove the final H to show that it is chelating",5
+Non-Essential AminoAcids,"Glycine, Alanine, Glutamic Acid, Aspartic Acid, Glutamine, Asparagine, Serine, Cysteine, Tyrosine, Proline",Any abomination structure like tert-butyl or cyclopropyl would be artificial,Comma Seperate common names,2
 "Pepsin, Diastase, Maltase","Protein->Amino Acids, Starch->Maltose, Maltose->Glucose",,Enzymatic Action. Format: Reactant->Product (Without space in between t->P),5
 Action of Enzyme produced by Yeast,Zymase+Glucose->C2H5OH+CO2,,"Use common names in reactants side, Add enzyme like a reactant",
 "Invertase,Urease","Sucrose,Urea","Urea-ase, Invertase is because of inversion of optical rotation from sucrose to glucose+fructose from +ve to -ve (ie Fructose's activity overpowers)",Enzyme and Substrate,5
 "Nylon-x,y",x,Not x-2. **N**ylon and N containing monomer comes first,No. of Carbons in diammine monomer,3
-Monomers of Synthetic Rubbers,"Butadiene, Chloroprene, Acrylonitrile",Vinyl and Acrylic are the same things. Chloroprene is butadiene but with a Cl at 2nd carbon,"Include monomers of both the two, Comma seperate, Common names",2
+Monomers of Synthetic Rubbers,"Butadiene+Acrylonitrile, Chloroprene",Vinyl and Acrylic are the same things. Chloroprene is butadiene but with a Cl at 2nd carbon,Use + for same polymer's monomers,2
 "Dry Lubricant, Water Pipes, Sportwear, Tyre Stitches, Conveyor belts, Oil Seals","Teflon, PVC, Nylon-66, Nylon-6, Neoprene, Buna-N",,"Choose from Teflon, PVC, Nylon-66, Nylon-6, Neoprene, Buna-N and from Dry Lubricant, Water Pipes, Sportwear, Tyre Stitches, Conveyor belts, Oil Seals",5
 "Foodwear, Raincoats, Fishing Nets, Ropes, Hoses, Tank linings","Teflon, PVC, Nylon-66, Nylon-6, Neoprene, Buna-N",,"Choose from Teflon, PVC, Nylon-66, Nylon-6, Neoprene, Buna-N and from Foodwear, Raincoats, Fishing Nets, Ropes, Hoses, Tank linings",5
 Sucrose,C2-b-D-Fructose + C1-a-D-Glucose,Both the carbonyls are involved. ,Format: C#-a/b-D/L-Someose + C#-a/b-D/L-Someotherose,
@@ -363,7 +376,9 @@ Amylose,C1-a-D-Glucose + C4-a-D-Glucose,Polymeric version of Maltose. Solubility
 Cellulose,C1-b-D-Glucose + C4-b-D-Glucose,"Polymeric Version of Lactose. Similar to lactose, Cellulose is given the pathway to become beta, this is wantedly done to keep the cell wall the most stable one. Insoluble in Water because unlike Amylose, C6 is equitorial for beta and hindered",Format: C#-a/b-D/L-Someose + C#-a/b-D/L-Someotherose,
 Amylopectin,C1-a-D-Glucose + C4-a-D-Glucose + C6-a-D-Glucose,Amylose but branching using C1-C6 too. Not soluble since the C6 (CH2OH) group is bonded now.,Format: C#-a/b-D/L-Someose + C#-a/b-D/L-Someotherose (+ C#-a/b-D/L-Someotherose),
 "Solubility, Helix/Sheet, Protein Code, Tangling with other proteins/Peptization","3, 2, 1, 4","Solubility depends on Globular or Fiberous - 3* is the structure of vanderwaals interaction between several strands. alpha Helix or beta Sheet is decided by Hydrogen bonding (and sometimes other chemical bonding like -S-). 4* is just physical arrangement, nothing chemical.",Match the Characteristic with degree of structure for Proteins (use just numbers),3
-Gly-Alanine,(NH2CH2CONH2)(CH3)CHCOOH,Order of naming for Proteins is opposite of Nylon. COOH's side comes first here,Structural formula without - or spaces,
+"Amylose, Cellulose, Glycogen, Keratin, Myosin, Insulin, Albumin","Yes, No, No, No,No,Yes,Yes",Glylcogen is similar to Amylopectin. Beta structure in Cellulose won't allow free OH *sticking out* of the polymeric fibres. Keratin and Myosin are fibrous (Tertiary Structure). Insuline and Albumin are Globular,Solubility: Yes/No,3
+Glycylalanine,(NH2CH2CONH2)(CH3)CHCOOH,Order of naming for Proteins is opposite of Nylon. COOH's side comes first here,Structural formula without - or spaces,
+Hot Saturated Solution of Glucose ->,b-D-Glucose,,,
 ,,,,
 ,Indefinite Integrals,,,
 ,,,,
@@ -408,8 +423,15 @@ Radius of Auxiliary Circle of Hyperbola and Line from abscissa of a point make a
 Slope form Normal Equation for Hyperbola,y=mx+m(a^2+b^2)/sqrt(a^2-m^2b^2),"For ellipse, it can be gotten by putting tantheta = mb/a and thus sintheta. Hyperbola will just be ellipse with an inverted b^2.",Use + instead of + or -,
 Product of Perpendicular Distances to Asymptotes from a point,1/(1/a^2+1/b^2),"Can be checked using (a,0)",,
 Perpendiculat to Tangent from a Focus lies on (For Parabola),Vertex Tangent,,,
-Parametric point of tangent for Parabola,"(att, a(t+t))",Plug Joaschmithal substitution,Use t for both,
+Parametric point of tangent for Parabola,"(att, a(t+t))",Plug Joaschmithal substitution. This is also used in focal chord att = -a,Use t for both,
 Quickest way to find Circumcentre of a triangle formed within a circle,Euler Line,For 3D,,
+"Normals intersect at parabola, then",tt=2,Quickly derive k = -(t+2/t) and then put condition that k should be same even if the other point is plugged in,Use t for both,
+"Length of Subtangent, Length of Subnormal of a parabola","2x, 2a",Subtangent -at^2.,,
+"Relation between SP, ST, SN and coordinates of P",SP=ST=SN=x+a,x+a = ST is trivial from length of subtangent,N and T are entersection of Normal and Tangent at axis,
+Normal intersects parabola again,t=-(t+2/t),,Use t for both,
+Semi Latus Rectum (Ellipse and Hyperbola),b^2/a^2,,,
+Finding parameters of a general conic uses the idea that:,X=(ax+by+c)/sqrt(a^2+b^2),,,
+Slopes of Principal Axes of a general Conic other than parabola is same as Slops of Principal Axes of:,ax^2+by^2+2hxy,It follows that discriminant of this decides if given conic is Ellipse or Hyperbola,,
 ,,,,
 ,General Mathematics,,,
 ,,,,
@@ -428,7 +450,7 @@ Victor Meyer test's N-based ions involved:,"NO2, NO",,Yeet Charge,
 "FeCl3 + Alcohol, FeCl3 + AcOH, FeCl3+ Larger COOH, FeCl3+Resourcinol, FeCl3+Catechol, FeCl3+Beta-OH-Naphthol","no rxn, Violet Soln, Brown ppt, Violet Soln, Green Soln, No Colour","Normally all AcOH are Violet only, Catechol alone Green in FeCl3, and Resourcinol alone Green in pthalic anhydride test",Comma seperate observations (use soln and ppt instead of Solution and Precipitate),3
 Cyclocompounds naming exception precedence order:,Chain Length > FG,,Format: Something > Something else (with spaces in b/w),
 Melting/Boiling point precedence order for Covalent Compounds (Desc.),"Type of Interaction, Molar Mass, Branching, Additional Factor","Additional factor for Boiling is dipole moment, Melting is compactness of lattice. For t-butyl v other butanes alone, the addition factor comes further up. Para and Trans are more compact because they fit like a thread of fibre or something into lattice. Further, lattice energy majorly depends on compactness, more than surface area. Melting point isn't directly = lattice E trends, Melting point is affected by covalency and surface area trends while lattice energy isn't",Comma Seperate,3
-Acidity order (Desc.),"HI, H2SO4, HX, RSO3H, H3O, RCOOH, H2CO3, ArEH, RNH3, H2O, ROH, H2, RCHO",Aromatic OH with 1 or more NO2 like deactivation will come higher than HCO3. Aliphatic with 3 beta Hyperconj. or 2 NO2 will also come above HCO3. Amides won't dissolve in HCl unlike Amines. Litmus Roughly lies at H2CO3's position too,Include conjugate acids of bases but don't notate charges. Position of HNO3 is disputed thus don't include it. Use E for O/N. Assume conjugate acid of Hydride is H2,3
+Acidity order (Desc.),"HI, H2SO4, HX, RSO3H, H3O, RCOOH, H2CO3, ArEH, RNH3, H2O, ROH, NH3, H2, yne, RCHO",Aromatic OH with 1 or more NO2 like deactivation will come higher than HCO3. Aliphatic with 3 beta Hyperconj. or 2 NO2 will also come above HCO3. Amides won't dissolve in HCl unlike Amines. Litmus Roughly lies at H2CO3's position too,Include conjugate acids of bases but don't notate charges. Position of HNO3 is disputed thus don't include it. Use E for O/N. Assume conjugate acid of Hydride is H2,3
 Electronic Effects: Substituents order (Assuming M effect is operative unlike COOH groups),"-N, -O, -NC=O, -OC=O, 3*, -ph, -allyl, -R, -H, -X, -C=O, 3 beta, -N+, -NO2","Allyl activates ring too. 3 beta can be considered pure I, -N+ is pure I",Use * for degree.,3
 Bredt Rule is that no cation of = at ________,Bridgehead,,,3
 Electronic Effects: Effects order,"M, Steric, I",Steric factors include inhibition of resonance and ortho effect. Ortho effect for conjugate of NH2 is known of Steric inhibition of protonation.,,3
@@ -472,13 +494,14 @@ Formic Acid + Cu(II) [OH]->,"Cu2O(ppt, red)+CO2+H2O","Fehling test, but enol rad
 ,Coordination Compounds,,,
 ,,,,
 d orbitals in dsp2 (Asc),"dyz=dzx,dxy,dz^2",,"Comma seperate, use Equal sign for degenerate, don't use ""_"" for subscripting",3
-"Splitting: [NiF6]--, [CoF6]---, [Fe(NH3)6]++, [Fe(NH3)6]+++, [Cr(OH)4]-","Strong, Weak, Weak, Strong, Weak","Ni(IV) is always strong, Co(III) always strong except F-, NH3 is strong for 3+ and weak for 2+, Cr(II) and Cu(II) are actually weak splits but make inner orbital due to distortion of dz^2",strong/weak,3
+"Splitting: [NiF6]--, [CoF6]---, [Fe(NH3)6]++, [Fe(NH3)6]+++, [Co(NH3)6]++","Strong, Weak, Weak, Strong, Strong","Ni(IV) is always strong, Co(III) always strong except F-, NH3 is strong for 3+ and weak for 2+, NH3 is strong with Co always",strong/weak,3
 Stability of Complex Precedense,"EAN, Ligand, q/r^2, Chelation",Precedence order is rough and a big factor can overpower another,"Comma seperate, Descending",3
 [Fe(CN)(CO)(H2O)(NH3)(H)(NO)] IUPAC Name,AmmineAquaCarbonylCyanoHydridoNitrosylIron(III),,IUPAC Name,
 K2[CuCl4],Potassium TetraChloridoCuprate(II),"In anionic alone latin name-ate comes. Chlorido, not Chloro",IUPAC Name,
 "en, gly, acac, dmg","AA, AB, AA, AB, AA",acac is conjugared to become AA altho AB without conjugation,Ligand type,3
 "dien, trien, dipy, py, acac, EDTA, gly","3,4,2,3,2,6,2",,Denticity,3
 "acac, dmg, gly, EDTA, en","1,1,1,4,0",,Ligand Charges,3
+"[Cr(CN)4]--, [Ni(NH3)x], [Ag(NH3)4]NO3, [Co(NH3)4]Cl2, H[AuCl4]","sp3, sp3d2, dsp2, dsp2, dsp2","Assymetric dz^2 forms Square Planar always. Strong splitting Cr wont allow for assymetric eg Ni typically gives square planar with strong split, tetrahedral with weak split and octahedral with solvents (NH3 and H2O). d9 always show the eg assymetry. Ag generally likes 2 coordination only, this is just a rare case. NH3 exceptionally strong always for Co and this makes this another assymetric eg. Pt,Pd,Au which are d8 coinage metals are not really assymetric eg but give square planar always. Au(III) likes 4 coordination more than 2 unlike Au(I)",dsp2/sp3/sp3d2,3
 ,,,,
 ,Physical Chemistry & Physics,,,
 ,,,,
