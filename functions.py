@@ -86,6 +86,7 @@ def format(l,mode=0):
       b=[i.strip() for i in b]
       b=[i.lower() for i in b]
       return b
+  
   else:
     b=l.split()
     b=[i.lower() for i in b]

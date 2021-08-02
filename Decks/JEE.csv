@@ -353,7 +353,7 @@ Glucose+Br2/H2O,Gluconic Acid,"Br2/H2O just like at C-C pi bonds, can react with
 Glucose+HNO3,"Glucaric Acid,Saccharic acid",Terminal groups oxidized,Comma Seperate Common names,2
 Fructose+Br2/H2O,no rxn,Ketone cant be further reduced to acid,Just type common name,
 5 Homologues of Oxalic Acid,"Oxalic, Malonic, Succinic, Glutaric, Adipic",,"Including Oxalic acid, Comma seperate",3
-Glucose+RaNiH2,Sorbitol,,Common name,
+Glucose+RaNiH2,Sorbitol,Temp and P omitted here generally,Common name,
 Glucose+ROH+[H+],Alkyl Glucopyranoside,SN similar to Ether formation happens but only at carbonyl carbon since that is the most acidic H,"Use Alkyl for R, Common Name",
 Glucose+phNH2NH2,"Yellow Precipitate, Osazone, 3","After one =N addition, Another N-N acts like inorganic hydrazine and redoxes. Now another =N happens. Reaction stops here because of H bonded cycle.","Observation and Common Name of product, No. of moles of phNHNH2 used",2
 "Purine rings out of A=T, C=G",A G,AuGmented size. And also AT^2 - A and T are 2 H bond pairs. UT - Uracil is primitive Thyamine,Space seperate first letters alone,1
@@ -442,6 +442,7 @@ sum sin(AP),(sin((n+1)d/2)/sin(d/2))sin(AM),sin((n+1)d/2)/sin(d/2) is almost lik
 Skewed Lines are ________ and don't intersect,non-parallel,,,
 "A&B are mutually independent, then P(A|B)=",P(A),,,
 "(h,k,o) is Reflection of (x,y,z) about ax+by+cz-d. h=",x-2a(ax+by+cz-d)/(a^2+b^2+c^2),,,
+Ptolemy Theorem,AC.BD=AB.CD+AD.BC,,use . instead of *,
 ,,,,
 ,Organic Chemistry,,,
 ,,,,
@@ -494,7 +495,7 @@ Formic Acid + Cu(II) [OH]->,"Cu2O(ppt, red)+CO2+H2O","Fehling test, but enol rad
 ,Coordination Compounds,,,
 ,,,,
 d orbitals in dsp2 (Asc),"dyz=dzx,dxy,dz^2",,"Comma seperate, use Equal sign for degenerate, don't use ""_"" for subscripting",3
-"Splitting: [NiF6]--, [CoF6]---, [Fe(NH3)6]++, [Fe(NH3)6]+++, [Co(NH3)6]++","Strong, Weak, Weak, Strong, Strong","Ni(IV) is always strong, Co(III) always strong except F-, NH3 is strong for 3+ and weak for 2+, NH3 is strong with Co always",strong/weak,3
+"Splitting: [NiF6]--, [CoF6]---, [Fe(NH3)6]++, [Fe(NH3)6]+++, [Co(NH3)6]++, [Co(ox)3]---","Strong, Weak, Weak, Strong, Strong, Strong","Ni(IV) is always strong, Co(III) always strong except F-, NH3 is strong for 3+ and weak for 2+, NH3 is strong with Co always. ",strong/weak,3
 Stability of Complex Precedense,"EAN, Ligand, q/r^2, Chelation",Precedence order is rough and a big factor can overpower another,"Comma seperate, Descending",3
 [Fe(CN)(CO)(H2O)(NH3)(H)(NO)] IUPAC Name,AmmineAquaCarbonylCyanoHydridoNitrosylIron(III),,IUPAC Name,
 K2[CuCl4],Potassium TetraChloridoCuprate(II),"In anionic alone latin name-ate comes. Chlorido, not Chloro",IUPAC Name,

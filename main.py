@@ -19,6 +19,7 @@ nav = DefaultMenu("◀️", "▶️")
 bot.help_command = PrettyHelp(navigation=nav, color=discord.Colour.green())
 
 
+
 # async def log(string,channelname=None,servername=None,membername=None):
 #   await bot.get_channel(860153556883472434).send(string+ "by"+membername+"at"+(servername+channelname))
 
