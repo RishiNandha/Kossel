@@ -171,7 +171,7 @@ def export(name):
     for row in csvreader:
       rows.append(row)
   f=open("anki.txt","w")
-  for row in rows:
+  for row in rows[::-1]:
     for i in range(len(row[2])):
       if row[2][i]==";":
         row[2]=row[2][:i]+"."+row[2][i+1:]
