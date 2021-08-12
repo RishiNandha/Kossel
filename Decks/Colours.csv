@@ -1,7 +1,7 @@
 Question,Answers,Comment,Instructions,Mode
 BaCO3 color,white,white ppt,,
 Acididied K2Cr2O7 color change,"orange,green",,,
-Acidified KMnO4 color change,"purple,colorless",,,
+Acidified KMnO4 color change,"purple,colorless",,Comma seperate,
 PbS,black,,,
 Na2[Fe(CN)5(NO)],Reddish Brown,sodium nitropresside is used in confirmation of sulphide ion,,
 Na4[Fe(CN)5(NO)S],violet,formed in confirmation of sulphide ion using sodium nitro prusside,,
@@ -57,7 +57,7 @@ HMnO4 color,pink,manganese cation is confirmed in form of permanganic acid,,
 CaCrO4 color,yellow,yellow precipitate,,
 SrCrO4 color,yellow,yellow suspension,,
 BaCrO4 color,yellow,yellow solution,,
-"colors of CaCrO4, SrCrO4 and BaCrO4","yellow,yellow,yellow","they are precipitate, suspension and solutions respectively",,3
+"colors of CaCrO4, SrCrO4 and BaCrO4","yellow,yellow,yellow","they are precipitate, suspension and solutions respectively",Comma seperate,3
 CaC2O4 color,white,white precipitate,,
 SrC2O4 color,white,white suspension,,
 Mg(NH4)(PO4),white,Mg2+ precipitated in this form in analysis,,
@@ -68,7 +68,7 @@ Cr+3 flame test give dark _____ color,green,,,
 Mn+2 flame test gives pale ____ color,pink,,,
 Cu2+ flame test,blue,,,
 "group 1 elements with flame test colors: blue, red, golden yellow, reddist violet and lilac/violet","Cs,Li,Na,Rb,K",,Comma seperate,3
-group 2 elements which do not give flame test,"Be,Mg",,,3
+group 2 elements which do not give flame test,"Be,Mg",,Comma seperate,2
 Sr flame test,crimson red,,,
 Ca flame test,brick red,,,
 Ba flame test,apple green,,,
