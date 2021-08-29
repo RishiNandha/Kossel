@@ -176,5 +176,5 @@ def export(name):
       if row[2][i]==";":
         row[2]=row[2][:i]+"."+row[2][i+1:]
     if len(row[0])!=0:
-      f.write(row[0]+";"+ row[1].lower()+r"<br>"+row[2]+"\n")
+      f.write(row[0]+r"<br>"+row[3]+";"+ row[1].lower()+r"<br>"+row[2]+"\n")
   
