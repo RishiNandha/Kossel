@@ -1,0 +1,5 @@
+Question,Answer,Comment,Instructions,"Mode:  0-Reactions eg. CuSO4(blue)+Zn->ZnSO4+Cu(ppt), 1-Unordered space sep,2-unordered comma sep,3-ordered comma sep,5-interchangable ques & ans"
+List of Common Ligands,"X-,H2O,OH-,CH3CN,py,NCS-,NO2-,PPh3,CN-,CO,en,bpy,phen,EDTA,ox,acac",,Comma seperate,2
+Write the reaction of CoCl2 anhydrous with Water,CoCl2(blue)+H2O->CoCl2.6H2O(magenta),,,0
+Octahedral eg's contituent orbitals,"dz2, dx2-y2",stronger interaction with ligand centres,Comma seperate,2
+Octahedral t2g's contituent orbitals,"dxy,dyz,dxz",Least interaction with ligand centres,Comma seperate,2
