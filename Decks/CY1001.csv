@@ -3,3 +3,10 @@ List of Common Ligands,"X-,H2O,OH-,CH3CN,py,NCS-,NO2-,PPh3,CN-,CO,en,bpy,phen,ED
 Write the reaction of CoCl2 anhydrous with Water,CoCl2(blue)+H2O->CoCl2.6H2O(magenta),,,0
 Octahedral eg's contituent orbitals,"dz2, dx2-y2",stronger interaction with ligand centres,Comma seperate,2
 Octahedral t2g's contituent orbitals,"dxy,dyz,dxz",Least interaction with ligand centres,Comma seperate,2
+g in t2g and eg stands for,gerade,Gerade's wavefunction will be even in nature. It will have a centre of inversion.,,
+Dq,Differential Quanta,,Abbrievation in CFT context,
+Common ligands in descending order of splitting,"CO=CN-,PPh3, NO2-, phen, bipy, en, NH3, py, CH3CN, NCS-, H2O=Ox,OH-,F-,Cl-,NCS-,Br-,I-",,"Incase of NCS-, type NCS- for both N donor and S donor. Comma seperate.",3
+Incase of several absorption lines ________ is taken for splitting calculations,least energy line,,least energy line/highest energy line,
+▲t/▲o,4/9,Apparently one 2/3 because 4 ligands instead of 6. And 2/3 for approaching from corners instead of face centres,,1
+Magnetic Moment in terms of total spin (s),2sqrt(s(s+1)),sqrt(n(n+2)) = sqrt(2s(2s+2)) = 2sqrt(s(s+2)) where n is the number of unpaired,,1
+Splitting strength in ascending order of metal centres,"Mn(II),Ni(II),Co(II),Fe(III),Cr(III),Co(III),Ru(III),Mo(III),Rh(III),Pd(II),Ir(III),Pt(IV)",Smaller ones split more because of more repulsions. Higher charged split stronger because of better interactions,,3
